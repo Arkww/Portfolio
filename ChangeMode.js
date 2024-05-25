@@ -189,3 +189,11 @@ document.addEventListener("DOMContentLoaded", function () {
       "This really helped me to understand and manipulate matrices in JAVA, as well as to adapt and understand existing code that I hadn't coded.";
   });
 });
+
+document.querySelector('#contact-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    e.target.elements.name.value = '';
+    e.target.elements.email.value = '';
+    e.target.elements.message.value = '';
+  });
+
