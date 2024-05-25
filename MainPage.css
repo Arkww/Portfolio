@@ -1,0 +1,122 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body.dark {
+  #container2,
+  #container4 {
+    background-image: url(/Background/dark3.jpg);
+  }
+
+  #container1,
+  #container3 {
+    background-image: url(/Background/dark3.jpg);
+  }
+  color: aliceblue;
+
+  .carte {
+    box-shadow: #090914 5px 5px 5px 5px;
+  }
+  a {
+    color: white;
+  }
+  a:hover {
+    color: rgb(131, 137, 143);
+    scale: 1.1;
+  }
+}
+
+body.light {
+  #container1,
+  #container3 {
+    background-image: url("/Background/light2.jpg");
+  }
+
+  #container2,
+  #container4 {
+    background-image: url("/Background/light1.jpg");
+  }
+
+  .carte {
+    box-shadow: #02021c 1px 1px 1px 1px;
+  }
+  p,
+  a,
+  .slide-title {
+    color: black;
+  }
+
+  a:hover {
+    color: rgb(68, 125, 153);
+    scale: 1.1;
+  }
+}
+
+#changeLanguages {
+  display: flex;
+  justify-content: center;
+
+  padding-left: 10px;
+  padding: 15px;
+  font-size: 1em;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.title {
+  font-size: 2em;
+  padding-top: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  height: 10vh;
+  position: fixed;
+  width: 500px;
+  top: 0;
+  left: 0; /* Ensure the navbar sticks to the left side of the viewport */
+  width: 100%; /* Ensure the navbar spans the entire width of the viewport */
+  z-index: 1000; /* Ensure it appears above other content */
+  background-color: rgba(255, 255, 255, 0); /* Transparent white background */
+}
+
+.navclick {
+  text-decoration: none;
+
+  padding: 15px;
+  padding-left: 30px;
+  font-size: 1em;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.navigation {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.navigation:hover {
+  color: rgb(131, 137, 143);
+}
+
+#container1,
+#container2,
+#container4,
+#container3 {
+  height: 100vh;
+}
+
+title {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 50px;
+}

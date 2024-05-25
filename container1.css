@@ -1,0 +1,23 @@
+#bio {
+    padding-top: 20vh;
+    margin-left: 10vh;
+    width: 600px;
+  }
+
+  #container1 {
+    height: 100vh;
+    display: flex;
+    padding-top: 15vh;
+    justify-content: center;
+}
+
+.classicIMG {
+    border-radius: 15px;
+    box-shadow: 10px 5px 5px rgb(14, 10, 23);
+    margin: 15px;
+}
+
+.classicIMG:hover {
+    transform: scale(1.05);
+    transition-duration: 1s;
+}
