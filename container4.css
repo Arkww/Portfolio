@@ -1,0 +1,155 @@
+#name,
+#email {
+  height: 2.5rem; /* 40px to rem */
+  color: white;
+}
+
+#message {
+  height: 12.5rem; /* 200px to rem */
+  color: white;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.25rem; /* 20px to rem */
+  padding-bottom: 1.25rem; /* 20px to rem */
+}
+
+#gauche {
+  padding-right: 12.5rem; /* 200px to rem */
+}
+
+#droite {
+  padding-left: 12.5rem; /* 200px to rem */
+}
+
+.form-control {
+  width: 31.25rem; /* 500px to rem */
+  background-color: rgb(23, 23, 24);
+  margin: 0.625rem; /* 10px to rem */
+  border-radius: 0.625rem; /* 10px to rem */
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.25rem; /* 20px to rem */
+  padding-bottom: 1.25rem; /* 20px to rem */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.icon,
+.iconNC {
+  width: 3.125rem; /* 50px to rem */
+  color: white;
+  margin: 0.625rem; /* 10px to rem */
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.social-media-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 1.25rem; /* 20px to rem */
+  padding-bottom: 1.25rem; /* 20px to rem */
+  width: 18.75rem; /* 300px to rem */
+}
+
+#contactTitle {
+  padding-top: 12.5rem; /* 200px to rem */
+}
+
+#submit {
+  background-color: rgb(23, 23, 24);
+  color: white;
+  border-radius: 0.625rem; /* 10px to rem */
+  width: 31.25rem; /* 500px to rem */
+  height: 2.5rem; /* 40px to rem */
+  margin: 0.625rem; /* 10px to rem */
+}
+
+#submit:hover {
+  background-color: rgb(56, 56, 197);
+  transition-duration: 1s;
+  color: white;
+  border-radius: 0.625rem; /* 10px to rem */
+  width: 31.25rem; /* 500px to rem */
+  height: 2.5rem; /* 40px to rem */
+  margin: 0.625rem; /* 10px to rem */
+}
+
+::placeholder {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1rem;
+}
+
+button {
+  font-family: inherit;
+  font-size: 1.25rem; /* 20px to rem */
+  background: royalblue;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 1rem; /* 16px to rem */
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+  width: 33rem;
+}
+
+button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+  transform: translateX(25em);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}

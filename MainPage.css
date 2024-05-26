@@ -1,0 +1,114 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body.dark {
+  #container2,
+  #container4 {
+    background-image: url(/Background/dark3.jpg);
+  }
+
+  #container1,
+  #container3 {
+    background-image: url(/Background/dark3.jpg);
+  }
+  color: aliceblue;
+
+  .carte {
+    box-shadow: #090914 0.3125rem 0.3125rem 0.3125rem 0.3125rem; /* 5px to rem */
+  }
+  a {
+    color: white;
+  }
+  a:hover {
+    color: rgb(131, 137, 143);
+    scale: 1.1;
+  }
+}
+
+body.light {
+  #container1,
+  #container3 {
+    background-image: url("/Background/light2.jpg");
+  }
+
+  #container2,
+  #container4 {
+    background-image: url("/Background/light1.jpg");
+  }
+
+  .carte {
+    box-shadow: #02021c 0.0625rem 0.0625rem 0.0625rem 0.0625rem; /* 1px to rem */
+  }
+  p,
+  a,
+  .slide-title {
+    color: black;
+  }
+
+  a:hover {
+    color: rgb(68, 125, 153);
+    scale: 1.1;
+  }
+}
+
+#changeLanguages {
+  display: flex;
+  justify-content: center;
+  padding-left: 0.625rem; /* 10px to rem */
+  padding: 0.9375rem; /* 15px to rem */
+  font-size: 1em;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.title {
+  font-size: 2rem; /* Changed to relative unit */
+  padding-top: 1.25rem; /* 20px to rem */
+  text-align: center;
+  padding-bottom: 3.125rem; /* 50px to rem */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.25rem; /* 20px to rem */
+  height: 10vh;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.navclick {
+  text-decoration: none;
+  padding: 0.9375rem; /* 15px to rem */
+  padding-left: 1.875rem; /* 30px to rem */
+  font-size: 1em;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.navigation {
+  padding-right: 3.125rem; /* 50px to rem */
+  padding-left: 3.125rem; /* 50px to rem */
+}
+
+.navigation:hover {
+  color: rgb(131, 137, 143);
+}
+
+#container1,
+#container2,
+#container3,
+#container4 {
+  height: 100vh;
+}
+
