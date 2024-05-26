@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="container4.css" />
     <link rel="stylesheet" href="mediaQueries.css" />
 
-    <title>Portfolio</title>
+    <title>Mathieu JAY</title>
   </head>
   <body class="dark">
     <header>
@@ -348,7 +348,7 @@
       <h1 id="contactTitle" class="title">Contact me</h1>
       <div id="form">
         <div id="gauche">
-          <form id="contact-form">
+          <form id="contact-form" action="javascript:void(0);">
             <div class="form-group">
               <input
                 type="text"
@@ -384,7 +384,7 @@
               ></textarea>
             </div>
 
-            <button>
+            <button  onclick="sendEmail()">
               <div class="svg-wrapper-1">
                 <div class="svg-wrapper">
                   <svg
@@ -419,7 +419,7 @@
 
             <li class="list-item">
               <img class="iconNC" src="/Icon/mail.png" />
-              <a href="mailto:mathieu.jay2@gmail.com" title="Send me an email"
+              <a href="mailto:mathieu.jay2@gmail.com" target="_blank" id="linkSendEmail" title="Send me an email"
                 >mathieu.jay2@gmail.com</a
               >
             </li>
@@ -463,5 +463,18 @@
 
     <script type="module" src="ChangeMode.js"></script>
     <script type="module" src="Carousel.js"></script>
+    <script lang="javascript" >
+      function sendEmail() {
+  var link = document.getElementById('linkSendEmail');
+  var name = document.getElementById('name').value;
+  var subject = 'Contact from portfolio Mathieu JAY';
+  var message = encodeURIComponent( document.getElementById('message').value) + "%0D%0A" + name + "%0D%0A" + document.getElementById('email').value;
+  var email = "mathieu.jay2@gmail.com";
+  var href = "mailto:" + email + "?subject=" + subject + "&body=" + message;
+  console.log(href);
+  link.setAttribute("href", href);
+  link.click();
+}
+    </script>
   </body>
 </html>
