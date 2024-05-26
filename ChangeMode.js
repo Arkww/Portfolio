@@ -61,8 +61,9 @@ document.addEventListener("DOMContentLoaded", function () {
       "Département informatique de l'IUT de Gradignan";
     document.getElementById("title").textContent =
       "Mathieu Jay, étudiant en informatique à l'IUT de Gradignan";
-    document.getElementById("bio").textContent =
+    document.getElementsByClassName("bio")[0].textContent =
       "Etudiant en première année à l'IUT de Gradignan je suis passioné de voyage et de théorie des graphes.";
+
     /**Nav bar */
     document.getElementsByClassName("navclick")[0].textContent =
       "A propos de moi";
@@ -134,9 +135,9 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("undername").textContent =
       "IUT Computer science department of Gradignan";
     document.getElementById("title").textContent =
-      "IUT Computer science department of Gradignan";
-    document.getElementById("bio").textContent =
-      "First year student at the IUT of Gradignan, France. I am passionate about travels and the graph theory.";
+      "Mathieu Jay, computer science student";
+    document.getElementsByClassName("bio")[0].textContent =
+      "          First year student at the IUT of Gradignan, France. I am passionate about travels and the graph theory.";
     /**Nav bar */
     document.getElementsByClassName("navclick")[0].textContent = "About me";
     document.getElementsByClassName("navclick")[1].textContent = "My skills";
@@ -199,3 +200,4 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("submitButton").textContent = "Send";
   });
 });
+
