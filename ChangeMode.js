@@ -97,7 +97,8 @@ document.addEventListener("DOMContentLoaded", function () {
     /**Projets description */
     document.getElementById("projectTitle").textContent = "Mes projets";
     /**Graphes */
-    document.getElementsByClassName("slide-date")[0].textContent = "Projet graphes"
+    document.getElementsByClassName("slide-date")[0].textContent =
+      "Projet graphes";
     document.getElementsByClassName("graph")[0].textContent =
       "Dans ce projet, j'ai codé une application en JAVA capable de créer, de visualiser et d'appliquer des algorithmes à des graphes.";
     document.getElementsByClassName("graph")[1].textContent =
@@ -121,6 +122,10 @@ document.addEventListener("DOMContentLoaded", function () {
       "Pour chacun de ces modes, j'ai dû créer et utiliser une matrice booléenne pour afficher l'interface de l'unité de contrôle.";
     document.getElementsByClassName("odomo")[2].textContent =
       "Cela m'a vraiment aidé à comprendre et à manipuler les matrices en JAVA, ainsi qu'à adapter et à comprendre le code existant que je n'avais pas codé.";
+    /**Contact */
+    document.getElementById("contactTitle").textContent = "Contacter-moi";
+    document.getElementById("name").placeholder = "NOM";
+    document.getElementById("submitButton").textContent = "Envoyer";
   });
 
   EN.addEventListener("click", () => {
@@ -163,7 +168,8 @@ document.addEventListener("DOMContentLoaded", function () {
     /**Projets description */
     document.getElementById("projectTitle").textContent = "My projects";
     /**Graphes */
-    document.getElementsByClassName("slide-date")[0].textContent = "Graph project"
+    document.getElementsByClassName("slide-date")[0].textContent =
+      "Graph project";
     document.getElementsByClassName("graph")[0].textContent =
       "In this project i coded an application in JAVA that was able to create, visualize and apply algorithms to graphs.";
     document.getElementsByClassName("graph")[1].textContent =
@@ -187,13 +193,9 @@ document.addEventListener("DOMContentLoaded", function () {
       "Which each of these mods we had to create and use a Boolean matrices to display the control unit's interface.";
     document.getElementsByClassName("odomo")[2].textContent =
       "This really helped me to understand and manipulate matrices in JAVA, as well as to adapt and understand existing code that I hadn't coded.";
+    /**Contact */
+    document.getElementById("contactTitle").textContent = "Contact me";
+    document.getElementById("name").placeholder = "NAME";
+    document.getElementById("submitButton").textContent = "Send";
   });
 });
-
-document.querySelector('#contact-form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    e.target.elements.name.value = '';
-    e.target.elements.email.value = '';
-    e.target.elements.message.value = '';
-  });
-

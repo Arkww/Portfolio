@@ -20,7 +20,7 @@ body.dark {
   color: aliceblue;
 
   .carte {
-    box-shadow: #090914 5px 5px 5px 5px;
+    box-shadow: #090914 0.3125rem 0.3125rem 0.3125rem 0.3125rem; /* 5px to rem */
   }
   a {
     color: white;
@@ -43,7 +43,7 @@ body.light {
   }
 
   .carte {
-    box-shadow: #02021c 1px 1px 1px 1px;
+    box-shadow: #02021c 0.0625rem 0.0625rem 0.0625rem 0.0625rem; /* 1px to rem */
   }
   p,
   a,
@@ -60,48 +60,45 @@ body.light {
 #changeLanguages {
   display: flex;
   justify-content: center;
-
-  padding-left: 10px;
-  padding: 15px;
+  padding-left: 0.625rem; /* 10px to rem */
+  padding: 0.9375rem; /* 15px to rem */
   font-size: 1em;
   font-weight: bold;
   transition: 0.5s;
 }
 
 .title {
-  font-size: 2em;
-  padding-top: 20px;
+  font-size: 2rem; /* Changed to relative unit */
+  padding-top: 1.25rem; /* 20px to rem */
   text-align: center;
-  margin-bottom: 50px;
+  padding-bottom: 3.125rem; /* 50px to rem */
 }
 
 nav {
   display: flex;
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 1.25rem; /* 20px to rem */
   height: 10vh;
   position: fixed;
-  width: 500px;
+  width: 100%;
   top: 0;
-  left: 0; /* Ensure the navbar sticks to the left side of the viewport */
-  width: 100%; /* Ensure the navbar spans the entire width of the viewport */
-  z-index: 1000; /* Ensure it appears above other content */
-  background-color: rgba(255, 255, 255, 0); /* Transparent white background */
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .navclick {
   text-decoration: none;
-
-  padding: 15px;
-  padding-left: 30px;
+  padding: 0.9375rem; /* 15px to rem */
+  padding-left: 1.875rem; /* 30px to rem */
   font-size: 1em;
   font-weight: bold;
   transition: 0.5s;
 }
 
 .navigation {
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 3.125rem; /* 50px to rem */
+  padding-left: 3.125rem; /* 50px to rem */
 }
 
 .navigation:hover {
@@ -110,13 +107,8 @@ nav {
 
 #container1,
 #container2,
-#container4,
-#container3 {
+#container3,
+#container4 {
   height: 100vh;
 }
 
-title {
-  font-size: 2em;
-  text-align: center;
-  margin-top: 50px;
-}

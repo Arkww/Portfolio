@@ -1,15 +1,12 @@
-
-
 .projet {
   display: flex;
   justify-content: space-between;
-  margin: 30px;
+  padding: 1.875rem; /* 30px to rem */
 }
 
-
 .legende {
-    padding-top: 25px;
-    width : 450px;
+  padding-top: 1.5625rem; /* 25px to rem */
+  width: 28.125rem; /* 450px to rem */
 }
 
 #projectTitle {
@@ -23,6 +20,7 @@ body {
   -webkit-font-smoothing: antialiased;
   margin: 0;
 }
+
 .flex {
   display: -webkit-flex;
   display: flex;
@@ -35,25 +33,28 @@ body {
 .slider-wrapper div {
   position: relative;
 }
-.slider-wrapper {
 
-  margin-left: 11vw;
+.slider-wrapper {
+  margin-left: 2rem;
 }
+
 .slide-image {
-    margin-top: 50px;
+  margin-top: 3.125rem; /* 50px to rem */
   height: 24vw;
 }
+
 .slide-image img {
-  width: 25vw;
-  cursor: pointer;
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
+
 .slide-content {
   width: 100vh;
-  color: #fff;;
+  color: #fff;
   padding: 3vw 18vw 3vw 9vw;
 }
+
 .slide-date {
   color: #0a8acb;
   font-size: 1.1vw;
@@ -61,26 +62,30 @@ body {
   letter-spacing: 0.1vw;
   padding-bottom: 1.4vw;
 }
+
 .slide-title {
   font-size: 1.2vw;
   font-weight: 400;
-  width: 700px;
+  width: 43.75rem; /* 700px to rem */
   letter-spacing: 0.1vw;
   line-height: 1.55vw;
   padding-bottom: 1.8vw;
 }
+
 .slide-text {
   font-size: 0.8vw;
   line-height: 1.2vw;
   opacity: 0.8;
   padding-bottom: 4vw;
 }
+
 .slide-more {
   font-weight: 400;
   letter-spacing: 0.1vw;
   float: left;
   font-size: 0.9vw;
 }
+
 .slide-bullet {
   width: 0.5vw;
   height: 0.5vw;
@@ -89,6 +94,7 @@ body {
   position: relative;
   margin-left: 1.2vw;
 }
+
 .slide-nav {
   margin-left: 64vw;
   margin-top: -5.5vw;
@@ -101,6 +107,7 @@ div.overlay-blue {
   top: 0;
   transition: 0.5s ease all;
 }
+
 div.overlay-blue:hover {
   background-color: rgba(13, 27, 43, 0.5);
 }
@@ -111,6 +118,7 @@ div.overlay-blue:hover {
   margin-left: 72vw;
   position: relative;
 }
+
 .arrow {
   display: inline-block;
   position: absolute;
@@ -124,10 +132,12 @@ div.overlay-blue:hover {
   text-decoration: none;
   color: transparent;
 }
+
 .arrow:hover {
   border-color: #0a8acb;
   border-width: 0.25vw;
 }
+
 .arrow:before {
   display: block;
   height: 200%;
@@ -137,10 +147,12 @@ div.overlay-blue:hover {
   content: "";
   transform: rotate(45deg);
 }
+
 .arrow.prev {
   transform: rotate(-45deg);
   left: 0;
 }
+
 .arrow.next {
   transform: rotate(135deg);
   right: 0;
