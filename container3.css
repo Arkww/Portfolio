@@ -14,7 +14,6 @@
 }
 
 body {
-  background-color: #0d1b2b;
   overflow-x: hidden;
   font-family: roboto;
   -webkit-font-smoothing: antialiased;
@@ -51,7 +50,6 @@ body {
 
 .slide-content {
   width: 100vh;
-  color: #fff;
   padding: 3vw 18vw 3vw 9vw;
 }
 

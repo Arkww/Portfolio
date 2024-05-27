@@ -12,55 +12,36 @@ g*,
 }
 
 body.dark {
-  #container2,
-  #container4 {
-    background-image: url(/Background/dark3.jpg);
-  }
 
-  #container1,
-  #container3 {
-    background-image: url(/Background/dark3.jpg);
-  }
+  
+  background-color: rgb(22, 24, 38);
+
   color: aliceblue;
-
-  .carte {
-    box-shadow: #090914 0.3125rem 0.3125rem 0.3125rem 0.3125rem; /* 5px to rem */
-  }
-  a {
+  
+  #navbar {
     color: white;
   }
-  a:hover {
-    color: rgb(131, 137, 143);
-    scale: 1.1;
-  }
 }
-
-body.light {
-  #container1,
-  #container3 {
-    background-image: url("/Background/light2.jpg");
-  }
-
-  #container2,
-  #container4 {
-    background-image: url("/Background/light1.jpg");
-  }
 
   .carte {
-    box-shadow: #02021c 0.0625rem 0.0625rem 0.0625rem 0.0625rem; /* 1px to rem */
-  }
-  p,
-  a,
-  .slide-title {
-    color: black;
+    box-shadow: rgba(9, 30, 66, 0.25) 3px 4px 4px, rgba(9, 30, 66, 0.13) 3px 4px 4px 4px;
   }
 
-  a:hover {
-    color: rgb(68, 125, 153);
-    scale: 1.1;
-  }
+body.light {
+
+  background-color: rgb(240, 240, 240);
+
+  
+  
+}
+a{
+  color: white;
 }
 
+a:hover {
+  color: rgb(131, 137, 143);
+  scale: 1.1;
+}
 #changeLanguages {
   display: flex;
   justify-content: center;
