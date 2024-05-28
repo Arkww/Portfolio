@@ -4,13 +4,16 @@
     height: 70vh;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
-#downArrow {
+
+
+.downArrow {
     width: 10em;
 }
 
-#divDownArrow {
+.divDownArrow {
     display: flex;
     justify-content: center;
 }

@@ -1,8 +1,12 @@
-#container2 {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  padding-top: 10vh;
+@media screen and (min-width: 600px) {
+  #container2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 10vh;
+  }
+  
+
 }
 
 #container2 h2 {
@@ -11,7 +15,6 @@
   padding-top: 1.25rem;
   padding-bottom: 3.125rem;
 }
-
 .sous_section {
   width: 90vw;
   max-width: 31.25rem; /* 500px to rem */
@@ -66,6 +69,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 
 .logo {
   width: 5.625rem; /* 90px to rem */

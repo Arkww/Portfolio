@@ -1,24 +1,14 @@
-.bio {
-    padding-top: 20vh;
-    width: 37.5rem; /* 600px to rem */
-  }
-  
+@media screen and (min-width: 600px) {
   #container1 {
-    height: 100vh;
+    height: 85vh;
     display: flex;
     padding-top: 5vh;
     justify-content: center;
   }
   
-  .classicIMG {
-    border-radius: 0.9375rem; /* 15px to rem */
-    box-shadow: 0.625rem 0.3125rem 0.3125rem black; /* 10px 5px 5px to rem */
-    margin: 0.9375rem; /* 15px to rem */
-  }
-  
-  .classicIMG:hover {
-    transform: scale(1.05);
-    transition-duration: 1s;
+  .bio {
+    padding-top: 20vh;
+    width: 37.5rem; /* 600px to rem */
   }
 
   #divBio {
@@ -26,6 +16,25 @@
     flex-direction: column;
     padding-left: 10vh;
   }
+}
+
+
+#arrow2 {
+  margin-left: 20vh;
+  margin-right: 20vh;
+}
+
+.classicIMG {
+  border-radius: 0.9375rem; /* 15px to rem */
+  box-shadow: 0.625rem 0.3125rem 0.3125rem black; /* 10px 5px 5px to rem */
+  margin: 0.9375rem; /* 15px to rem */
+}
+
+.classicIMG:hover {
+  transform: scale(1.05);
+  transition-duration: 1s;
+}
+
 
 
 button {
