@@ -5,7 +5,7 @@
   padding-top: 10vh;
 }
 
-h2 {
+#container2 h2 {
   font-size: 2rem;
   text-align: center;
   padding-top: 1.25rem;
@@ -76,6 +76,7 @@ h2 {
 
 .carte:hover {
   transform: scale(1.1);
+  transition-duration: 0.5s;
 }
 
 .carte {

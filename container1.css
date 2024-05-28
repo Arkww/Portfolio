@@ -1,19 +1,18 @@
 .bio {
     padding-top: 20vh;
-    margin-left: 10vh;
     width: 37.5rem; /* 600px to rem */
   }
   
   #container1 {
     height: 100vh;
     display: flex;
-    padding-top: 15vh;
+    padding-top: 5vh;
     justify-content: center;
   }
   
   .classicIMG {
     border-radius: 0.9375rem; /* 15px to rem */
-    box-shadow: 0.625rem 0.3125rem 0.3125rem rgb(14, 10, 23); /* 10px 5px 5px to rem */
+    box-shadow: 0.625rem 0.3125rem 0.3125rem black; /* 10px 5px 5px to rem */
     margin: 0.9375rem; /* 15px to rem */
   }
   
@@ -21,3 +20,65 @@
     transform: scale(1.05);
     transition-duration: 1s;
   }
+
+  #divBio {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10vh;
+  }
+
+
+button {
+  font-family: inherit;
+  font-size: 1.25rem; /* 20px to rem */
+  background: royalblue;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 1rem; /* 16px to rem */
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+  width: 14rem;
+}
+
+button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+  transform: translateX(10em);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}

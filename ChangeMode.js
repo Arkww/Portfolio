@@ -39,16 +39,13 @@ document.addEventListener("DOMContentLoaded", function () {
       if (image.classList.contains("moveX")) {
         image.classList.remove("moveX");
         image.classList.add("moveBack");
+        
         text.style.opacity = "0";
       } else {
         image.classList.add("moveX");
         image.classList.remove("moveBack");
         text.style.opacity = "1";
       }
-    });
-
-    text.addEventListener("click", () => {
-      text.style.opacity = "0";
     });
   });
 
@@ -58,9 +55,9 @@ document.addEventListener("DOMContentLoaded", function () {
     document.documentElement.lang = "fr";
     /**Intro */
     document.getElementById("undername").textContent =
-      "Département informatique de l'IUT de Gradignan";
+      "Département informatique de l'IUT de Gradignan, Bordeaux";
     document.getElementById("title").textContent =
-      "Mathieu Jay, étudiant en informatique à l'IUT de Gradignan";
+      "Mathieu Jay, étudiant en informatique";
     document.getElementsByClassName("bio")[0].textContent =
       "Etudiant en première année à l'IUT de Gradignan je suis passioné de voyage et de théorie des graphes.";
 
@@ -126,14 +123,14 @@ document.addEventListener("DOMContentLoaded", function () {
     /**Contact */
     document.getElementById("contactTitle").textContent = "Contacter-moi";
     document.getElementById("name").placeholder = "NOM";
-    document.getElementById("submitButton").textContent = "Envoyer";
+    document.getElementById("submitButton").textContent = "Me contacter";
   });
 
   EN.addEventListener("click", () => {
     document.documentElement.lang = "en";
     /**Intro */
     document.getElementById("undername").textContent =
-      "IUT Computer science department of Gradignan";
+      "IUT Computer science department of Gradignan, Bordeaux";
     document.getElementById("title").textContent =
       "Mathieu Jay, computer science student";
     document.getElementsByClassName("bio")[0].textContent =
@@ -197,7 +194,7 @@ document.addEventListener("DOMContentLoaded", function () {
     /**Contact */
     document.getElementById("contactTitle").textContent = "Contact me";
     document.getElementById("name").placeholder = "NAME";
-    document.getElementById("submitButton").textContent = "Send";
+    document.getElementById("submitButton").textContent = "Contact me";
   });
 });
 

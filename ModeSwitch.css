@@ -12,6 +12,10 @@
     width: 0;
     height: 0;
   }
+
+  #toggleContainer {
+    padding-bottom: 0.5em;
+  }
   
   .sliderr {
     position: absolute;
