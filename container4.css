@@ -19,7 +19,8 @@
 
 
 .list-item a, .list-item span {
-  padding-left: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .contact-list {

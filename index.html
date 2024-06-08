@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="container4.css" />
     <link rel="stylesheet" href="mediaQueries.css" />
     <link rel="stylesheet" href="anim.css" />
+    <link rel="stylesheet" href="projetSwitch.css" />
     <link rel="icon" type="image/x-icon" href="/favicon.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,7 +36,6 @@
           <a class="navclick" href="#container1">About me</a>
           <a id="navSkill" class="navclick" href="#container2">My skills</a>
           <a class="navclick" href="#container3">My projects</a>
-          <a class="navclick" href="#container4">Contact me</a>
           <div id="changeLanguages">
             <a id="FR">FR</a>
             <p>/</p>
@@ -70,10 +70,12 @@
     <section id="container0">
       <div>
         <h1 id="myName">Mathieu Jay</h1>
-        <h2>Computer science student. Bordeaux, France</h2>
+        <h2 id="littleBio">Computer science student. Bordeaux, France</h2>
         <h2 id="chinoisTexte">计算机科学专业学生</h2>
         <span id="button">
+          <p id="buttonT">
           Download my resume
+        </p>
           <div class="arroww-wrapper">
             <div class="arroww"></div>
           </div>
@@ -110,17 +112,28 @@
           First year student at the IUT of Gradignan, France. I am passionate
           about travels, the graph theory and programmation in general.
         </p>
-        <br>
-        <br>
-        <p class="bio">Being president of the student association of my university I love to organize events and manage my team. I feel confident in my leadership skills which are very often tested through my school team projects</p>
         <br />
-        <br>
-        <p class="bio">Learning languages has always been one of my passions therefore i am a self-taught polyglot and i love to take as many opportunities that i can to practice languages</p>
-        <br>
-        <br>
-        <p class="bio">I am looking for an internship in developement starting in september 2025, preferably in the fields of graphs or finance</p>
-        <br>
-        <br>
+        <br />
+        <p class="bio">
+          Being president of the student association of my university I love to
+          organize events and manage my team. I feel confident in my leadership
+          skills which are very often tested through my team projects
+        </p>
+        <br />
+        <br />
+        <p class="bio">
+          Learning languages has always been one of my passions therefore i am a
+          self-taught polyglot and i love to take as many opportunities that i
+          can to practice languages
+        </p>
+        <br />
+        <br />
+        <p class="bio">
+          I am looking for an internship in developement starting in september
+          2025, preferably in the fields of graphs or finance
+        </p>
+        <br />
+        <br />
         <button onclick="sendEmail()">
           <div class="svg-wrapper-1">
             <div class="svg-wrapper">
@@ -276,190 +289,108 @@
     </section>
 
     <section id="container3">
-
       <div class="title" id="projectTitle">My projects</div>
 
       <div class="secProj" id="secProj1">
-        
         <div class="projet">
-          <div class="slide-title">Pixel war</div>
-          <img src="/Projets/PixelWar1.png" />
+          <div class="slide-title">Java application visualizing graphs</div>
+          <img class="graph1" src="/Projets/graph3.png" />
           <p class="legende">
-            The website that i made. It acted like a interpreter between
-            me and the server
+            The result of the edge bundling algorithm I implemented
           </p>
-          <br>
-          <br>
-        <div class="slide-content">
-
-          <div class="slide-text">
-            <p class="graph">
-              In this project i coded an application in JAVA that was able
-              to create, visualize and apply algorithms to graphs.
-            </p>
-            <br />
-            <p class="graph">
-              It was challenging to represent a graph in JAVA but i
-              learned a lot on my favourite part of mathematics through
-              this subject.
-            </p>
-            <br />
-            <p class="graph">
-              I succesfully implemented the prim algorithm to find the
-              minimum spanning tree of any given graph but the highlight
-              of the project was to code an edge bundling algorithm.
-            </p>
-          </div></div>
+          <br />
+          <br />
+          <div class="slide-content">
+            <div class="slide-text">
+              <p class="graph">
+                In this project I coded an application in JAVA that was able to
+                create, visualize and apply algorithms to graphs.
+              </p>
+              <br />
+              <br />
+              <p class="graph">
+                I succesfully implemented the prim algorithm to find the minimum
+                spanning tree of any given graph but the highlight of the
+                project was to code an edge bundling algorithm, for which i
+                coded two shortest path algorithms, BFS and Dijkstra
+              </p>
+            </div>
+          </div>
         </div>
         <div class="projet">
-          <div class="slide-title">Pixel war</div>
+          <div class="slide-title">Coding a game and an AI</div>
           <img src="/Projets/Towa1.png" />
-          <p class="legende">
-            The website that i made. It acted like a interpreter between
-            me and the server
-          </p>
-          <br>
-          <br>
-        <div class="slide-content">
-            
-          <div class="slide-text">
-            <p class="towa">
-              A project with two phases, i first had to create a game in
-              JAVA according to the subject of the project and make it
-              work with the graphic interface that was provided. Thinking
-              about how i was going to make the next phases of the game
-              really developped my problem-solving skills
-            </p>
-            <br />
-            <p class="towa">
-              Once this phase ended i created an AI to play the game and
-              that would compete with the AI's of all the other students.
-              It was really interesting to try to come up with the best
-              algorithm possible for the game, i managed to squeeze in the
-              top 3 of the tournament even though the competition was
-              fierce
-            </p>
-          </div></div>
+          <p class="legende">The game in it's working stage</p>
+          <br />
+          <br />
+          <div class="slide-content">
+            <div class="slide-text">
+              <p class="towa">
+                I first had to create a game in JAVA according to the subject of
+                the project and make it work with the graphic interface that was
+                provided.
+              </p>
+              <br />
+              <p class="towa">
+                After that I created an AI to play the game and that would
+                compete with the AI's of all the other students. It was really
+                interesting to try to come up with the best algorithm possible
+                for the game.
+              </p>
+            </div>
+          </div>
         </div>
         <div class="projet">
-          <div class="slide-title">Pixel war</div>
+          <div class="slide-title">Code an home automation control</div>
           <img src="/Projets/Odomo1.png" />
-          <p class="legende">
-            The website that i made. It acted like a interpreter between
-            me and the server
-          </p>
-          <br>
-          <br>
-        <div class="slide-content">
-            
-          <div class="slide-text">
-            <p class="odomo">
-              The Odomo project involved rewriting the code for a home
-              automation control unit in JAVA language, with three modes:
-              rainfall, temperature and heating.
-            </p>
-            <br />
+          <p class="legende">The interface in rainfall mode working</p>
+          <br />
+          <br />
+          <div class="slide-content">
+            <div class="slide-text">
+              <p class="odomo">
+                The Odomo project involved rewriting the code for a home
+                automation control unit in JAVA language, with three modes:
+                rainfall, temperature and heating.
+              </p>
+              <br />
 
-            <p class="odomo">
-              Which each of these mods we had to create and use a Boolean
-              matrices to display the control unit's interface.
-            </p>
-            <br />
-            <p class="odomo">
-              This really helped me to understand and manipulate matrices
-              in JAVA, as well as to adapt and understand existing code
-              that I hadn't coded.
-            </p>
-          </div></div>
+              <p class="odomo">
+                For each of these mods I created and used a Boolean matrices to
+                display the control unit's interface.
+              </p>
+              <br />
+            </div>
+          </div>
         </div>
-
       </div>
       <div class="secProj" id="secProj2">
-        
         <div class="projet">
-          <div class="slide-title">Pixel war</div>
+          <div class="slide-title">Fetch data from a server to play a game</div>
           <img src="/Projets/PixelWar1.png" />
           <p class="legende">
-            The website that i made. It acted like a interpreter between
-            me and the server
+            The website that i made. It acted like a interpreter between me and
+            the server
           </p>
-          <br>
-          <br>
-        <div class="slide-content">
-
-          <div class="slide-text">
-            <p class="px">
-              I created a website in order to participate in a pixel war
-              with other students
-            </p>
-            <br />
-            <p class="px">
-              I had to read a lot of documentation to understand how to
-              make requests to the server and how to manipulate the data
-              that was sent back to me. This gets me to get familliar with
-              popular API tools like Swagger and taught me how to do
-              different kinds of requests (GET, PUT..)
-            </p>
-          </div></div>
+          <br />
+          <br />
+          <div class="slide-content">
+            <div class="slide-text">
+              <p class="px">
+                I created a website in order to participate in a pixel war with
+                other students by making requests to the server using javascript
+              </p>
+              <br />
+              <p class="px">
+                This got me used to popular API tools like
+                Swagger and taught me how to do different kinds of requests
+                (GET, PUT..)
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="projet">
-          <div class="slide-title">Pixel war</div>
-          <img src="/Projets/PixelWar1.png" />
-          <p class="legende">
-            The website that i made. It acted like a interpreter between
-            me and the server
-          </p>
-          <br>
-          <br>
-        <div class="slide-content">
-            
-          <div class="slide-text">
-            <p class="px">
-              I created a website in order to participate in a pixel war
-              with other students
-            </p>
-            <br />
-            <p class="px">
-              I had to read a lot of documentation to understand how to
-              make requests to the server and how to manipulate the data
-              that was sent back to me. This gets me to get familliar with
-              popular API tools like Swagger and taught me how to do
-              different kinds of requests (GET, PUT..)
-            </p>
-          </div></div>
-        </div>
-        <div class="projet">
-          <div class="slide-title">Pixel war</div>
-          <img src="/Projets/PixelWar1.png" />
-          <p class="legende">
-            The website that i made. It acted like a interpreter between
-            me and the server
-          </p>
-          <br>
-          <br>
-        <div class="slide-content">
-            
-          <div class="slide-text">
-            <p class="px">
-              I created a website in order to participate in a pixel war
-              with other students
-            </p>
-            <br />
-            <p class="px">
-              I had to read a lot of documentation to understand how to
-              make requests to the server and how to manipulate the data
-              that was sent back to me. This gets me to get familliar with
-              popular API tools like Swagger and taught me how to do
-              different kinds of requests (GET, PUT..)
-            </p>
-          </div></div>
-        </div>
-
       </div>
-
     </section>
-
-  
 
     <section id="footer">
       <div id="droite">
@@ -526,12 +457,10 @@
         </ul>
       </div>
 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-
-    <script type="module" src="ChangeMode.js"></script>
+      <script type="module" src="ChangeMode.js"></script>
     </section>
- 
   </body>
 </html>

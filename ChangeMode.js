@@ -54,12 +54,21 @@ document.addEventListener("DOMContentLoaded", function () {
   FR.addEventListener("click", () => {
     document.documentElement.lang = "fr";
     /**Intro */
+    document.getElementById("littleBio").textContent = "Etudiant en informatique. Bordeaux, France"
+    document.getElementById("buttonT").textContent = "Téléchargez mon CV";
     document.getElementById("undername").textContent =
       "Département informatique de l'IUT de Gradignan, Bordeaux";
     document.getElementById("title").textContent =
       "Mathieu Jay, étudiant en informatique";
-    document.getElementsByClassName("bio")[0].textContent =
-      "Etudiant en première année à l'IUT de Gradignan je suis passioné de voyage et de théorie des graphes.";
+      document.getElementsByClassName("bio")[0].textContent =
+      " Je suis passionné par les voyages, la théorie des graphes et la programmation en général.";
+      document.getElementsByClassName("bio")[1].textContent =
+      "En tant que président de l'association des étudiants de mon université, j'aime organiser des événements et gérer mon équipe. J'ai confiance en mes capacités de leadership, qui sont très souvent mises à l'épreuve dans le cadre de mes projets d'équipe.";
+      document.getElementsByClassName("bio")[2].textContent =
+      "L'apprentissage des langues a toujours été l'une de mes passions. Je suis donc une polyglotte autodidacte et j'aime saisir toutes les occasions qui se présentent à moi pour pratiquer les langues.";
+      document.getElementsByClassName("bio")[3].textContent =
+      "Je recherche un stage en développement à partir de septembre 2025, de préférence dans les domaines des graphes ou de la finance.";
+      document.getElementById("submitButton").textContent = "Me contacter";
 
     /**Nav bar */
     document.getElementsByClassName("navclick")[0].textContent =
@@ -70,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementsByClassName("navclick")[3].textContent =
       "Contacter-moi";
     /**Skills */
-    document.getElementsByClassName("allSkills")[0].textContent = "Compétences";
+    document.getElementById("talents").textContent = "Compétences";
     document.getElementsByClassName("allSkills")[1].textContent = "Logiciels";
     document.getElementsByClassName("allSkills")[2].textContent = "Langages";
     document.getElementById("climbing").textContent = "Escalade";
@@ -129,12 +138,21 @@ document.addEventListener("DOMContentLoaded", function () {
   EN.addEventListener("click", () => {
     document.documentElement.lang = "en";
     /**Intro */
+    document.getElementById("littleBio").textContent = "Computer science student. Bordeaux, France"
+    document.getElementById("buttonT").textContent = "Download my resume";
     document.getElementById("undername").textContent =
       "IUT Computer science department of Gradignan, Bordeaux";
     document.getElementById("title").textContent =
       "Mathieu Jay, computer science student";
     document.getElementsByClassName("bio")[0].textContent =
-      "          First year student at the IUT of Gradignan, France. I am passionate about travels and the graph theory.";
+      " First year student at the IUT of Gradignan, France. I am passionate about travels, the graph theory and programmation in general.";
+      document.getElementsByClassName("bio")[1].textContent =
+      "Being president of the student association of my university I love to organize events and manage my team. I feel confident in my leadership skills which are very often tested through my team projects";
+      document.getElementsByClassName("bio")[2].textContent =
+      "Learning languages has always been one of my passions therefore i am a self-taught polyglot and i love to take as many opportunities that i can to practice languages";
+      document.getElementsByClassName("bio")[3].textContent =
+      "I am looking for an internship in developement starting in september 2025, preferably in the fields of graphs or finance";
+      document.getElementById("submitButton").textContent = "Contact me";
     /**Nav bar */
     document.getElementsByClassName("navclick")[0].textContent = "About me";
     document.getElementsByClassName("navclick")[1].textContent = "My skills";
@@ -166,7 +184,7 @@ document.addEventListener("DOMContentLoaded", function () {
     /**Projets description */
     document.getElementById("projectTitle").textContent = "My projects";
     /**Graphes */
-    document.getElementsByClassName("slide-date")[0].textContent =
+    document.getElementsByClassName("slide-title")[0].textContent =
       "Graph project";
     document.getElementsByClassName("graph")[0].textContent =
       "In this project i coded an application in JAVA that was able to create, visualize and apply algorithms to graphs.";

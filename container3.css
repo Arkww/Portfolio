@@ -13,12 +13,25 @@
   box-shadow: 5px 5px 5px 5px black;
 }
 
+.projet:hover {
+  transform: scale(1.05);
+  transition-duration: 1s;
+}
+
 .projet * {
   width: 30rem;
 }
 
 #container3 {
 height: 100%;
+}
+
+.slide-title {
+  display: flex;
+  justify-content: center;
+  width: 30rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 
@@ -48,14 +61,20 @@ height: 100%;
   .slide-text p {
     font-size: 0.9rem;
     padding: 1rem;
-    width: 25rem;
+    width: 23rem;
+  }
+
+  .slide-text h2 {
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 23rem;
   }
 
   .projet {
     align-items: center;
 
     padding: 0;
-    width: 25rem;
+    width: 23rem;
     box-shadow: 5px 5px 5px 5px black;
   }
  }
