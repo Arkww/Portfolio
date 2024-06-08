@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="container4.css" />
     <link rel="stylesheet" href="mediaQueries.css" />
     <link rel="stylesheet" href="anim.css" />
-    <link rel="stylesheet" href="projetSwitch.css" />
     <link rel="icon" type="image/x-icon" href="/favicon.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,12 +27,12 @@
       <nav id="navbar">
         <a href="https://github.com/Arkww" target="_blank">
           <div>
-            <img src="favicon.jpg" alt="graph" width="100px" height="100px" />
+            <img src="favicon.jpg" alt="graph" width="100" height="100" />
           </div>
         </a>
 
         <div id="options" class="option">
-          <a class="navclick" href="#container1">About me</a>
+          <a id="navMe" class="navclick" href="#container1">About me</a>
           <a id="navSkill" class="navclick" href="#container2">My skills</a>
           <a class="navclick" href="#container3">My projects</a>
           <div id="changeLanguages">
@@ -73,28 +72,27 @@
         <h2 id="littleBio">Computer science student. Bordeaux, France</h2>
         <h2 id="chinoisTexte">计算机科学专业学生</h2>
         <span id="button">
-          <p id="buttonT">
-          Download my resume
-        </p>
+          <a id="buttonT" href="/cvMathieuJAY.pdf" download>Download my resume</a>
           <div class="arroww-wrapper">
             <div class="arroww"></div>
           </div>
         </span>
+        <div id="animDiv">
+          <a href="#container1">
+            <div class="loader">
+              <div class="loader-square"></div>
+              <div class="loader-square"></div>
+              <div class="loader-square"></div>
+              <div class="loader-square"></div>
+              <div class="loader-square"></div>
+              <div class="loader-square"></div>
+              <div class="loader-square"></div>
+            </div>
+          </a>
+        </div>
       </div>
 
-      <div id="animDiv">
-        <a href="#container1">
-          <div class="loader">
-            <div class="loader-square"></div>
-            <div class="loader-square"></div>
-            <div class="loader-square"></div>
-            <div class="loader-square"></div>
-            <div class="loader-square"></div>
-            <div class="loader-square"></div>
-            <div class="loader-square"></div>
-          </div>
-        </a>
-      </div>
+
     </section>
     <section id="container1">
       <div>
@@ -103,8 +101,9 @@
         <img
           class="classicIMG"
           src="Entrepot.jpg"
-          width="500px"
-          height="600px"
+          width="500"
+          height="600"
+          alt="moi"
         />
       </div>
       <div id="divBio">
@@ -151,7 +150,7 @@
               </svg>
             </div>
           </div>
-          <span id="submitButton">Contact me</span>
+          <a target="_blank" href="mailto:mathieu.jay2@gmail.com"><span id="submitButton">Contact me</span></a>
         </button>
       </div>
     </section>
@@ -294,7 +293,7 @@
       <div class="secProj" id="secProj1">
         <div class="projet">
           <div class="slide-title">Java application visualizing graphs</div>
-          <img class="graph1" src="/Projets/graph3.png" />
+          <img class="graph1" src="/Projets/graph3.png" alt="graph"/>
           <p class="legende">
             The result of the edge bundling algorithm I implemented
           </p>
@@ -319,7 +318,7 @@
         </div>
         <div class="projet">
           <div class="slide-title">Coding a game and an AI</div>
-          <img src="/Projets/Towa1.png" />
+          <img src="/Projets/Towa1.png" alt="towa" />
           <p class="legende">The game in it's working stage</p>
           <br />
           <br />
@@ -342,14 +341,14 @@
         </div>
         <div class="projet">
           <div class="slide-title">Code an home automation control</div>
-          <img src="/Projets/Odomo1.png" />
+          <img src="/Projets/Odomo1.png" alt="odomo"/>
           <p class="legende">The interface in rainfall mode working</p>
           <br />
           <br />
           <div class="slide-content">
             <div class="slide-text">
               <p class="odomo">
-                The Odomo project involved rewriting the code for a home
+                The project involved rewriting the code for a home
                 automation control unit in JAVA language, with three modes:
                 rainfall, temperature and heating.
               </p>
@@ -366,8 +365,28 @@
       </div>
       <div class="secProj" id="secProj2">
         <div class="projet">
+          <div class="slide-title">Make a database and fill it with data</div>
+          <img src="/Projets/bd1.png" alt="bd"/>
+          <p class="legende">
+            The model of the database that I created for the project
+          </p>
+          <br />
+          <br />
+          <div class="slide-content">
+            <div class="slide-text">
+              <p class="DBproj">
+                I created a database for a fictionnal bookstore in SQL language and filled it with data
+              </p>
+              <br />
+              <p class="DBproj">
+                I learned how to properly manipulate SQL Softwares like SQL server and make a creation script
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="projet">
           <div class="slide-title">Fetch data from a server to play a game</div>
-          <img src="/Projets/PixelWar1.png" />
+          <img src="/Projets/PixelWar1.png" alt="pixelWar" />
           <p class="legende">
             The website that i made. It acted like a interpreter between me and
             the server
@@ -382,9 +401,8 @@
               </p>
               <br />
               <p class="px">
-                This got me used to popular API tools like
-                Swagger and taught me how to do different kinds of requests
-                (GET, PUT..)
+                This got me used to popular API tools like Swagger and taught me
+                how to do different kinds of requests (GET, PUT..)
               </p>
             </div>
           </div>
@@ -399,18 +417,17 @@
             <a
               target="_blank"
               href="https://www.google.fr/maps/place/Bordeaux/@44.8637712,-0.6272114,13z/data=!3m1!4b1!4m6!3m5!1s0xd5527e8f751ca81:0x796386037b397a89!8m2!3d44.8416106!4d-0.5810938!16zL20vMDFiODU?entry=ttu"
-              ><img class="icon" src="/Icon/localisation.png"
-            /></a>
+              ><img class="icon" src="/Icon/localisation.png" alt="loc" /></a>
             <span class="contact-text place">Bordeaux, FRANCE</span>
           </li>
 
           <li class="list-item">
-            <img class="iconNC" src="/Icon/phone.png" />
+            <img class="iconNC" src="/Icon/phone.png" alt="phone"/>
             <a href="tel:0769972102">07 69 97 21 02</a>
           </li>
 
           <li class="list-item">
-            <img class="iconNC" src="/Icon/mail.png" />
+            <img class="iconNC" src="/Icon/mail.png" alt="mail" />
             <a target="_blank" href="mailto:mathieu.jay2@gmail.com"
               >mathieu.jay2@gmail.com</a
             >
@@ -425,7 +442,8 @@
               href="https://www.youtube.com/channel/UCd3WZpz_dv3pCjGtoxG_LhQ"
               target="_blank"
               class="contact-icon"
-              ><img class="icon" src="/Icon/youtube.png" />
+              ><img class="icon" src="/Icon/youtube.png" 
+              alt="youtube"/>
             </a>
           </li>
           <li>
@@ -433,8 +451,10 @@
               href="https://www.instagram.com/mathieuaway/"
               target="_blank"
               class="contact-icon"
+
             >
               <img class="icon" src="/Icon/instagram.jpg"
+                            alt="instagram"
             /></a>
           </li>
           <li>
@@ -442,16 +462,20 @@
               href="https://github.com/Arkww"
               target="_blank"
               class="contact-icon"
-              ><img class="icon" src="/Icon/github.png" />
+              ><img class="icon" src="/Icon/github.png" 
+              alt="github"/>
             </a>
           </li>
           <li>
             <a
               href="https://www.linkedin.com/in/mathieu-jay-76677430b/"
               class="contact-icon"
-              target="_blank"
+                                          target="_blank"
+
             >
               <img class="icon" src="/Icon/linkedin.png"
+
+              alt="linkedin"
             /></a>
           </li>
         </ul>

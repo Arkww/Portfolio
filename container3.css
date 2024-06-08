@@ -42,6 +42,12 @@ height: 100%;
     flex-direction: column;
     justify-content: center;
   }
+  body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 
   #droite {
     display: none;
@@ -52,7 +58,7 @@ height: 100%;
   }
 
   .projet img {
-    width: 23rem;
+    width: 21rem;
     height: 20rem;
     margin-top: 1rem;
     margin-left: 1rem;
@@ -61,7 +67,18 @@ height: 100%;
   .slide-text p {
     font-size: 0.9rem;
     padding: 1rem;
-    width: 23rem;
+    width: 21rem;
+  }
+
+  .slide-title {
+    font-size: 1rem;
+    padding: 1rem;
+    width: 21rem;
+  }
+
+  .legende {
+    width: 21rem;
+    padding: 1rem;
   }
 
   .slide-text h2 {

@@ -18,16 +18,13 @@ html {
 body.dark {
 
   
-  background-color: rgb(22, 24, 38);
+  background-color: #0d1b2a;
 
   color: aliceblue;
   
   
 }
 
-body.dark #footer{
-  background-color: #10171f;
-}
 
 a{
   color: white;
@@ -49,9 +46,6 @@ body.light .arrow {
   border-left: 0.15vw solid black;
 }
 
-body.light #footer{
-  background-color: #e9ecef;
-}
 
 body.light .loader-square {
   background-color: #10171f;
