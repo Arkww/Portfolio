@@ -53,6 +53,10 @@ body.light #footer{
   background-color: #e9ecef;
 }
 
+body.light .loader-square {
+  background-color: #10171f;
+}
+
 body.light a {
   color: black;
 }

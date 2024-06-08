@@ -1,10 +1,25 @@
 #container0 {
     display: flex;
-    margin: 20vh;
+    padding: 20vh;
+    margin: 10vh;
     height: 70vh;
     flex-direction: column;
     justify-content: space-between;
     
+}
+
+#animDiv {
+  display: flex;
+  justify-content: center;
+}
+
+#myName {
+  color:#130c94;
+  font-size: xx-large;
+}
+
+#chinoisTexte {
+  color: #7872f1;
 }
 
 
@@ -19,7 +34,7 @@
 }
 
 
-buttoon {
+#button {
     margin-top: 2em;
     --primary-color: #645bff;
     --secondary-color: #fff;
@@ -40,13 +55,13 @@ buttoon {
     width: 16rem;
   }
   
-  buttoon .arroww-wrapper {
+  #button .arroww-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  buttoon .arroww {
+  #button .arroww {
     margin-top: 1px;
     width: var(--arrow-width);
     background: var(--primary-color);
@@ -55,7 +70,7 @@ buttoon {
     transition: 0.2s;
   }
   
-  buttoon .arroww::before {
+  #button .arroww::before {
     content: "";
     box-sizing: border-box;
     position: absolute;
@@ -69,14 +84,14 @@ buttoon {
     transform: rotate(-45deg);
   }
   
-  buttoon:hover {
+  #button:hover {
     background-color: var(--hover-color);
   }
   
-  buttoon:hover .arroww {
+  #button:hover .arroww {
     background: var(--secondary-color);
   }
   
-  buttoon:hover .arroww:before {
+  #button:hover .arroww:before {
     right: 0;
   }
