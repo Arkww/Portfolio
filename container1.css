@@ -8,6 +8,7 @@
   
   .bio {
     width: 37.5rem; /* 600px to rem */
+    margin-bottom: 5vh;
   }
 
   #divBio {
