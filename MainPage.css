@@ -25,6 +25,10 @@ body.dark {
   
 }
 
+a,p {
+  color: black;
+}
+
 
 a{
   color: white;
