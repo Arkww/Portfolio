@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
     /**DataBaseSAE */
     document.getElementsByClassName("DBproj")[0].textContent =
       "J'ai créé une base de données pour une librairie fictive en langage SQL et je l'ai remplie avec des données.";
-    document.getElementsByClassName("odomo")[1].textContent =
+    document.getElementsByClassName("DBproj")[1].textContent =
       "J'ai appris à manipuler correctement les logiciels SQL comme SQL server et à faire un script de création.";
     /**Contact */
     document.getElementById("submitButton").textContent = "Me contacter";
@@ -210,7 +210,7 @@ document.addEventListener("DOMContentLoaded", function () {
     /**DataBaseSAE */
     document.getElementsByClassName("DBproj")[0].textContent =
       "I created a database for a fictionnal bookstore in SQL language and filled it with data";
-    document.getElementsByClassName("odomo")[1].textContent =
+    document.getElementsByClassName("DBproj")[1].textContent =
       "I learned how to properly manipulate SQL Softwares like SQL server and make a creation script";
     /**Contact */
     document.getElementById("submitButton").textContent = "Contact me";
