@@ -1,4 +1,4 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
 
   #container1, #container2,#container3 {
     height: 100%;
@@ -9,10 +9,22 @@
     margin: 0;
   }
 
+  #navbar {
+    width: 21rem;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin-top: 1rem;
+  }
+
+
   .bio {
     padding-top: 0;
-    width: 25.5rem; /* 600px to rem */
+    width: 20rem; /* 600px to rem */
     align-items: center;
+    font-size: medium;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
   }
 
   .allSkills {
@@ -21,16 +33,27 @@
 
   .carte {
     padding-top: 0;
-    width: 5.5rem; /* 600px to rem */
+    width: 4rem; /* 600px to rem */
+    align-items: center;
+  }
+
+  #undername {
+    font-size:0.69rem;
+  }
+
+  #photoPresentation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
   }
 
   .carte img {
-    width: 5rem;
+    width: 3.75rem;
   }
 
   .carte p {
-    font-size: 0.9rem;
+    font-size: 0.65rem;
   }
 
 
@@ -40,8 +63,8 @@
     box-sizing: border-box;
   }
 
-  .loader {
-    padding-bottom: 20vh;
+  #languePC {
+    display: none;
   }
 
 
@@ -51,6 +74,7 @@
     align-items: center;
     width: 30rem;
     padding: 3vh;
+        width: 100%;
     margin: 0;
   }
 
@@ -58,24 +82,15 @@
     justify-content: center;
   }
 
-  #divbio {
-    align-items: center;
-    margin: 5rem;
-    margin: 0;
-  }
 
   .classicIMG {
     padding-top: 15.5rem;
-    width: 35vh;
-    height: 30vh;
+    width: 45vh;
+    height: 40vh;
     margin: 0;
     padding: 0;
-  }
-
-  #bio {
-    width: 5rem;
-    margin: 0;
-    padding: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   #title {
@@ -84,8 +99,30 @@
   }
 
 
-  #navSkill, #navMe {
+  #navSkill, #navMe, #navProj {
+    display: none;
    display: none;
+  }
+
+  #container0 {
+    padding: 0;
+    margin: 0;
+    height: 900px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #littleBio {
+    font-size: small;
   }
 
   #options {
@@ -95,6 +132,7 @@
     margin: 0;
     padding: 0;
   }
+  
 
   .navclick {
     text-decoration: none;
@@ -110,12 +148,6 @@
     color: rgb(131, 137, 143);
   }
 
-
-  #bio {
-    padding-top: 20vh;
-    margin-left: 10vh;
-    width: 400px;
-  }
 
 * {
   margin: 0;

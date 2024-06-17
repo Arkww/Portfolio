@@ -61,7 +61,7 @@ a:hover {
   color: rgb(131, 137, 143);
   scale: 1.1;
 }
-#changeLanguages {
+.changeLanguages {
   display: flex;
   justify-content: center;
   padding: 0.9375rem; /* 15px to rem */
