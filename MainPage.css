@@ -25,24 +25,13 @@ body.dark {
   
 }
 
-body.dark p {
+
+body.dark * {
   color: white;
 }
 
-body.dark a {
-  color: white;
-}
 
-a,p {
-  color: black;
-}
-
-
-a{
-  color: white;
-}
-
-  .carte {
+.carte {
     box-shadow: rgba(9, 30, 66, 0.25) 3px 4px 4px, rgba(9, 30, 66, 0.13) 3px 4px 4px 4px;
   }
 
@@ -63,9 +52,10 @@ body.light .loader-square {
   background-color: #10171f;
 }
 
-body.light a {
+* {
   color: black;
 }
+
 
 a:hover {
   color: rgb(131, 137, 143);

@@ -204,7 +204,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "After that I created an AI to play the game and that would compete with the AI's of all the other students. It was really interesting to try to come up with the best algorithm possible for the game.";
     /**Odomo */
     document.getElementsByClassName("odomo")[0].textContent =
-      "The project involved rewriting the code for a home automation control unit in JAVA language, with three modes: rainfall, temperature and heating.";
+      "The project involved rewriting the code for a home automation controla unit in JAVA language, with three modes: rainfall, temperature and heating.";
     document.getElementsByClassName("odomo")[1].textContent =
       "For each of these mods I created and used a Boolean matrices to display the control unit's interface";
     /**DataBaseSAE */
