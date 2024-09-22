@@ -10,12 +10,16 @@
 .projet {
   margin: 4vh;
   padding: 4vh;
-  box-shadow: 5px 5px 5px 5px black;
+  box-shadow: 10px 10px 20px 0px #bac4cf;
+  transition: transform 0.5s; 
+}
+
+body.dark .projet {
+  box-shadow: -5px -5px 15px 2px #132538;
 }
 
 .projet:hover {
-  transform: scale(1.05);
-  transition-duration: 1s;
+  transform: scale(1.03);
 }
 
 

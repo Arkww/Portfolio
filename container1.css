@@ -31,13 +31,18 @@
 
 .classicIMG {
   border-radius: 0.9375rem; /* 15px to rem */
-  box-shadow: 0.625rem 0.3125rem 0.3125rem black; /* 10px 5px 5px to rem */
+  box-shadow: 10px 10px 6px 0px #bac4cf;
   margin: 0.9375rem; /* 15px to rem */
+  transition: transform 0.5s; 
+}
+
+body.dark .classicIMG {
+  box-shadow: 10px 10px 6px 0px #132538;
 }
 
 .classicIMG:hover {
-  transform: scale(1.05);
-  transition-duration: 1s;
+  transform: scale(1.01);
+
 }
 
 

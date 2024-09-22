@@ -25,15 +25,29 @@ body.dark {
   
 }
 
-
-body.dark * {
-  color: white;
+body.dark #stop {
+  width: 25rem;
+  height: 33rem;
+  margin-top: 7rem;
+  margin-left: 10rem;
+  border-radius: 5px;
+  box-shadow: -50px -17px 6px 0px #132538;
 }
 
 
-.carte {
-    box-shadow: rgba(9, 30, 66, 0.25) 3px 4px 4px, rgba(9, 30, 66, 0.13) 3px 4px 4px 4px;
-  }
+
+body.dark * {
+  color: white;
+  
+}
+
+
+
+body.dark .carte {
+  box-shadow: 0px 0px 2px 4px #132538 ;
+  
+}
+
 
 body.light {
 
@@ -42,15 +56,6 @@ body.light {
   
 }
 
-body.light .arrow {
-  border-top: 0.15vw solid black;
-  border-left: 0.15vw solid black;
-}
-
-
-body.light .loader-square {
-  background-color: #10171f;
-}
 
 * {
   color: black;
