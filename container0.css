@@ -18,8 +18,8 @@
 #welcomeText {
   font-size: 5rem;
   height: 5rem;
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
   margin: 4rem;
   font-family: "Kanit", sans-serif;
