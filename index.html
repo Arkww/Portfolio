@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="container3.css" />
     <link rel="stylesheet" href="container4.css" />
     <link rel="stylesheet" href="mediaQueries.css" />
+    <link rel="stylesheet" href="parallax.css" />
     <link rel="stylesheet" href="anim.css" />
     <link rel="icon" type="image/x-icon" href="/favicon.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,6 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
+
 
     <title>Mathieu JAY</title>
   </head>
@@ -72,6 +74,7 @@
       </nav>
     </header>
     <section id="container0">
+      <div id="box1pres">
       <div id="presentation">
         <h1 id="myName">Mathieu Jay</h1>
         <h2 id="littleBio">Computer science student. Bordeaux, France</h2>
@@ -82,20 +85,13 @@
             <div class="arroww"></div>
           </div>
         </span>
-        <div id="animDiv">
-          <a href="#container1">
-            <div class="loader">
-              <div class="loader-square"></div>
-              <div class="loader-square"></div>
-              <div class="loader-square"></div>
-              <div class="loader-square"></div>
-              <div class="loader-square"></div>
-              <div class="loader-square"></div>
-              <div class="loader-square"></div>
-            </div>
-          </a>
+      </div>       
+       <div class="parallax">
+          <img id="stop"  src="/stopTaiwan.jpg">
         </div>
       </div>
+     
+      <div id="welcomeText"> Bienvenue sur mon site web</div>
 
 
     </section>
@@ -127,8 +123,8 @@
           can to practice languages
         </p>
         <p class="bio">
-          I am looking for an internship in developement starting in september
-          2025, preferably in the fields of graphs or finance
+          I am looking for an internship in developement starting in july
+          2025.
         </p>
 
         <button onclick="sendEmail()">
@@ -177,12 +173,22 @@
             />
             <p>JavaScript</p>
           </div>
+          <div class="carte">
+            <img class="logo" src="LogosSkills/python.png" alt="Python" />
+            <p>Python</p>
+          </div>
+
         </div>
         <div class="row">
           <div class="carte">
             <img class="logo" src="LogosSkills/java.png" alt="Java" />
             <p>Java</p>
           </div>
+          <div class="carte">
+            <img class="logo" src="LogosSkills/pandas.png" alt="Pandas" />
+            <p>Pandas</p>
+          </div>
+
           <div class="carte">
             <img class="logo" src="LogosSkills/Logo_C_sharp.svg.png" alt="C#" />
             <p>C#</p>
@@ -196,14 +202,8 @@
             <p>SQL</p>
           </div>
           <div class="row">
-            <div class="carte">
-              <img class="logo" src="LogosSkills/python.png" alt="Python" />
-              <p>Python</p>
-            </div>
-            <div class="carte">
-              <img class="logo" src="LogosSkills/pandas.png" alt="Pandas" />
-              <p>Pandas</p>
-            </div>
+
+
             <div class="carte">
               <img class="logo" src="LogosSkills/numpy.png" alt="Numpy" />
               <p>Numpy</p>
@@ -274,13 +274,18 @@
         </div>
 
         <div class="image-container">
+          <img class="languageSkill" src="LogoPays/china.png" alt="China" />
+          <div class="overlay-text">B1/HSK4</div>
+        </div>
+
+        <div class="image-container">
           <img class="languageSkill" src="LogoPays/spain.png" alt="Spain" />
           <div class="overlay-text">B1</div>
         </div>
 
         <div class="image-container">
-          <img class="languageSkill" src="LogoPays/china.png" alt="China" />
-          <div class="overlay-text">B1/HSK3</div>
+          <img class="languageSkill" src="LogoPays/japan.jpg" alt="japan" />
+          <div class="overlay-text">A1</div>
         </div>
       </div>
     </section>
@@ -360,28 +365,6 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="secProj" id="secProj2">
-        <div class="projet">
-          <div class="slide-title">Make a database and fill it with data</div>
-          <img src="/Projets/bd1.png" alt="bd"/>
-          <p class="legende">
-            The model of the database that I created for the project
-          </p>
-          <br />
-          <br />
-          <div class="slide-content">
-            <div class="slide-text">
-              <p class="DBproj">
-                I created a database for a fictionnal bookstore in SQL language and filled it with data
-              </p>
-              <br />
-              <p class="DBproj">
-                I learned how to properly manipulate SQL Softwares like SQL server and make a creation script
-              </p>
-            </div>
-          </div>
-        </div>
         <div class="projet">
           <div class="slide-title">Fetch data from a server to play a game</div>
           <img src="/Projets/PixelWar1.png" alt="pixelWar" />
@@ -405,6 +388,29 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="secProj" id="secProj2">
+        <div class="projet">
+          <div class="slide-title">Make a database and fill it with data</div>
+          <img src="/Projets/bd1.png" alt="bd"/>
+          <p class="legende">
+            The model of the database that I created for the project
+          </p>
+          <br />
+          <br />
+          <div class="slide-content">
+            <div class="slide-text">
+              <p class="DBproj">
+                I created a database for a fictionnal bookstore in SQL language and filled it with data
+              </p>
+              <br />
+              <p class="DBproj">
+                I learned how to properly manipulate SQL Softwares like SQL server and make a creation script
+              </p>
+            </div>
+          </div>
+        </div>
+       
       </div>
     </section>
 
@@ -483,6 +489,8 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 
       <script type="module" src="ChangeMode.js"></script>
+      <script type="module" src="welcomeText.js"></script>
+
     </section>
   </body>
 </html>

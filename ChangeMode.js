@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
 document.addEventListener("DOMContentLoaded", function () {
   const languageSkills = document.querySelectorAll(".image-container");
 
@@ -69,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementsByClassName("bio")[2].textContent =
         "L'apprentissage des langues a toujours été l'une de mes passions. Je suis donc un polyglotte autodidacte et j'aime saisir toutes les occasions qui se présentent à moi pour pratiquer les langues.";
       document.getElementsByClassName("bio")[3].textContent =
-        "Je recherche une alternance en développement à partir de septembre 2025, de préférence dans les domaines des graphes ou de la finance.";
+        "Je recherche une alternance en développement à partir de juillet 2025.";
       document.getElementById("submitButton").textContent = "Me contacter";
 
       /**Nav bar */
@@ -155,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementsByClassName("bio")[2].textContent =
         "Learning languages has always been one of my passions therefore i am a self-taught polyglot and i love to take as many opportunities that i can to practice languages";
       document.getElementsByClassName("bio")[3].textContent =
-        "I am looking for an internship in developement starting in september 2025, preferably in the fields of graphs or finance";
+        "I am looking for an internship in developement starting in july 2025";
       document.getElementById("submitButton").textContent = "Contact me";
       /**Nav bar */
       document.getElementsByClassName("navclick")[0].textContent = "About me";

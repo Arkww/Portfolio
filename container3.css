@@ -1,5 +1,5 @@
 .projet img {
-  width: 30rem;
+  width: 20rem;
   height: 20rem;
 }
 
@@ -33,7 +33,7 @@ height: 100%;
 
 @media screen and (min-width: 1200px) {
 .projet * {
-  width: 30rem;
+  width: 20rem;
 }
 #langueTEL {
   display: none;
