@@ -1,0 +1,17 @@
+{
+    "intro": {
+      "littleBio": "Computer science student. Bordeaux, France",
+      "buttonT": "Download my resume",
+      "undername": "IUT Computer science department of Gradignan, Bordeaux",
+      "title": "Mathieu Jay, computer science student",
+      "bios": [
+        "First year student at the IUT of Gradignan, France. I am passionate about travels, graph theory, and programming in general.",
+        "Being president of the student association at my university, I love organizing events and managing my team. I feel confident in my leadership skills, which are very often tested through my team projects.",
+        "Learning languages has always been one of my passions, therefore I am a self-taught polyglot and I love to take as many opportunities as I can to practice languages.",
+        "I am looking for an internship in development starting in July 2025."
+      ]
+    },
+    "contactButton": "Contact me",
+    "nav": ["About me", "My skills", "My projects"]
+  }
+  

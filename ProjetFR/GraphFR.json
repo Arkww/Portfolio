@@ -1,0 +1,43 @@
+{
+  "titleProjet": "Titre du Projet",
+  "littleTitleProjet": "Coder une IA pour concourir dans un jeu contre des étudiants",
+  "resultRecap": "Expliquer ce qui a été fait, par exemple, j'ai codé ceci pour cela, mais j'avais aussi l'exigence de respecter ces exigences. Ce fut une expérience vraiment géniale, et je suis reconnaissant d'avoir pu le faire avec succès !",
+
+  "skills": [
+    "Compétence 1",
+    "Compétence 2",
+    "Compétence 3",
+    "Compétence 4",
+    "Compétence 5"
+  ],
+
+  "technologies": [
+    "Technologie 1",
+    "Technologie 2",
+    "Technologie 3",
+    "Technologie 4",
+    "Technologie 5",
+    "Technologie 5",
+    "Technologie 5"
+  ],
+  "photoProjet": [
+    {
+      "src": "Projets/graph1.png",
+      "desc": "Description de l'image 1"
+    },
+    {
+      "src": "Projets/graph3.png",
+      "desc": "Description de l'image 2"
+    }
+  ],
+  "githubLink": "https://github.com/Arkww",
+
+
+
+  "downloadButtonText": "Télécharger",
+  "seeCodeButtonText": "Voir le Code",
+  "navbarMyProject": "Mes Projets",
+  "navbarAboutMe": "À Propos De Moi",
+  "skillsTitle": "Compétences Acquises",
+  "technoTitle": "Technologies Utilisées"
+}

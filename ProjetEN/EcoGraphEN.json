@@ -1,0 +1,40 @@
+{
+    "titleProjet": "EcoGraph",
+    "littleTitleProjet": "Code an application to visualize data on maps",
+    "resultRecap": "We were a team of 5 students that were working together full-time for 2 weeks on this projects, we had to create an application in visual studio 2022 using C#, extract data on the internet to put it in a database and then show that data on custom maps in the application, I was the project leader of our group and had to supervise the team. I used the software MindView to manage the team",
+  
+    "skills": [
+      "Supervise a team of 5 people",
+      "Linking the application to the database with Python",
+      "Finding pertinent data on internet",
+      "Creating and filling our database"
+    ],
+  
+    "technologies": [
+      "Python",
+      "C#",
+      "SQL",
+      "MindView"
+    ],
+    "photoProjet": [
+      {
+        "src": "Projets/EcoGraph1.png",
+        "desc": "The visualization, you can pick data on the right"
+      },
+      {
+        "src": "Projets/EcoGraph2.png",
+        "desc": "The main page of the application"
+      }
+    ],
+    "githubLink": "https://github.com/Xabi08YT/Ecograph",
+  
+  
+  
+    "downloadButtonText": "Download",
+    "seeCodeButtonText": "View the Code",
+    "navbarMyProject": "My Projects",
+    "navbarAboutMe": "About Me",
+    "technoTitle": "Technologies Used",
+    "skillsTitle": "Skills Gained"
+  }
+  

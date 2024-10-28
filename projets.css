@@ -1,0 +1,147 @@
+
+
+
+#technoProjet ul{
+    display: flex;
+
+}
+
+#technoProjet ul li{
+    margin: 10px;
+
+
+}
+
+.newCompetence {
+    list-style: disc;
+}
+
+#competenceProjet div {
+    display: flex;
+
+}
+#competenceProjet ul {
+    margin-left: 10%;
+}
+
+#competenceProjet {
+    width: 800px;
+}
+#descProjet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#technoTitle, #result, #skillsTitle {
+    display: flex;
+    justify-content: center;
+}
+
+#photoProjet img {
+    margin-top: 5%;
+    border-radius: 20px;
+    width: 500px;
+    height: 250px;
+}
+
+#technoTitle {
+    padding-bottom: 10px;
+}
+
+#middlePart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#bottomButtons {
+    padding-top: 20px;
+}
+
+
+@media screen and (min-width: 1200px) { 
+
+    #technoProjet ul li{
+        width: 10rem;
+    
+    }
+
+    #compContainer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #presentationProjet {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #resultRecap {
+        width: 600px;
+    }
+
+    #descProjet {
+        padding-left: 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #photoProjet {
+        padding-right: 3rem;
+    }
+main {
+    height: 80vh;
+}
+
+
+
+    #descProjet div {
+        margin-top: 40px;
+    }
+
+   #bottomButtons {
+        display: flex;
+        justify-content: center;
+   
+   }
+
+   #bottomButtons button{
+   width: 10rem;
+}
+  }
+
+  .hidden {
+    display: none;
+}
+
+#technoTitle, #skillsTitle, #littleTitleProjet {
+    color: #3b82f6;
+}
+
+#titleProjet {
+    color: #7285f1;
+}
+
+
+.technoUsed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7285f1;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 120px;
+    height: 45px;
+    transition: 0.3s;
+  }
+  
+  .technoUsed:hover {
+    background-color: #3b82f6;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+  }
+  

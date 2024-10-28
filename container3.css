@@ -3,42 +3,19 @@
   height: 20rem;
 }
 
-.secProj {
-  display: flex; 
-}
 
-.projet {
-  margin: 4vh;
-  padding: 4vh;
-  box-shadow: 10px 10px 20px 0px #bac4cf;
-  transition: transform 0.5s; 
-}
 
-body.dark .projet {
-  box-shadow: -5px -5px 15px 2px #132538;
-}
-
-.projet:hover {
-  transform: scale(1.03);
-}
 
 
 #container3 {
 height: 100%;
+margin: 5%;
 }
 
-.slide-title {
-  display: flex;
-  justify-content: center;
-  width: 30rem;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
+
 
 @media screen and (min-width: 1200px) {
-.projet * {
-  width: 20rem;
-}
+
 #langueTEL {
   display: none;
 }
@@ -47,11 +24,7 @@ height: 100%;
 
 
 @media screen and (max-width: 1200px) {
-  .secProj {
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-  }
+
   body {
     display: flex;
     justify-content: center;
@@ -105,3 +78,249 @@ height: 100%;
     box-shadow: 5px 5px 5px 5px black;
   }
  }
+
+
+
+
+.text p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+#buttonbar {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+.badges span {
+
+  color: #72ddf7;
+  border: #72ddf7 solid 0.5px;
+  border-radius: 10px;
+  padding: 6px;
+  margin-top: 0em;
+}
+
+
+
+
+
+@keyframes anim {
+  0% {
+      box-shadow: 0 0 0 0 var(--violet);
+  }
+
+  70% {
+      box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 60px; 
+  align-items: center;
+  justify-content: center;
+}
+
+.cards a {
+  transition: all 0.5s ease-in-out;
+}
+
+.card {
+  position: relative;
+  width: 30%;
+  height: 0%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  
+}
+
+
+
+
+.card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: rotate(0deg) scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #5e7ce2;
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  color: black;
+}
+
+body.light #titleProjet {
+  color: #5e7ce2;
+}
+
+
+.btn1 {
+  margin-left: 1%;
+  color:#72ddf7;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #72ddf7;
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+  border-radius: 150px;
+}
+
+body.light .btn1 {
+  color: #5e7ce2;
+  border: 2px solid #5e7ce2;}
+
+
+
+.btn1::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background-color: #72ddf7;
+  z-index: -1;
+  transition: all 1s;
+}
+
+.btn1:hover::before {
+  width: 160%;
+}
+
+.card img {
+  width: 500px;
+  height: 250px;
+}
+
+
+.card:hover .card__content {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  margin-bottom: 70px;
+  font-size: 14px;
+  line-height: 1.4;
+  height: 80px;
+  overflow-y: auto;
+}
+
+
+
+
+
+h1 {
+  font-size: 3.8rem;
+  line-height: 60px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#titleProjet {
+  color: #72ddf7;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+
+
+
+
+@media screen and (max-width: 1400px) {
+
+  h1 {
+      font-size: 3rem;
+      line-height: 50px;
+  }
+
+  .text p {
+      font-size: 1rem;
+      line-height: 20px;
+  }
+
+  .projet {
+      margin: 40px 50px;
+  }
+
+  .cards {
+      justify-content: center;
+  }
+
+  .card {
+      width: 300px;
+      height: 180px;
+  }
+
+  .card-projet button {
+      font-size: 12px;
+      width: 120px;
+  }
+
+  .card__content {
+      padding: 10px;
+  }
+
+
+}
+
+
+
+
+@media screen and (max-width: 541px) {
+  h1 {
+      font-size: 2rem;
+      line-height: 35px;
+  }
+
+  .text p {
+      font-size: 0.9rem;
+
+  }
+
+  #projet-img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+  }
+
+
+}

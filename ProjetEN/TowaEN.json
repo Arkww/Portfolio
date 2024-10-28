@@ -1,0 +1,38 @@
+{
+    "titleProjet": "Pixel War",
+    "littleTitleProjet": "Code a website to play a pixel war with the others students",
+    "resultRecap":  "I first had to create a game in JAVA according to the subject of the project and make it work with the graphic interface that was provided.   After that I created an AI to play the game and that would compete with the AI's of all the other students. It was really interesting to try to come up with the best algorithm possible for the game and I managed to finish third of the students.",
+  
+    "skills": [
+      "Coding a game from scratches",
+      "Inventing an AI to play the game",
+      "Trying to come up with the best algorithm to beat the beat the others students"
+
+    ],
+  
+    "technologies": [
+      "Java",
+      "AI"
+    ],
+    "photoProjet": [
+      {
+        "src": "Projets/Towa1.png",
+        "desc": "The game in it's working stage"
+      },
+      {
+        "src": "",
+        "desc": ""
+      }
+    ],
+    "githubLink": "",
+  
+  
+  
+    "downloadButtonText": "Download",
+    "seeCodeButtonText": "",
+    "navbarMyProject": "My Projects",
+    "navbarAboutMe": "About Me",
+    "technoTitle": "Technologies Used",
+    "skillsTitle": "Skills Gained"
+  }
+  

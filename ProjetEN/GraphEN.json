@@ -1,0 +1,36 @@
+{
+  "titleProjet": "Graph project",
+  "littleTitleProjet": "Coding a java application to display graphs and apply algorithms to them",
+  "resultRecap": "In this project I succesfully implemented the prim algorithm to find the minimum spanning tree of any given graph but the highlight of the project was to code an edge bundling algorithm, for which i had to implements two shortest path algorithms, BFS and Dijkstra.",
+  "skills": [
+    "Implementing complex Graph Algorithms",
+    "Handling the display of the graphs",
+    "Manipulating graphs by programming"
+  ],
+
+  "technologies": [
+    "Java",
+    "GIT"
+
+  ],
+  "photoProjet": [
+    {
+      "src": "Projets/graph1.png",
+      "desc": "One graph in it's orginal form (american air traffic)"
+    },
+    {
+      "src": "Projets/graph3.png",
+      "desc": "The same graph after the edge bundling algorithm"
+    }
+  ],
+  "githubLink": "",
+
+
+
+  "downloadButtonText": "Download",
+  "seeCodeButtonText": "View the Code",
+  "navbarMyProject": "My Projects",
+  "navbarAboutMe": "About Me",
+  "technoTitle": "Technologies",
+  "skillsTitle": "Challenges"
+}

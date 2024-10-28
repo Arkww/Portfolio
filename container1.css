@@ -24,10 +24,6 @@
 }
 
 
-#arrow2 {
-  margin-left: 20vh;
-  margin-right: 20vh;
-}
 
 .classicIMG {
   border-radius: 0.9375rem; /* 15px to rem */
@@ -47,7 +43,8 @@ body.dark .classicIMG {
 
 
 
-button {
+
+.btn2  {
   font-family: inherit;
   font-size: 1.25rem; /* 20px to rem */
   background: royalblue;
@@ -64,31 +61,36 @@ button {
   width: 14rem;
 }
 
-button span {
+.btn2 span {
   display: block;
   margin-left: 0.3em;
   transition: all 0.3s ease-in-out;
 }
 
-button svg {
+
+.btn2 svg {
   display: block;
   transform-origin: center center;
   transition: transform 0.3s ease-in-out;
 }
 
-button:hover .svg-wrapper {
+
+.btn2:hover .svg-wrapper {
   animation: fly-1 0.6s ease-in-out infinite alternate;
 }
 
-button:hover svg {
+
+.btn2:hover svg {
   transform: translateX(1.2em) rotate(45deg) scale(1.1);
 }
 
-button:hover span {
+
+.btn2:hover span {
   transform: translateX(10em);
 }
 
-button:active {
+
+.btn2:active {
   transform: scale(0.95);
 }
 

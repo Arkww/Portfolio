@@ -5,7 +5,9 @@
   margin: 0;
   padding: 0;
 }
-
+.L {
+  display: none;
+}
 * {
 
     font-family: "Roboto Mono", monospace;
@@ -20,7 +22,7 @@ body.dark {
   
   background-color: #0d1b2a;
 
-  color: aliceblue;
+
   
   
 }
@@ -51,7 +53,7 @@ body.dark .carte {
 
 body.light {
 
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(190, 205, 255);
 
   
 }
@@ -61,9 +63,11 @@ body.light {
   color: black;
 }
 
-
+a {
+  transition: 0.5s;
+}
 a:hover {
-  color: rgb(131, 137, 143);
+  color: #7872f1;
   scale: 1.1;
 }
 .changeLanguages {
@@ -102,19 +106,28 @@ nav {
   align-items: center;
   gap: 10px; 
 }
-
 .navclick {
+  color: var(--bleu-noir);
+  font-weight: 500;
   text-decoration: none;
-  padding: 0.9375rem; /* 15px to rem */
-  padding-left: 1.875rem; /* 30px to rem */
-  font-size: 1.20em;
-  font-weight: bold;
-  transition: 0.5s;
+  display: block;
+  padding: 40px 25px;
+  font-size: 1.3rem;
+  line-height: 1;
+  transition: 0.3s;
 }
 
+
 .navclick:hover {
-  color: rgb(8, 55, 102);
+  color: #7872f1;
   scale: 1.1;
+}
+
+.L img {
+  width: 40px;
+  height: 25px;
+  margin-top: 8px;
+  margin-left: 10px;
 }
 
 
@@ -124,4 +137,10 @@ nav {
 #container3{
   height: 100vh;
 }
+
+#footer {
+
+  box-shadow: 0px -5px 60px 4px #7872f1;
+}
+
 

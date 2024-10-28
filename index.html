@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="container3.css" />
     <link rel="stylesheet" href="container4.css" />
     <link rel="stylesheet" href="mediaQueries.css" />
-    <link rel="stylesheet" href="parallax.css" />
     <link rel="stylesheet" href="anim.css" />
     <link rel="icon" type="image/x-icon" href="/favicon.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,30 +21,27 @@
     />
 
 
-    <title>Mathieu JAY</title>
+  <title>Mathieu JAY</title>
   </head>
+
+  
   <body class="light">
+
     <header>
+      <div id="start"></div>
       <nav id="navbar">
-        <div id="langueTEL" class="changeLanguages">
-          <a class="FR">FR</a>
-          <p>/</p>
-          <a class="EN">EN</a>
-        </div>
         <a href="https://github.com/Arkww" target="_blank">
           <div>
-            <img src="favicon.jpg" alt="graph" width="100" height="100" />
+         
           </div>
         </a>
 
         <div id="options" class="option">
           <a id="navMe" class="navclick" href="#container1">About me</a>
-          <a id="navSkill" class="navclick" href="#container2">My skills</a>
           <a id="navProj" class="navclick" href="#container3">My projects</a>
           <div id="languePC" class="changeLanguages">
-            <a class="FR">FR</a>
-            <p>/</p>
-            <a class="EN">EN</a>
+            <a class="L FR"><img src="LogoPays/france.png"></a>
+            <a class="L EN"><img src="LogoPays/UK.png"></a>
           </div>
           <div id="toggleContainer">
             <label class="switchh" id="toggle">
@@ -73,10 +69,12 @@
         </div>
       </nav>
     </header>
+
+
     <section id="container0">
       <div id="box1pres">
       <div id="presentation">
-        <h1 id="myName">Mathieu Jay</h1>
+        <h2 id="myName">Mathieu JAY</h2>
         <h2 id="littleBio">Computer science student. Bordeaux, France</h2>
         <h2 id="chinoisTexte">计算机科学专业学生</h2>
         <span id="button">
@@ -127,7 +125,7 @@
           2025.
         </p>
 
-        <button onclick="sendEmail()">
+        <button class="btn2" onclick="sendEmail()">
           <div class="svg-wrapper-1">
             <div class="svg-wrapper">
               <svg
@@ -149,295 +147,110 @@
       </div>
     </section>
 
-    <section id="container2">
-      <div class="sous-section" id="ssec1">
-        <h2 class="allSkills">Skills</h2>
-        <div class="row">
-          <div class="carte">
-            <img class="logo" src="LogosSkills/html.png" alt="HTML" />
-            <p>HTML</p>
-          </div>
-          <div class="carte">
-            <img
-              class="logo"
-              src="LogosSkills/css-removebg-preview.png"
-              alt="CSS"
-            />
-            <p>CSS</p>
-          </div>
-          <div class="carte">
-            <img
-              class="logo"
-              src="LogosSkills/javascript.png"
-              alt="JavaScript"
-            />
-            <p>JavaScript</p>
-          </div>
-          <div class="carte">
-            <img class="logo" src="LogosSkills/python.png" alt="Python" />
-            <p>Python</p>
-          </div>
 
-        </div>
-        <div class="row">
-          <div class="carte">
-            <img class="logo" src="LogosSkills/java.png" alt="Java" />
-            <p>Java</p>
-          </div>
-          <div class="carte">
-            <img class="logo" src="LogosSkills/pandas.png" alt="Pandas" />
-            <p>Pandas</p>
-          </div>
-
-          <div class="carte">
-            <img class="logo" src="LogosSkills/Logo_C_sharp.svg.png" alt="C#" />
-            <p>C#</p>
-          </div>
-          <div class="carte">
-            <img
-              class="logo"
-              src="LogosSkills/sql-removebg-preview.png"
-              alt="SQL"
-            />
-            <p>SQL</p>
-          </div>
-          <div class="row">
-
-
-            <div class="carte">
-              <img class="logo" src="LogosSkills/numpy.png" alt="Numpy" />
-              <p>Numpy</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="carte">
-              <img class="logo" src="LogosSkills/ukulele.jpg" alt="Ukulele" />
-              <p>Ukulele</p>
-            </div>
-            <div class="carte">
-              <img class="logo" src="LogosSkills/surf.jpg" alt="Surf" />
-              <p>Surf</p>
-            </div>
-            <div class="carte">
-              <img class="logo" src="LogosSkills/escalade.jpg" alt="Escalade" />
-              <p id="climbing">Climbing</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="sous-section" id="ssec2">
-        <h2 class="allSkills">Softwares</h2>
-        <div class="row">
-          <div class="carte">
-            <img
-              class="logo"
-              src="LogoLogiciels/vscode-removebg-preview.png"
-              alt="VSCODE"
-            />
-            <p>VS code</p>
-          </div>
-          <div class="carte">
-            <img class="logo" src="LogoLogiciels/netbeans.png" alt="NetBeans" />
-            <p>NetBeans</p>
-          </div>
-          <div class="carte">
-            <img class="logo" src="LogoLogiciels/git.png" alt="Git" />
-            <p>Git</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="carte">
-            <img class="logo" src="LogoLogiciels/excel.png" alt="Excel" />
-            <p>Excel</p>
-          </div>
-          <div class="carte">
-            <img
-              class="logo"
-              src="LogoLogiciels/sqlserver-removebg-preview.png"
-              alt="SQL server"
-            />
-            <p>SQL server</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="sous-section" id="ssec3">
-        <h2 class="allSkills">Languages</h2>
-        <div class="image-container">
-          <img class="languageSkill" src="LogoPays/france.png" alt="France" />
-          <div class="overlay-text">C2</div>
-        </div>
-        <div class="image-container">
-          <img class="languageSkill" src="LogoPays/UK.png" alt="UK" />
-          <div class="overlay-text">C1</div>
-        </div>
-
-        <div class="image-container">
-          <img class="languageSkill" src="LogoPays/china.png" alt="China" />
-          <div class="overlay-text">B1/HSK4</div>
-        </div>
-
-        <div class="image-container">
-          <img class="languageSkill" src="LogoPays/spain.png" alt="Spain" />
-          <div class="overlay-text">B1</div>
-        </div>
-
-        <div class="image-container">
-          <img class="languageSkill" src="LogoPays/japan.jpg" alt="japan" />
-          <div class="overlay-text">A1</div>
-        </div>
-      </div>
-    </section>
 
     <section id="container3">
-      <div class="title" id="projectTitle">My projects</div>
+            
+    </div>
+</div>
+</div>
+</div>
 
-      <div class="secProj" id="secProj1">
-        <div class="projet">
-          <div class="slide-title">Java application visualizing graphs</div>
-          <img class="graph1" src="/Projets/graph3.png" alt="graph"/>
-          <p class="legende">
-            The result of the edge bundling algorithm I implemented
-          </p>
-          <br />
-          <br />
-          <div class="slide-content">
-            <div class="slide-text">
-              <p class="graph">
-                In this project I coded an application in JAVA that was able to
-                create, visualize and apply algorithms to graphs.
-              </p>
-              <br />
-              <br />
-              <p class="graph">
-                I succesfully implemented the prim algorithm to find the minimum
-                spanning tree of any given graph but the highlight of the
-                project was to code an edge bundling algorithm, for which i
-                coded two shortest path algorithms, BFS and Dijkstra
-              </p>
+<h1>My <span id="titleProjet">projets</span></h1>
+
+</div>
+<div>
+<div id="buttonbar">
+
+<button class="btn1 active" >Tous</button>
+<button class="btn1">Java</button>
+<button class="btn1" >C#</button>
+<button class="btn1">Javascript</button>
+<button class="btn1">SQL</button>
+<button class="btn1">Python</button>
+<button class="btn1">HTML/CSS</button>
+</div>
+<div class="cards">
+
+    <div data-skills="Java"  data-project="Graph" class="card">
+        <img src="Projets/graph2.png" alt="photo odomo">
+        <a href="template.html" class="project-link">
+        <div class="card__content">
+            <p class="card__title">Graph Project
+            </p>
+            <p class="card__description">Coding a java application capable of displaying graphs and applying algorithm to them</p>
+            <div class="badges">
+                <span>Java</span>
             </div>
-          </div>
+          </a>
         </div>
-        <div class="projet">
-          <div class="slide-title">Coding a game and an AI</div>
-          <img src="/Projets/Towa1.png" alt="towa" />
-          <p class="legende">The game in it's working stage</p>
-          <br />
-          <br />
-          <div class="slide-content">
-            <div class="slide-text">
-              <p class="towa">
-                I first had to create a game in JAVA according to the subject of
-                the project and make it work with the graphic interface that was
-                provided.
+        </div>
+        <div data-skills="SQL Python C#"  data-project="EcoGraph" class="card">
+          <img src="Projets/EcoGraph1.png" alt="photo odomo">
+          <a href="template.html" class="project-link">
+          <div class="card__content">
+              <p class="card__title">EcoGraph
               </p>
-              <br />
-              <p class="towa">
-                After that I created an AI to play the game and that would
-                compete with the AI's of all the other students. It was really
-                interesting to try to come up with the best algorithm possible
-                for the game.
-              </p>
+              <p class="card__description">Making an entire application with a database to visualize the data of the database. </p>
+              <div class="badges">
+                  <span>Python</span>
+                  <span>C#</span>
+                  <span>SQL</span>
+            
+              </div>
+            </a>
+          </div>
+          
+          </div>
+          
+    <div data-skills="Javascript HTML/CSS"  data-project="PixelWar" class="card">
+        <img src="Projets/PixelWar1.png" alt="photo odomo">
+        <a href="template.html" class="project-link">
+        <div class="card__content">
+            <p class="card__title">Pixel War
+            </p>
+            <p class="card__description">Making a website to play a pixel war with the other students by making GET/POST/... requests</p>
+            <div class="badges">
+                <span>Javascript</span>
+                <span>HTML/CSS</span>
             </div>
-          </div>
+          </a>
         </div>
-        <div class="projet">
-          <div class="slide-title">Code an home automation control</div>
-          <img src="/Projets/Odomo1.png" alt="odomo"/>
-          <p class="legende">The interface in rainfall mode working</p>
-          <br />
-          <br />
-          <div class="slide-content">
-            <div class="slide-text">
-              <p class="odomo">
-                The project involved rewriting the code for a home
+      </div>
+      <div data-skills="Java"  data-project="Odomo" class="card">
+          <img src="Projets/Odomo1.png" alt="photo odomo">
+          <a href="template.html" class="project-link">
+          <div class="card__content">
+              <p class="card__title">Odomo
+              </p>
+              <p class="card__description"> The project involved rewriting the code for a home
                 automation control unit in JAVA language, with three modes:
-                rainfall, temperature and heating.
+                rainfall, temperature and heating.</p>
+              <div class="badges">
+                  <span>Java</span>
+              </div>
+            </a>
+          </div>
+ 
+        
+        </div>
+        <div data-skills="Java"  data-project="Towa" class="card">
+          <img src="Projets/Towa1.png" alt="photo odomo">
+          <a href="template.html" class="project-link">
+          <div class="card__content">
+              <p class="card__title">Towa
               </p>
-              <br />
+              <p class="card__description"> Coding a game and then an AI to play the game and compete agaisnt the other students</p>
+              <div class="badges">
+                  <span>Java</span>
+              </div>
+            </a>
+          </div>
 
-              <p class="odomo">
-                For each of these mods I created and used a Boolean matrices to
-                display the control unit's interface.
-              </p>
-              <br />
-            </div>
-          </div>
-        </div>
-        <div class="projet">
-          <div class="slide-title">Fetch data from a server to play a game</div>
-          <img src="/Projets/PixelWar1.png" alt="pixelWar" />
-          <p class="legende">
-            The website that i made. It acted like a interpreter between me and
-            the server
-          </p>
-          <br />
-          <br />
-          <div class="slide-content">
-            <div class="slide-text">
-              <p class="px">
-                I created a website in order to participate in a pixel war with
-                other students by making requests to the server using javascript
-              </p>
-              <br />
-              <p class="px">
-                This got me used to popular API tools like Swagger and taught me
-                how to do different kinds of requests (GET, PUT..)
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="secProj" id="secProj2">
-        <div class="projet">
-          <div class="slide-title">Make a database and fill it with data</div>
-          <img src="/Projets/bd1.png" alt="bd"/>
-          <p class="legende">
-            The model of the database that I created for the project
-          </p>
-          <br />
-          <br />
-          <div class="slide-content">
-            <div class="slide-text">
-              <p class="DBproj">
-                I created a database for a fictionnal bookstore in SQL language and filled it with data
-              </p>
-              <br />
-              <p class="DBproj">
-                I learned how to properly manipulate SQL Softwares like SQL server and make a creation script
-              </p>
-            </div>
-          </div>
-        </div>
-       
-      </div>
-    </section>
+</section>
 
     <section id="footer">
-      <div id="droite">
-        <ul class="contact-list">
-          <li class="list-item">
-            <a
-              target="_blank"
-              href="https://www.google.fr/maps/place/Bordeaux/@44.8637712,-0.6272114,13z/data=!3m1!4b1!4m6!3m5!1s0xd5527e8f751ca81:0x796386037b397a89!8m2!3d44.8416106!4d-0.5810938!16zL20vMDFiODU?entry=ttu"
-              ><img class="icon" src="/Icon/localisation.png" alt="loc" /></a>
-            <span class="contact-text place">Bordeaux, FRANCE</span>
-          </li>
-
-          <li class="list-item">
-            <img class="iconNC" src="/Icon/phone.png" alt="phone"/>
-            <a href="tel:0769972102">07 69 97 21 02</a>
-          </li>
-
-          <li class="list-item">
-            <img class="iconNC" src="/Icon/mail.png" alt="mail" />
-            <a target="_blank" href="mailto:mathieu.jay2@gmail.com"
-              >mathieu.jay2@gmail.com</a
-            >
-          </li>
-        </ul>
-      </div>
+      
 
       <div id="gauche">
         <ul class="social-media-list">
@@ -490,6 +303,9 @@
 
       <script type="module" src="ChangeMode.js"></script>
       <script type="module" src="welcomeText.js"></script>
+      <script type="module" src="test1.js"></script>
+      <!-- <script type="module" src="lang.js"></script> -->
+      <script type="module" src="projectLoad.js"></script>
 
     </section>
   </body>

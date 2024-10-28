@@ -1,0 +1,36 @@
+{
+    "titleProjet": "Odomo",
+    "littleTitleProjet": "Coding an home automation unit",
+    "resultRecap":  "The project involved rewriting the code for a home automation control unit in JAVA language, with three modes: rainfall, temperature and heating.               For each of these mods I created and used a Boolean matrices to display the control unit's interface.",
+  
+    "skills": [
+      "Manipulate matrices in Java"
+
+    ],
+  
+    "technologies": [
+      "Java"
+
+    ],
+    "photoProjet": [
+      {
+        "src": "Projets/Odomo1.png",
+        "desc": "the interface in rainfall mode"
+      },
+      {
+        "src": "Projets/Odomo2.png",
+        "desc": "The interface in heating mode asking you to choose the heating time"
+      }
+    ],
+    "githubLink": "",
+  
+  
+  
+    "downloadButtonText": "Download",
+    "seeCodeButtonText": "",
+    "navbarMyProject": "My Projects",
+    "navbarAboutMe": "About Me",
+    "technoTitle": "Technologies Used",
+    "skillsTitle": "Skills Gained"
+  }
+  

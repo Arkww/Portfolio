@@ -1,0 +1,16 @@
+{
+    "intro": {
+      "littleBio": "Étudiant en informatique. Bordeaux, France",
+      "buttonT": "Téléchargez mon CV",
+      "undername": "Département informatique de l'IUT de Gradignan, Bordeaux",
+      "title": "Mathieu Jay, étudiant en informatique",
+      "bios": [
+        "Je suis passionné par les voyages, la théorie des graphes et la programmation en général.",
+        "En tant que président de l'association des étudiants de mon université, j'aime organiser des événements et gérer mon équipe. J'ai confiance en mes capacités de leadership, qui sont très souvent mises à l'épreuve dans le cadre de mes projets d'équipe.",
+        "L'apprentissage des langues a toujours été l'une de mes passions. Je suis donc un polyglotte autodidacte et j'aime saisir toutes les occasions qui se présentent à moi pour pratiquer les langues.",
+        "Je recherche une alternance en développement à partir de juillet 2025."
+      ]
+    },
+    "contactButton": "Me contacter",
+    "nav": ["À propos de moi", "Mes compétences", "Mes projets"]
+  }
