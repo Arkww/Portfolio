@@ -1,0 +1,36 @@
+{
+    "titleProjet": "Labyrinth game",
+    "littleTitleProjet": "Code a small game where the hero has to find a way out of a labyrinth",
+    "resultRecap": "I coded a labyrinth game, implementing the mouvement of the user and mouvement patterns of the monsters in the labyrinth. the user was able to switch floor of the labyrinth and had to find the way out",
+  
+    "skills": [
+      "Use scripts to animate the mouvement of the character",
+      "Calculate in real time the coordinate of the user that was moving in the labyrinth"
+
+    ],
+  
+    "technologies": [
+      "Java"
+    ],
+    "photoProjet": [
+      {
+        "src": "Projets/Labyrinthe1.png",
+        "desc": "The game, with the hero and the enemies"
+      },
+      {
+        "src": "",
+        "desc": ""
+      }
+    ],
+    "githubLink": "",
+  
+  
+  
+    "downloadButtonText": "Download",
+    "seeCodeButtonText": "View the Code",
+    "navbarMyProject": "My Projects",
+    "navbarAboutMe": "About Me",
+    "technoTitle": "Technologies Used",
+    "skillsTitle": "Skills Gained"
+  }
+  

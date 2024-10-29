@@ -1,95 +1,40 @@
-@media screen and (min-width: 600px) {
-  #container2 {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    padding-top: 10vh;
+#language {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#languageDesc {
+  margin: 50px;
+  width: 80%;
+  align-items: center;
+}
+
+#languageList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 70px;
+  margin: 20px;
+}
+
+#languageList img {
+  width: 200px;
+  height: 100px;
+  border-radius: 5px;
+  transition: 0.75s;
+}
+
+#languageList img:hover {
+ scale: 1.05;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+  #languageList img {
+    width: 160px;   height: 75x;
   }
   
-
-}
-
-#container2 h2 {
-  font-size: 2rem;
-  text-align: center;
-  padding-top: 1.25rem;
-  padding-bottom: 3.125rem;
-}
-.sous_section {
-  width: 90vw;
-  max-width: 31.25rem; /* 500px to rem */
-  height: 31.25rem; /* 500px to rem */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem 0;
-}
-
-.image-container {
-  position: relative;
-  display: inline-block;
-  margin: 0.625rem; /* 10px to rem */
-  background-color: rgb(152, 151, 170);
-}
-
-.languageSkill {
-  display: block;
-  width: 12.5rem; /* 200px to rem */
-  height: 6.25rem; /* 100px to rem */
-  transition: transform 2s;
-}
-
-.overlay-text {
-  position: absolute;
-  bottom: 1.875rem; /* 30px to rem */
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 0.3125rem; /* 5px to rem */
-  opacity: 0;
-  font-size: 1.25rem; /* xx-large to rem */
-  transition: opacity 1s ease;
-}
-
-.image-container:hover .overlay-text {
-  opacity: 1;
-}
-
-.moveX {
-  transform: translateX(12.5rem); /* 200px to rem */
-}
-
-.moveBack {
-  transform: translateX(0);
-}
-
-#ssec3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-.logo {
-  width: 5.625rem; /* 90px to rem */
-  height: 5.625rem; /* 90px to rem */
-  border-radius: 10%;
-  margin: 0.625rem; /* 10px to rem */
-}
-
-.carte {
-  margin: 0.3375rem; /* 15px to rem */
-  border-radius: 10px;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  display: inline-flex;
-  padding-bottom: 0.625rem; /* 10px to rem */
-  transition: transform 0.5s; /* Ajoute la transition ici */
-  box-shadow: 0px 0px 2px 4px #bac4cf ;
-}
-
-.carte:hover {
-  transform: scale(1.1);
 }
