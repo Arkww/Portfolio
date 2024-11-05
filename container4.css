@@ -47,9 +47,17 @@ body.dark #footer {
   margin: 0.625rem; /* 10px to rem */
 }
 
-.icon:hover {
-  transform: scale(1.2);
+.icon {
+
+  transition: 0.75s;
 }
+
+.icon:hover {
+ scale: 1.25;
+}
+
+
+
 
 .social-media-list {
   display: flex;

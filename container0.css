@@ -15,6 +15,13 @@
   }
 }
 
+@media screen and (min-width: 1200px) { 
+  #resume {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 #welcomeText {
   font-size: 5rem;
   height: 5rem;
@@ -54,7 +61,7 @@
 }
 
 
-#buttonT {
+.buttonT {
   color: #fff;
 }
 
@@ -78,16 +85,16 @@
     justify-content: center;
 }
 
-#button a:hover {
+.button a:hover {
   scale: 1;
 }
 
 
-#button {
+.button {
     margin-top: 2em;
     --primary-color: #645bff;
     --secondary-color: #fff;
-    --hover-color: #111;
+    --hover-color: #3945e7;
     --arrow-width: 10px;
     --arrow-stroke: 2px;
     box-sizing: border-box;
@@ -104,13 +111,13 @@
     width: 16rem;
   }
   
-  #button .arroww-wrapper {
+  .button .arroww-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  #button .arroww {
+  .button .arroww {
     margin-top: 1px;
     width: var(--arrow-width);
     background: var(--primary-color);
@@ -119,7 +126,7 @@
     transition: 0.2s;
   }
   
-  #button .arroww::before {
+  .button .arroww::before {
     content: "";
     box-sizing: border-box;
     position: absolute;
@@ -133,15 +140,15 @@
     transform: rotate(-45deg);
   }
   
-  #button:hover {
+  .button:hover {
     background-color: var(--hover-color);
   }
   
-  #button:hover .arroww {
+  .button:hover .arroww {
     background: var(--secondary-color);
   }
   
-  #button:hover .arroww:before {
+  .button:hover .arroww:before {
     right: 0;
   }
 
