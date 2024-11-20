@@ -125,6 +125,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     githubButton.style.display = 'none'; // Hide if no link
                 }
 
+                const tryMe = document.getElementById('tryMeButton');
+                if (data.tryMeLink) {
+                    tryMe.href = data.tryMeLink; // Set the GitHub link
+                    tryMe.style.display = ''; // Show the button
+                } else {
+                    tryMe.style.display = 'none'; // Hide if no link
+                }
+
+
                 const downloadButton = document.getElementById('download-button');
                 if (data.downloadButtonText) {
                     downloadButton.textContent = data.downloadButtonText;

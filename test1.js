@@ -16,10 +16,10 @@ buttons.forEach(button => {
 const filterCards = (skill) => {
     cards.forEach(card => {
         const skills = card.getAttribute("data-skills").split(" ");
-        const shouldDisplay = (skill === "Tous") || skills.includes(skill);
+        const shouldDisplay = (skill === "All") || skills.includes(skill);
         card.style.display = shouldDisplay ? "flex" : "none";
     });
 };
 
 // Initial filter to show all cards
-filterCards("Tous");
+filterCards("All");
