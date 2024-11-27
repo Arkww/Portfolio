@@ -17,11 +17,11 @@
     ],
     "photoProjet": [
       {
-        "src": "Projets/Article1.PNG",
+        "src": "Projets/Article1.png",
         "desc": "Word count of characters in simplified Chinese articles"
       }, 
       {
-        "src": "Projets/Article2.PNG",
+        "src": "Projets/Article2.png",
         "desc": "Word count of characters in traditional Chinese articles"
       }
     ],
