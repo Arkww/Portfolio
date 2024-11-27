@@ -2,7 +2,7 @@
   
     "titleProjet": "Study of Chinese articles",
     "littleTitleProjet": "Studying the word count of a database of simplfied and traditional Chinese articles",
-    "resultRecap":  "In this project counted the frequency of all the characters presents in a database of more than 140 000 Chinese articles order to study if they would be a significient difference between the 20 most used characters in traditional and simplified Chinese articles and found an explanation to the difference.",
+    "resultRecap":  "In this project I counted the frequency of all the characters presents in a database of more than 140 000 Chinese articles order to study if they would be a significient difference between the 20 most used characters in traditional and simplified Chinese articles and found an explanation to the difference.",
   
     "skills": [
       "Processing a big number of Chinese characters data",
@@ -19,7 +19,7 @@
       {
         "src": "Projets/Article1.PNG",
         "desc": "Word count of characters in simplified Chinese articles"
-      },
+      }, 
       {
         "src": "Projets/Article2.PNG",
         "desc": "Word count of characters in traditional Chinese articles"
