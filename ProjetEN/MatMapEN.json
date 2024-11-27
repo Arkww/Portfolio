@@ -1,44 +1,43 @@
 {
-    "titleProjet": "MatMap",
-    "littleTitleProjet": "Coding a website with a database to show choropleth maps ",
-    "resultRecap":  "In this project I coded a website attached to a database that displayed choropleth maps made from the value of the database. I then made it so the user has to guess which map is displayed by choosing between 4 options, they are 10 rounds and the goal is to score the higher possible.",
-  
-    "skills": [
-      "Discovering how to make map in Javascript",
-      "Updating maps in real time",
-      "Filling a database with data I found on Kaggle",
-      "Coding python scripts to add/modify data to the database"
+"titleProjet": "MatMap",
+"littleTitleProjet": "Coding a website with a database to show choropleth maps ",
+"resultRecap":  "In this project I coded a website attached to a database that displayed choropleth maps made from the value of the database. I then made it so the user has to guess which map is displayed by choosing between 4 options, they are 10 rounds and the goal is to score the higher possible.",
 
-    ],
-  
-    "technologies": [
-      "Python",
-      "HTML/CSS",
-      "JavaScript",
-      "Pandas",
-      "Leaflet.js",
-      "Kaggle"
+"skills": [
+  "Discovering how to make map in Javascript",
+  "Updating maps in real time",
+  "Filling a database with data I found on Kaggle",
+  "Coding python scripts to add/modify data to the database"
 
-    ],
-    "photoProjet": [
-      {
-        "src": "Projets/MatMap1.png",
-        "desc": "Display of the game playing"
-      },
-      {
-        "src": "Projets/MatMap2.png",
-        "desc": "Multiples maps and color are available"
-      }
-    ],
-    "githubLink": "https://github.com/Arkww/MatMap",
-    "tryMeLink": "https://arkww.github.io/MatMap/",
-  
-  
-    "downloadButtonText": "Download",
-    "seeCodeButtonText": "",
-    "navbarMyProject": "My Projects",
-    "navbarAboutMe": "About Me",
-    "technoTitle": "Technologies Used",
-    "skillsTitle": "Skills Gained"
+],
+
+"technologies": [
+  "Python",
+  "HTML/CSS",
+  "JavaScript",
+  "Pandas",
+  "Leaflet.js",
+  "Kaggle"
+
+],
+"photoProjet": [
+  {
+    "src": "Projets/MatMap1.PNG",
+    "desc": "Display of the game playing"
+  },
+  {
+    "src": "Projets/MatMap2.PNG",
+    "desc": "Multiples maps and color are available"
   }
-  
+],
+"githubLink": "https://github.com/Arkww/MatMap",
+"tryMeLink": "https://arkww.github.io/MatMap/",
+
+
+"downloadButtonText": "Download",
+"seeCodeButtonText": "",
+"navbarMyProject": "My Projects",
+"navbarAboutMe": "About Me",
+"technoTitle": "Technologies Used",
+"skillsTitle": "Skills Gained"
+}
