@@ -3,6 +3,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 10rem;
 }
 
 #languageDesc {
@@ -27,7 +28,7 @@
 }
 
 #languageList img:hover {
- scale: 1.25;
+ scale: 1.15;
 }
 
 

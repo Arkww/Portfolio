@@ -61,9 +61,7 @@
 }
 
 
-.buttonT {
-  color: #fff;
-}
+
 
 #myName {
   color:#7872f1;
@@ -89,6 +87,9 @@
   scale: 1;
 }
 
+body.light .button {
+  --secondary-color:black;
+}
 
 .button {
     margin-top: 2em;
@@ -152,6 +153,4 @@
     right: 0;
   }
 
-  #submitButton {
-    color: #fff;
-  }
+ 
