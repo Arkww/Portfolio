@@ -1,14 +1,18 @@
 #travels {
     padding-bottom: 10rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
+
+
 .travelbox {
     display: flex;
-    
+
+    flex: 1 1 calc(50% - 1rem);
     background-color: #a3abec;
     margin-top: 3rem;
     border-radius: 7px;
@@ -40,7 +44,7 @@
     margin: 2rem;
 }
 
-.sousSecTravel *{
+.sousSecTravel * {
     margin-top: 1rem;
 
 }
@@ -52,11 +56,11 @@
     justify-content: space-between;
 }
 
-.sousSecTravel2 p{
+.sousSecTravel2 p {
     display: flex;
-   justify-content: end;
-   color: #6050ee;
-   margin: 2rem;
+    justify-content: end;
+    color: #6050ee;
+    margin: 2rem;
 }
 
 .videoLink {
@@ -70,27 +74,41 @@
 
 @media screen and (min-width: 1200px) {
 
-    
+    .sousSecTravel2 * {
+        font-size: medium;
+    }
+
+    .row-container {
+        display: flex;
+        flex-direction: row;
+        /* Align items in a single row */
+        justify-content: center;
+        /* Center items in the row */
+        gap: 5rem;
+        /* Space between the two items in the row */
+
+    }
+
     .travelbox img {
-        width: 550px;
-        height: 350px;
+        width: 300px;
+        height: 450px;
         margin-left: 1rem;
 
     }
 
     .sectionTravel2 {
-        width: 90rem;
+        width: 50rem;
     }
 
     .travelbox {
-        width: 80rem;
-        height: 28rem;
+        width: 40rem;
+        height: 45rem;
     }
 
 }
 
 @media screen and (max-width: 1199px) {
-    
+
     /* Make travel boxes stack vertically on smaller screens */
     .travelbox {
         flex-direction: column;
@@ -100,30 +118,39 @@
     }
 
     .travelbox img {
-        width: 100%;  /* Full width on smaller screens */
-        height: auto; /* Maintain aspect ratio */
-        margin-left: 0; /* Remove left margin */
+        width: 100%;
+        /* Full width on smaller screens */
+        height: auto;
+        /* Maintain aspect ratio */
+        margin-left: 0;
+        /* Remove left margin */
     }
 
     .sectionTravel2 {
-        width: 100%; /* Ensure section fits screen */
-        padding: 1rem; /* Add padding for smaller screens */
+        width: 100%;
+        /* Ensure section fits screen */
+        padding: 1rem;
+        /* Add padding for smaller screens */
     }
 
     .sousSecTravel {
-        margin: 1rem; /* Reduce margin for smaller screens */
+        margin: 1rem;
+        /* Reduce margin for smaller screens */
     }
 
     .sousSecTravel * {
-        margin-top: 0.5rem; /* Reduce spacing between items */
+        margin-top: 0.5rem;
+        /* Reduce spacing between items */
     }
 
     .sousSecTravel2 p {
-        font-size: 14px; /* Smaller text size for smaller screens */
+        font-size: 14px;
+        /* Smaller text size for smaller screens */
         margin: 1rem;
     }
 
     .videoLink {
-        font-size: 14px; /* Smaller font size for the link */
+        font-size: 14px;
+        /* Smaller font size for the link */
     }
 }
