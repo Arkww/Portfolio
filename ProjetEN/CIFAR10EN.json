@@ -1,0 +1,31 @@
+{
+  "titleProjet": "CIFAR10 Image recognition",
+  "littleTitleProjet": "Training a deep learning model to recognize photos of animals and vehicules",
+  "resultRecap": "For my first project in deep learning I coded an AI model using convolutional neural networks to recognize photos of animals and vehicules from the CIFAR10 dataset. The model reached an accuracy of 85% and I was able to succesfully recognize my cats.",
+
+  "skills": [
+    "Making a model with convolutional neural networks",
+    "Trying a lot of diffrent options to improve the accuracy of the model",
+    "Learning how to use Pytorch and Cuda"
+  ],
+
+  "technologies": ["Python", "Pytorch"],
+  "photoProjet": [
+    {
+      "src": "Projets/CIFAR1.png",
+      "desc": "The training loss of my model over 30 epochs"
+    },
+    {
+      "src": "Projets/CIFAR2.png",
+      "desc": "My model recognizing photos of my cats"
+    }
+  ],
+  "githubLink": "https://github.com/Arkww/CIFAR10Recognition",
+
+  "downloadButtonText": "Download",
+  "seeCodeButtonText": "",
+  "navbarMyProject": "My Projects",
+  "navbarAboutMe": "About Me",
+  "technoTitle": "Technologies Used",
+  "skillsTitle": "Skills Gained"
+}
