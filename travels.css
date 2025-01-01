@@ -89,23 +89,27 @@
     }
 
     .travelbox img {
-        width: 300px;
+        width: 500px;
         height: 450px;
         margin-left: 1rem;
 
     }
 
-    #left {
-        margin-right: 5rem;
+    .left {
+        margin-right: 20rem;
+
     }
 
+    .right {
+        margin-left: 20rem;
+    }
     .sectionTravel2 {
         width: 50rem;
     }
 
     .travelbox {
         width: 60rem;
-        height: 45rem;
+        height: 35rem;
     }
 
 }

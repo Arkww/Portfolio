@@ -31,6 +31,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const languageSkills = document.querySelectorAll(".image-container");
 
