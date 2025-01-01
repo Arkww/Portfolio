@@ -1,0 +1,31 @@
+{
+  "titleProjet": "Chinese Numbers Recognition",
+  "littleTitleProjet": "Creating a deep learning model from scratch to recognize Chinese numbers using Pytorch",
+  "resultRecap": "For this project I created a deep learning model from scratch using Pytorch to recognize Chinese numbers, I used a dataset of 15 000 images of handwritten Chinese numbers (Credit in the readme) and then trained my model on it, I was able to attain an accuracy of 0.98 on my model and display a confusion matrix to see where my model was making mistakes",
+
+  "skills": [
+    "Creating my own deep learning model",
+    "Attained an accuracy of 0.98",
+    "Displaying a confusion matrix"
+  ],
+
+  "technologies": ["Python", "Pytorch"],
+  "photoProjet": [
+    {
+      "src": "Projets/ChineseCharacters1.png",
+      "desc": "The final confusion matrix of my model"
+    },
+    {
+      "src": "Projets/ChineseCharacters2.png",
+      "desc": "One of characters with the layers (Number 9)"
+    }
+  ],
+  "githubLink": "https://github.com/Arkww/ChineseNumbersRecognition",
+
+  "downloadButtonText": "Download",
+  "seeCodeButtonText": "",
+  "navbarMyProject": "My Projects",
+  "navbarAboutMe": "About Me",
+  "technoTitle": "Technologies Used",
+  "skillsTitle": "Skills Gained"
+}
