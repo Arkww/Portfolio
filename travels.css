@@ -12,7 +12,6 @@
 .travelbox {
     display: flex;
 
-    flex: 1 1 calc(50% - 1rem);
     background-color: #a3abec;
     margin-top: 3rem;
     border-radius: 7px;
@@ -96,12 +95,16 @@
 
     }
 
+    #left {
+        margin-right: 5rem;
+    }
+
     .sectionTravel2 {
         width: 50rem;
     }
 
     .travelbox {
-        width: 40rem;
+        width: 60rem;
         height: 45rem;
     }
 
