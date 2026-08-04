@@ -108,6 +108,15 @@ body {
 .close-btn { background: #EF4444; transition: all .2s ease; }
 .close-btn:hover { background: #DC2626; }
 
+/* Project card bottom links */
+.card-link { color: var(--sub); transition: color .2s ease; }
+.card-link:hover { color: var(--accent); }
+
+/* Hero links card */
+.hero-link { transition: color .2s ease; }
+.hero-link:hover { color: var(--accent) !important; }
+.hero-link:hover span { color: var(--accent) !important; }
+
 /* Gallery images (click to open lightbox) */
 .gallery-img { transition: filter .2s ease, transform .2s ease; }
 .gallery-img:hover { filter: brightness(1.04); transform: scale(1.01); }

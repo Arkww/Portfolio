@@ -1,19 +1,19 @@
 import React from 'react';
 import { useStore } from '../store';
-import { HERO, LANGS, type Lang } from '../content';
+import { HERO, CURRENT_WORK, HERO_LINKS } from '../content';
 import Highlight from './Highlight';
+import LinkIcon from './LinkIcon';
+
+const eyebrow: React.CSSProperties = {
+  fontSize: 11.5, fontWeight: 700, letterSpacing: '.12em',
+  color: 'var(--accent)', textTransform: 'uppercase',
+};
 
 const TAGS = ['NLP', 'AI', 'ML', 'Data Science'];
 
-// The three codes that are full app languages (Spanish & Japanese are hero-only previews).
-const SWITCHABLE = new Set<string>(['en', 'fr', 'zh']);
-
 const Hero: React.FC = () => {
-  const { t, lang, setLang, pick, hovered, setHovered } = useStore();
-
-  // Whole-hero language preview: hovering a card temporarily switches the left column.
-  const heroLang = hovered >= 0 ? LANGS[hovered].code : lang;
-  const hero = HERO[heroLang];
+  const { t, lang, pick } = useStore();
+  const hero = HERO[lang];
 
   return (
     <section
@@ -78,53 +78,55 @@ const Hero: React.FC = () => {
           </div>
         </div>
 
-        {/* Right column — language cards */}
-        <div className="hero-cards" style={{ flex: 'none' }}>
-          <div style={{
-            fontSize: 11.5, fontWeight: 700, letterSpacing: '.12em',
-            color: 'var(--accent)', textAlign: 'center', marginBottom: 16,
+        {/* Right column — "currently working on" + links */}
+        <div className="hero-cards" style={{
+          flex: 'none', display: 'flex', flexDirection: 'column', gap: 16, width: 440, maxWidth: '100%',
+        }}>
+          {/* Currently working on (wide, short) */}
+          <div className="lift" style={{
+            boxSizing: 'border-box', background: 'var(--card)', border: '1px solid var(--border-soft)',
+            borderRadius: 18, padding: '16px 22px', boxShadow: 'var(--shadow)',
+            display: 'flex', flexDirection: 'column', gap: 10,
           }}>
+            <div style={{ ...eyebrow, display: 'flex', alignItems: 'center', gap: 8 }}>
+              <span style={{
+                width: 7, height: 7, borderRadius: '50%', background: '#22c55e',
+                boxShadow: '0 0 0 3px color-mix(in oklab, #22c55e 25%, transparent)',
+              }} />
+              {t.currentlyWorking}
+            </div>
+            <div style={{ fontSize: 13.5, lineHeight: 1.55, color: 'var(--sub)' }}>{pick(CURRENT_WORK)}</div>
           </div>
-          <div style={{
-            display: 'grid', gridTemplateColumns: 'repeat(2, 150px)', gap: 14, justifyItems: 'stretch',
+
+          {/* Links (icon + actual URL) */}
+          <div className="lift" style={{
+            boxSizing: 'border-box', background: 'var(--card)', border: '1px solid var(--border-soft)',
+            borderRadius: 18, padding: '20px 22px', boxShadow: 'var(--shadow)',
+            display: 'flex', flexDirection: 'column', gap: 14,
           }}>
-            {LANGS.map((l, i) => {
-              const isHover = hovered === i;
-              const switchable = SWITCHABLE.has(l.code);
-              const isActive = switchable && l.code === lang;
-              return (
-                <div
-                  key={l.code}
-                  onMouseEnter={() => setHovered(i)}
-                  onMouseLeave={() => setHovered(-1)}
-                  onClick={() => switchable && setLang(l.code as Lang)}
-                  role={switchable ? 'button' : undefined}
-                  aria-label={switchable ? `Switch language to ${pick(l.name)}` : undefined}
+            <div style={eyebrow}>{t.links}</div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+              {HERO_LINKS.map((l) => (
+                <a
+                  key={l.platform}
+                  href={l.href}
+                  target={l.href.startsWith('mailto:') ? undefined : '_blank'}
+                  rel="noreferrer"
+                  className="hero-link"
                   style={{
-                    gridColumn: i === 4 ? '1 / -1' : 'auto',
-                    justifySelf: 'center', width: 150, boxSizing: 'border-box',
-                    background: 'var(--card)',
-                    border: `1px solid ${isHover || isActive ? 'var(--accent)' : 'var(--border-soft)'}`,
-                    borderRadius: 16, padding: '20px 14px', textAlign: 'center',
-                    cursor: switchable ? 'pointer' : 'default',
-                    boxShadow: isHover ? 'var(--shadow-lift)' : 'var(--shadow)',
-                    transform: isHover ? 'translateY(-4px)' : 'none',
-                    transition: 'all .3s cubic-bezier(.2,.7,.3,1.2)',
+                    fontSize: 14, fontWeight: 500, color: 'var(--sub)', textDecoration: 'none',
+                    display: 'flex', alignItems: 'center', gap: 12, minWidth: 0,
                   }}
                 >
-                  <div style={{ fontSize: 26, lineHeight: 1 }}>{l.flag}</div>
-                  <div style={{ marginTop: 10, fontSize: 14, fontWeight: 700, color: 'var(--text)' }}>
-                    {isHover ? l.greeting : pick(l.name)}
-                  </div>
-                  <div style={{
-                    marginTop: 3, fontSize: 11.5, fontWeight: 500,
-                    color: isHover ? 'var(--accent)' : 'var(--muted)', transition: 'color .25s',
-                  }}>
-                    {isHover ? pick(l.name) : pick(l.level)}
-                  </div>
-                </div>
-              );
-            })}
+                  <span style={{ flex: 'none', display: 'flex', color: 'var(--text)' }}>
+                    <LinkIcon platform={l.platform} />
+                  </span>
+                  <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                    {l.display}
+                  </span>
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -1,6 +1,8 @@
 import React from 'react';
 import { useStore } from '../store';
 import { PROJECTS, FILTERS } from '../content';
+import SmartImg from './SmartImg';
+import LinkIcon from './LinkIcon';
 
 const ProjectsSection: React.FC = () => {
   const { t, pick, filter, setFilter, query, setQuery, showAll, setShowAll, setModal } = useStore();
@@ -80,7 +82,7 @@ const ProjectsSection: React.FC = () => {
               }}
             >
               {p.img && (
-                <img
+                <SmartImg
                   src={p.img}
                   alt={p.title}
                   style={{ height: 160, width: '100%', objectFit: 'cover', borderBottom: '1px solid var(--border-soft)' }}
@@ -99,8 +101,41 @@ const ProjectsSection: React.FC = () => {
                     </span>
                   ))}
                 </div>
-                <div style={{ marginTop: 2, fontSize: 12.5, fontWeight: 600, color: 'var(--accent)' }}>
-                  {t.details} →
+                <div style={{
+                  marginTop: 2, display: 'flex', alignItems: 'center',
+                  justifyContent: 'space-between', gap: 10,
+                }}>
+                  <span style={{ fontSize: 12.5, fontWeight: 600, color: 'var(--accent)' }}>
+                    {t.details} →
+                  </span>
+                  {(p.github || p.tryMe) && (
+                    <div style={{ display: 'flex', gap: 12, flex: 'none' }}>
+                      {p.github && (
+                        <a
+                          href={p.github}
+                          target="_blank"
+                          rel="noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="card-link"
+                          style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 12, fontWeight: 600, textDecoration: 'none' }}
+                        >
+                          <LinkIcon platform="github" size={14} /> GitHub
+                        </a>
+                      )}
+                      {p.tryMe && (
+                        <a
+                          href={p.tryMe}
+                          target="_blank"
+                          rel="noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="card-link"
+                          style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 12, fontWeight: 600, textDecoration: 'none' }}
+                        >
+                          <LinkIcon platform="external" size={14} /> {t.tryMe}
+                        </a>
+                      )}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

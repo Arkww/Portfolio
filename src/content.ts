@@ -11,7 +11,7 @@ export interface UIStrings {
   navTrack: string; navProjects: string; navLanguages: string;
   eyebrow: string; hello: string; bio: string;
   explore: string; hoverHello: string;
-  trackTitle: string;
+  trackTitle: string; experienceTitle: string; educationTitle: string;
   profileBio: string;
   resume: string; projectsTitle: string; searchPh: string;
   viewGithub: string; tryMe: string; noResults: string;
@@ -20,7 +20,7 @@ export interface UIStrings {
   descTitle: string; skillsGained: string; techUsed: string; gallery: string;
   close: string; tryLive: string; showAll: string; showLess: string;
   details: string; certificate: string; footerTag: string;
-  report: string; reference: string;
+  report: string; reference: string; links: string; currentlyWorking: string;
   footerNav: string; footerContact: string; rights: string; backTop: string;
 }
 
@@ -30,7 +30,7 @@ export const T: Record<Lang, UIStrings> = {
     eyebrow: 'COMPUTER SCIENCE & LANGUAGES', hello: "Hello, I'm",
     bio: 'Computer science student and autodidact polyglot with a passion for data science and living languages. I enjoy building AI and NLP systems that bridge technology and human language.',
     explore: 'Explore my work', hoverHello: 'HOVER TO SAY HELLO',
-    trackTitle: 'Academic & Professional Track',
+    trackTitle: 'Academic & Professional Track', experienceTitle: 'Professional Experience', educationTitle: 'Education',
     profileBio: 'Third-year computer science student at the University of Bordeaux, currently an apprentice AI engineer at the French Senate in Paris, designing and shipping AI solutions for Senators and civil servants.',
     resume: 'Resume', projectsTitle: 'Personal Projects', searchPh: 'Search by title, technology…',
     viewGithub: 'View on GitHub', tryMe: 'Try it', noResults: 'No projects match, try another filter or search.',
@@ -38,7 +38,7 @@ export const T: Record<Lang, UIStrings> = {
     langIntro1: 'Apart from programming I spend my time **practicing** and **speaking** foreign languages, self-taught, using all kinds of resources but mostly YouTube.',
     langIntro2: 'Language learning started as a hobby that makes friends everywhere, but learning new **grammars** and **syntaxes** also sharpened my **logic** and **problem-solving**.',
     descTitle: 'Description', skillsGained: 'Skills Gained', techUsed: 'Technologies Used', gallery: 'Gallery', close: 'Close', tryLive: 'Try it live', showAll: 'Show all projects', showLess: 'Show less', details: 'Details', certificate: 'Certificate', footerTag: 'CS student · AI & NLP enthusiast · Polyglot',
-    report: 'Report', reference: 'Reference letter',
+    report: 'Report', reference: 'Reference letter', links: 'Links', currentlyWorking: 'Currently working on',
     footerNav: 'NAVIGATION', footerContact: 'CONTACT', rights: 'All rights reserved.', backTop: 'Back to top',
   },
   fr: {
@@ -46,7 +46,7 @@ export const T: Record<Lang, UIStrings> = {
     eyebrow: 'INFORMATIQUE & LANGUES', hello: 'Bonjour, je suis',
     bio: "Étudiant en informatique et polyglotte autodidacte, passionné de data science et de langues vivantes. J'aime construire des systèmes d'IA et de NLP qui relient la technologie et le langage humain.",
     explore: 'Découvrir mon travail', hoverHello: 'SURVOLEZ POUR DIRE BONJOUR',
-    trackTitle: 'Parcours académique & professionnel',
+    trackTitle: 'Parcours académique & professionnel', experienceTitle: 'Expérience professionnelle', educationTitle: 'Formation',
     profileBio: "Étudiant en troisième année d'informatique à l'Université de Bordeaux, actuellement ingénieur IA en alternance au Sénat à Paris, je conçois et déploie des solutions d'IA pour les sénateurs et fonctionnaires.",
     resume: 'CV', projectsTitle: 'Projets personnels', searchPh: 'Rechercher par titre, technologie…',
     viewGithub: 'Voir sur GitHub', tryMe: 'Essayer', noResults: 'Aucun projet ne correspond, essayez un autre filtre.',
@@ -54,7 +54,7 @@ export const T: Record<Lang, UIStrings> = {
     langIntro1: "En dehors de la programmation, je passe mon temps à **pratiquer** et **parler** des langues étrangères, en autodidacte, surtout grâce à YouTube.",
     langIntro2: "L'apprentissage des langues est d'abord un loisir qui me fait des amis partout, mais apprendre de nouvelles **grammaires** et **syntaxes** a aussi aiguisé ma **logique** et ma **résolution de problèmes**.",
     descTitle: 'Description', skillsGained: 'Compétences acquises', techUsed: 'Technologies utilisées', gallery: 'Galerie', close: 'Fermer', tryLive: 'Essayer en ligne', showAll: 'Voir tous les projets', showLess: 'Voir moins', details: 'Détails', certificate: 'Certificat', footerTag: 'Étudiant CS · Passionné IA & NLP · Polyglotte',
-    report: 'Rapport', reference: 'Lettre de recommandation',
+    report: 'Rapport', reference: 'Lettre de recommandation', links: 'Liens', currentlyWorking: 'En ce moment',
     footerNav: 'NAVIGATION', footerContact: 'CONTACT', rights: 'Tous droits réservés.', backTop: 'Haut de page',
   },  
   zh: {
@@ -62,7 +62,7 @@ export const T: Record<Lang, UIStrings> = {
     eyebrow: '计算机科学与语言', hello: '你好，我是',
     bio: '计算机科学专业学生，自学多语者，热爱数据科学与语言。我喜欢构建连接技术与人类语言的AI和NLP系统。',
     explore: '查看我的作品', hoverHello: '悬停打个招呼',
-    trackTitle: '学术与职业经历',
+    trackTitle: '学术与职业经历', experienceTitle: '职业经历', educationTitle: '教育经历',
     profileBio: '波尔多大学计算机科学三年级学生，目前在巴黎的法国参议院担任AI工程师学徒，为参议员和公务员设计并落地AI解决方案。',
     resume: '简历', projectsTitle: '个人项目', searchPh: '按标题、技术搜索…',
     viewGithub: '在GitHub查看', tryMe: '试一试', noResults: '没有匹配的项目，换个筛选或搜索词试试。',
@@ -70,7 +70,7 @@ export const T: Record<Lang, UIStrings> = {
     langIntro1: '编程之外，我把时间花在**练习**和**使用**外语上，完全自学，主要通过YouTube。',
     langIntro2: '学语言起初只是能到处交朋友的爱好，但学习新的**语法**和**句法**也让我的**逻辑**和**解决问题**的能力更敏锐。',
     descTitle: '描述', skillsGained: '收获的技能', techUsed: '使用的技术', gallery: '图库', close: '关闭', tryLive: '在线试玩', showAll: '查看全部项目', showLess: '收起', details: '详情', certificate: '证书', footerTag: '计算机学生 · AI与NLP爱好者 · 多语者',
-    report: '报告', reference: '推荐信',
+    report: '报告', reference: '推荐信', links: '链接', currentlyWorking: '正在做的',
     footerNav: '导航', footerContact: '联系方式', rights: '版权所有。', backTop: '回到顶部',
   },
 };
@@ -87,6 +87,24 @@ export const HERO: Record<HeroLang, HeroCopy> = {
   es: { eyebrow: 'INFORMÁTICA E IDIOMAS', hello: '¡Hola! Soy', bio: 'Estudiante de informática y **políglota** autodidacta, apasionado por la **ciencia de datos** y las lenguas vivas. Me gusta construir sistemas de **IA** y **PLN** que conectan la tecnología con el lenguaje humano.' },
   ja: { eyebrow: 'コンピュータサイエンスと言語', hello: 'こんにちは、私は', bio: 'コンピュータサイエンスを学ぶ学生であり、独学の**ポリグロット**です。**データサイエンス**と生きた言語に情熱を注ぎ、テクノロジーと人間の言語をつなぐ**AI**・**NLP**システムを作ることが好きです。' },
 };
+
+// ----------------------------------------------------------------- Hero "currently working on"
+export const CURRENT_WORK: Loc = {
+  en: 'First year master student at Tsinghua University in Beijing China. Learning about advanced AI use practicaly and theoretically.',
+  fr: "Étudiant en première année de master à l'Université Tsinghua à Pékin, Chine. J'apprends à utiliser l'IA avancée de manière pratique et théorique.",
+  zh: ' 中国北京清华大学硕士一年级学生。学习先进的人工智能的理论与实践。',
+};
+
+// Hero links card. `platform` selects the icon; `display` is the URL shown to the user.
+export type LinkPlatform = 'leetcode' | 'github' | 'instagram' | 'linkedin' | 'email' | 'external' | 'document';
+export const HERO_LINKS: { platform: LinkPlatform; href: string; display: string }[] = [
+  { platform: 'github', href: 'https://github.com/Arkww', display: 'github.com/Arkww' },
+  { platform: 'linkedin', href: 'https://www.linkedin.com/in/mathieu-jay/', display: 'linkedin.com/in/mathieu-jay' },
+  { platform: 'email', href: 'mailto:mathieu.jay2@gmail.com', display: 'mathieu.jay2@gmail.com' },
+  { platform: 'leetcode', href: 'https://leetcode.com/u/MatMatLaMenace/', display: 'leetcode.com/u/MatMatLaMenace' },
+  { platform: 'instagram', href: 'https://www.instagram.com/mathieuaway/', display: 'instagram.com/mathieuaway' },
+
+];
 
 // -------------------------------------------------------------------- Language cards
 export interface LangCard {
@@ -106,6 +124,7 @@ export const LANGS: LangCard[] = [
 // -------------------------------------------------------------------- Track entries
 export interface TrackItem {
   id: string; logo: string; title: Loc; role: Loc; period: Loc; location: Loc;
+  category: 'experience' | 'education';
   // Optional links — each is only rendered when non-empty.
   report?: string;    // PDF, opens in the in-app viewer
   reference?: string; // PDF (reference letter), opens in the in-app viewer
@@ -116,10 +135,11 @@ export interface TrackPhoto { src: string; desc: Loc; }
 export interface TrackDetail { recap: Loc; skills: LocArr; photos: TrackPhoto[]; }
 
 export const TRACK: TrackItem[] = [
-  { id: 'senat', logo: '/assets/Logos/senatLogo.jpg', title: { en: 'French Senate', fr: 'Sénat', zh: '法国参议院' }, role: { en: 'Apprenticeship · AI Engineer', fr: 'Alternance · Ingénieur IA', zh: '学徒实习 · AI工程师' }, period: { en: 'Sep 2025 – Jul 2026', fr: 'Sept. 2025 – Juil. 2026', zh: '2025年9月 – 2026年7月' }, location: { en: 'Paris, France', fr: 'Paris, France', zh: '法国巴黎' }, report: '/assets/Documents/SenatReport.pdf', reference: '', github: '', tryMe: '' },
-  { id: 'tokyo', logo: '/assets/Logos/UniversityOfTokyo.png', title: { en: 'University of Tokyo', fr: 'Université de Tokyo', zh: '东京大学' }, role: { en: 'Internship · Research assistant', fr: 'Stage · Assistant de recherche', zh: '实习 · 研究助理' }, period: { en: 'Apr 2025 – Jul 2025', fr: 'Avr. 2025 – Juil. 2025', zh: '2025年4月 – 7月' }, location: { en: 'Tokyo, Japan', fr: 'Tokyo, Japon', zh: '日本东京' }, report: '/assets/Documents/TokyoReport.pdf', reference: '/assets/Documents/UTokyoReference.pdf', github: '', tryMe: '' },
-  { id: 'asso', logo: '/assets/Logos/LogoBDE.png', title: { en: 'Student Association', fr: 'Assopeña', zh: '学生会' }, role: { en: 'President', fr: 'Président', zh: '会长' }, period: { en: '2024 – 2025', fr: '2024 – 2025', zh: '2024 – 2025' }, location: { en: 'Bordeaux, France', fr: 'Bordeaux, France', zh: '法国波尔多' }, report: '', reference: '', github: '', tryMe: '' },
-  { id: 'iut', logo: '/assets/Logos/IUT.png', title: { en: 'University of Bordeaux', fr: 'Université de Bordeaux', zh: '波尔多大学' }, role: { en: 'B.Sc. Computer Science, International Track', fr: 'BUT Informatique, parcours international', zh: '计算机科学学士（国际方向）' }, period: { en: '2023 – 2026', fr: '2023 – 2026', zh: '2023 – 2026' }, location: { en: 'Bordeaux, France', fr: 'Bordeaux, France', zh: '法国波尔多' }, report: '', reference: '/assets/Documents/IUTReference.pdf', github: '', tryMe: '' },
+  { id: 'senat', category: 'experience', logo: '/assets/Logos/senatLogo.jpg', title: { en: 'French Senate', fr: 'Sénat', zh: '法国参议院' }, role: { en: 'Apprenticeship · AI Engineer', fr: 'Alternance · Ingénieur IA', zh: '学徒实习 · AI工程师' }, period: { en: 'Sep 2025 – Jul 2026', fr: 'Sept. 2025 – Juil. 2026', zh: '2025年9月 – 2026年7月' }, location: { en: 'Paris, France', fr: 'Paris, France', zh: '法国巴黎' }, report: '/assets/Documents/SenatReport.pdf', reference: '', github: '', tryMe: '' },
+  { id: 'tokyo', category: 'experience', logo: '/assets/Logos/UniversityOfTokyo.png', title: { en: 'University of Tokyo', fr: 'Université de Tokyo', zh: '东京大学' }, role: { en: 'Internship · Research assistant', fr: 'Stage · Assistant de recherche', zh: '实习 · 研究助理' }, period: { en: 'Apr 2025 – Jul 2025', fr: 'Avr. 2025 – Juil. 2025', zh: '2025年4月 – 7月' }, location: { en: 'Tokyo, Japan', fr: 'Tokyo, Japon', zh: '日本东京' }, report: '/assets/Documents/TokyoReport.pdf', reference: '/assets/Documents/UTokyoReference.pdf', github: '', tryMe: '' },
+  { id: 'asso', category: 'experience', logo: '/assets/Logos/LogoBDE.png', title: { en: 'Student Association', fr: 'Assopeña', zh: '学生会' }, role: { en: 'President', fr: 'Président', zh: '会长' }, period: { en: '2024 – 2025', fr: '2024 – 2025', zh: '2024 – 2025' }, location: { en: 'Bordeaux, France', fr: 'Bordeaux, France', zh: '法国波尔多' }, report: '', reference: '', github: '', tryMe: '' },
+  { id: 'tsinghua', category: 'education', logo: '/assets/Logos/Tsinghua.png', title: { en: 'Tsinghua University', fr: 'Université Tsinghua', zh: '清华大学' }, role: { en: 'M.Sc. Advanced Computing', fr: 'Master Advanced Computing', zh: '高等计算硕士' }, period: { en: '2026 - 2028', fr: '2026 - 2028', zh: '2026年 - 2028年' }, location: { en: 'Beijing, China', fr: 'Pékin, Chine', zh: '中国北京' }, report: '', reference: '', github: '', tryMe: '' },
+  { id: 'iut', category: 'education', logo: '/assets/Logos/IUT.png', title: { en: 'University of Bordeaux', fr: 'Université de Bordeaux', zh: '波尔多大学' }, role: { en: 'B.Sc. Computer Science, International Track', fr: 'BUT Informatique, parcours international', zh: '计算机科学学士（国际方向）' }, period: { en: '2023 – 2026', fr: '2023 – 2026', zh: '2023 – 2026' }, location: { en: 'Bordeaux, France', fr: 'Bordeaux, France', zh: '法国波尔多' }, report: '', reference: '/assets/Documents/IUTReference.pdf', github: '', tryMe: '' },
 ];
 
 export const TRACK_DETAILS: Record<string, TrackDetail> = {
@@ -154,6 +174,11 @@ export const TRACK_DETAILS: Record<string, TrackDetail> = {
       { src: '/assets/TrackPhotos/BDE2.png', desc: { en: 'The whole team of the association', fr: "Toute l'équipe de l'association", zh: '学生会全体成员' } },
     ],
   },
+  tsinghua: {
+    recap: { en: "Tsinghua University, in Beijing, is one of China's most prestigious universities and consistently ranks among the best in the world, especially in science and engineering. I am a first-year master's student there in Advanced Computing, focusing on AI subjects, with coursework in Chinese and English.", fr: "L'Université Tsinghua, à Pékin, est l'une des universités les plus prestigieuses de Chine et figure régulièrement parmi les meilleures au monde, en particulier en sciences et en ingénierie. J'y suis étudiant en première année de master en Advanced Computing, spécialisé sur les sujets d'IA, avec des cours en chinois et en anglais.", zh: '清华大学位于北京，是中国最负盛名的高等学府之一，在世界范围内、尤其在理工科领域长期名列前茅。我是清华 Advanced Computing（高等计算）专业的一年级硕士研究生，专注于人工智能方向，课程以中英文授课。' },
+    skills: { en: ['Advanced computing with a focus on AI', 'Coursework taught in Chinese and English', 'Research-oriented graduate study'], fr: ["Advanced computing avec une spécialisation en IA", 'Cours en chinois et en anglais', 'Études de master orientées recherche'], zh: ['高等计算与人工智能方向', '中英文授课', '研究导向的硕士学习'] },
+    photos: [],
+  },
   iut: {
     recap: { en: "Bachelor's degree (BUT) in Computer Science at the University of Bordeaux, subjects ranging from web development to data science and algorithmics. A strong point of the program is the frequency of team projects with randomly assigned students, teaching concrete teamwork. I follow the international track: computer science and mathematics classes in English, plus a required internship abroad, completed in Japan, which taught me to work in a technical, international environment.", fr: "BUT Informatique à l'Université de Bordeaux, des matières allant du développement web à la data science et l'algorithmique. Un point fort de la formation : la fréquence des projets d'équipe avec des étudiants tirés au sort, un vrai apprentissage du travail collectif. Je suis le parcours international : cours d'informatique et de maths en anglais, plus un stage obligatoire à l'étranger, effectué au Japon, qui m'a appris à travailler dans un environnement technique et international.", zh: '波尔多大学计算机科学学士（BUT），课程从Web开发到数据科学与算法。项目制是其一大特色：每学期与随机分组的同学完成团队项目，在实战中学习协作。我就读国际方向：计算机与数学课程全英文授课，并要求海外实习，已在日本完成，让我学会在技术性、国际化的环境中工作。' },
     skills: { en: ['Software development', 'Algorithm design and analysis', 'Database design and management', 'Web development', 'Object-oriented programming', 'Team collaboration'], fr: ['Développement logiciel', "Conception et analyse d'algorithmes", 'Conception et gestion de bases de données', 'Développement web', 'Programmation orientée objet', 'Collaboration en équipe'], zh: ['软件开发', '算法设计与分析', '数据库设计与管理', 'Web开发', '面向对象编程', '团队协作'] },
@@ -175,6 +200,8 @@ export interface ProjectDetail { recap: Loc; skills: LocArr; photos: ProjectPhot
 
 export const PROJECTS: Project[] = [
   { title: 'YOLO vs Custom CNN', cats: ['AI', 'Machine-learning'], techs: ['PyTorch', 'YOLO', 'OpenCV'], img: '/assets/ProjectsPhotos/customCNN.gif', github: 'https://github.com/elias-utf8/YOLOvsCustomCNN', blurb: { en: 'Supervised-learning audit comparing YOLO and a custom CNN for 3D object detection with an Intel RealSense depth camera.', fr: "Audit d'apprentissage supervisé comparant YOLO et un CNN maison pour la détection d'objets 3D avec une caméra de profondeur Intel RealSense.", zh: '对比YOLO与自研CNN的监督学习性能评测，结合Intel RealSense深度相机实现3D目标检测。' } },
+  { title: 'QuelImpact', cats: ['AI', 'NLP', 'Software-development'], techs: ['OpenFisca', 'FastAPI', 'React'], img: '/assets/ProjectsPhotos/QuelImpact1.png',github: 'https://github.com/theosorus/QuelImpact', tryMe: 'https://quelimpact.tcastillo.me/', blurb: { en: 'A citizen tool that turns a socio-fiscal amendment into a concrete, figures-based impact on your own household. Built for the French National Assembly trustworthy-AI hackathon.', fr: "Un outil citoyen qui traduit un amendement socio-fiscal en impact chiffré et concret sur votre propre foyer. Construit pour le hackathon « IA de confiance » de l'Assemblée nationale.", zh: '一个公民工具，把社会税收修正案转化为对你家庭的具体量化影响。为法国国民议会“可信AI”黑客松打造。' } },
+  { title: 'Mnemo', cats: ['NLP', 'AI', 'Software-development'], techs: ['Django', 'AnkiConnect', 'LLM'], tryMe:"https://mnemo.matjay.me/", github:"https://github.com/Arkww/Mnemo",img : '/assets/ProjectsPhotos/Mnemo1.png', blurb: { en: 'An open-source companion for the Anki ecosystem that turns the words you keep forgetting into short graded stories and example sentences you can read and hear, so they finally stick in context.', fr: "Un compagnon open-source pour l'écosystème Anki qui transforme les mots que vous oubliez sans cesse en courtes histoires et phrases d'exemple à lire et à écouter, pour qu'ils s'ancrent enfin en contexte.", zh: '一个面向 Anki 生态的开源工具，把你反复记不住的单词编成可读可听的短篇分级故事和例句，让它们在语境中真正记住。' } },
   { title: 'Neural Network from Scratch', cats: ['AI', 'Machine-learning'], techs: ['Python', 'NumPy', 'Pandas'], img: '/assets/ProjectsPhotos/ANNFromScratch1.png', github: 'https://github.com/Arkww/FromScratchMINST/', blurb: { en: 'A two-layer neural network built with only NumPy and pandas to truly understand the math, 92% on MNIST.', fr: 'Un réseau de neurones à deux couches codé uniquement avec NumPy et pandas pour comprendre les maths, 92 % sur MNIST.', zh: '仅用NumPy和pandas从零实现两层神经网络，真正弄懂背后的数学，MNIST准确率92%。' } },
   { title: 'Chinese Numbers Recognition', cats: ['Data-science', 'NLP', 'Machine-learning'], techs: ['PyTorch', 'Computer vision'], img: '/assets/ProjectsPhotos/ChineseCharacters1.png', github: 'https://github.com/Arkww/ChineseNumbersRecognition', blurb: { en: 'A PyTorch CNN trained on 15,000 handwritten Chinese numerals, 98% accuracy.', fr: 'Un CNN PyTorch entraîné sur 15 000 chiffres chinois manuscrits, 98 % de précision.', zh: '用PyTorch训练的CNN识别15000个手写汉字数字，准确率98%。' } },
   { title: 'Elliptic Curve Cryptography', cats: ['Cryptography', 'Mathematics'], techs: ['Python', 'secp256k1', 'ECDSA'], img: '/assets/ProjectsPhotos/ECC1.png', github: 'https://github.com/Arkww/Elliptic-Curve-Cryptography', blurb: { en: 'Elliptic-curve crypto from scratch: ECDH, AES, and a full Bitcoin simulation with ECDSA signing on secp256k1.', fr: 'Cryptographie sur courbes elliptiques from scratch : ECDH, AES et une simulation Bitcoin complète avec signatures ECDSA sur secp256k1.', zh: '从零实现椭圆曲线密码学：ECDH、AES，以及基于secp256k1的完整比特币模拟与ECDSA签名。' } },
@@ -190,6 +217,36 @@ export const PROJECTS: Project[] = [
 ];
 
 export const DETAILS: Record<string, ProjectDetail> = {
+  'QuelImpact': {
+    recap: {
+      en: "An experimental citizen tool, built over a weekend at the Assemblée nationale's AI hackathon 'The path of the law: towards trustworthy AI', that gives French citizens an easy way to concretely understand how a given amendment impacts their household. From the household details the user provides, it computes the before/after effect with the open-source engine OpenFisca, reached through its MCP, so every figure is deterministic and traceable, never invented by the AI.\n\nThe project was as much about people as about code: an elite, multidisciplinary team ranging from engineers to a legislative expert to a statistician. My work sat right at that crossroads, constantly translating between law, statistics and engineering to connect real amendments to the fiscal model. The weekend wrapped up with a live demo in front of the President of the Assemblée nationale, Yaël Braun-Pivet.",
+      fr: "Un projet citoyen expérimental, construit en un week-end lors du hackathon IA de l'Assemblée nationale « Le parcours de la loi : vers une IA de confiance », qui donne aux citoyens un moyen simple de comprendre concrètement l'impact d'un amendement sur leur foyer. À partir des informations que l'utilisateur donne sur son foyer, l'outil calcule l'effet avant/après avec le moteur open-source OpenFisca, via son MCP : chaque chiffre est déterministe et traçable, jamais inventé par l'IA.\n\nLe projet reposait autant sur l'humain que sur le code : une équipe d'élite et pluridisciplinaire, allant d'ingénieurs à un expert législatif en passant par un statisticien. Mon rôle se situait précisément à ce carrefour, à traduire en permanence entre le droit, les statistiques et l'ingénierie pour relier de vrais amendements au modèle fiscal. Le week-end s'est conclu par une démo en direct devant la Présidente de l'Assemblée nationale, Yaël Braun-Pivet.",
+      zh: '一个实验性的公民项目，在法国国民议会“法律之路：迈向可信AI”AI黑客松中用一个周末完成，让法国公民能简单、具体地了解某项修正案对自己家庭的影响。工具根据用户提供的家庭信息，用开源引擎 OpenFisca（通过其 MCP）计算前后变化，因此每个数字都是确定、可追溯的，绝不由AI凭空生成。\n\n这个项目既关乎代码，也关乎人：一支精英跨学科团队，成员从工程师到立法专家再到统计学家。我的工作正处在这个交汇点，不断在法律、统计和工程之间转译，把真实的修正案与税收模型连接起来。这个周末以在法国国民议会议长 Yaël Braun-Pivet 面前的现场演示收尾。',
+    },
+    skills: {
+      en: ['Collaborating in a multidisciplinary team (engineering, law, statistics)', 'Connecting real legal amendments to the OpenFisca fiscal model', 'Deterministic before/after simulation of a household disposable income', 'Building trustworthy AI where the model never invents the numbers'],
+      fr: ["Collaborer dans une équipe pluridisciplinaire (ingénierie, droit, statistiques)", "Relier de vrais amendements légaux au modèle fiscal OpenFisca", "Simulation déterministe avant/après du revenu disponible du foyer", "Construire une IA de confiance où le modèle n'invente jamais les chiffres"],
+      zh: ['在跨学科团队中协作（工程、法律、统计）', '把真实的法律修正案与 OpenFisca 税收模型连接起来', '确定性地模拟家庭可支配收入的前后变化', '构建大模型绝不凭空生成数字的可信AI'],
+    },
+    photos: [{ src: '/assets/ProjectsPhotos/QuelImpact1.png', desc: { en: 'The QuelImpact web app, showing the before/after effect of a socio-fiscal amendment on a household', fr: "L'application web QuelImpact, montrant l'effet avant/après d'un amendement socio-fiscal sur un foyer", zh: 'QuelImpact Web应用，展示社会税收修正案对家庭的前后影响' } },
+            {src: '/assets/ProjectsPhotos/QuelImpact2.png', desc: { en: 'The interdisciplinary team working on the QuelImpact project', fr: "L'équipe interdisciplinaire travaillant sur le projet QuelImpact", zh: 'QuelImpact项目跨学科团队' } }
+    ],
+  },
+  'Mnemo': {
+    recap: {
+      en: "Mnemo is an open-source project built to slot into the Anki ecosystem and help people learn all kinds of languages. It reads your hardest Anki cards over AnkiConnect and asks a language model you control to write a short, level-graded story that weaves those words in, then plays it back with click-to-play audio and karaoke-style word highlighting. It can also generate example sentences for a single word, keeps an archive of everything it has made, and shows your struggle pool as a filterable table.\n\nIts design is 'bring your own machine': it can be hosted on the public web yet still talks to the Anki and language model running on your own computer. Python is the single source of logic on a stateless server that stores nothing, the browser is a thin relay to your localhost services, and your settings live in your browser, so one hosted instance serves many people with no shared data. Text-to-speech uses the browser's built-in voices or your own Azure key.",
+      fr: "Mnemo est un projet open-source conçu pour s'intégrer à l'écosystème Anki et aider chacun à apprendre toutes sortes de langues. Il lit vos cartes Anki les plus difficiles via AnkiConnect et demande à un modèle de langage que vous contrôlez d'écrire une courte histoire, calibrée à votre niveau, qui y intègre ces mots, puis la lit à voix haute avec lecture au clic et surlignage des mots façon karaoké. Il génère aussi des phrases d'exemple pour un mot donné, garde une archive de tout ce qu'il a produit, et affiche vos mots difficiles dans un tableau filtrable.\n\nSon principe, c'est « bring your own machine » : il peut être hébergé sur le web tout en dialoguant avec l'Anki et le modèle qui tournent sur votre propre ordinateur. Python est l'unique source de logique, sur un serveur sans état qui ne stocke rien, le navigateur n'est qu'un relais léger vers vos services locaux, et vos réglages vivent dans votre navigateur : une seule instance hébergée sert ainsi plusieurs personnes sans données partagées. La synthèse vocale utilise les voix du navigateur ou votre propre clé Azure.",
+      zh: 'Mnemo 是一个开源项目，旨在融入 Anki 生态，帮助人们学习各种语言。它通过 AnkiConnect 读取你最难记的 Anki 卡片，请你自己掌控的语言模型写一篇与你水平相匹配的短篇故事，把这些单词自然融入其中，再配上点击即读的音频和卡拉OK式的单词高亮朗读出来。它还能为单个单词生成例句，保存所有生成内容的存档，并把你的难词以可筛选的表格展示。\n\n它的理念是“自带机器”：即使部署在公网上，也依然与运行在你自己电脑上的 Anki 和模型通信。Python 是唯一的逻辑来源，运行在不存储任何数据的无状态服务器上；浏览器只是通向你本地服务的轻量中继；你的设置保存在你的浏览器里，因此一个托管实例可以服务很多人而不共享数据。语音合成使用浏览器内置语音或你自己的 Azure 密钥。',
+    },
+    skills: {
+      en: ['Reading Anki struggle cards over AnkiConnect', 'Prompting a user-controlled LLM to write level-graded stories in context', 'A stateless "bring your own machine" architecture with the browser relaying to localhost', 'Karaoke-style text-to-speech with word highlighting'],
+      fr: ["Lire les cartes difficiles d'Anki via AnkiConnect", "Faire écrire à un LLM contrôlé par l'utilisateur des histoires calibrées au niveau, en contexte", "Une architecture sans état « bring your own machine » où le navigateur relaie vers localhost", "Synthèse vocale façon karaoké avec surlignage des mots"],
+      zh: ['通过 AnkiConnect 读取 Anki 难词卡片', '让用户掌控的大模型在语境中写出分级故事', '无状态的“自带机器”架构，由浏览器中继到本地服务', '卡拉OK式语音合成与单词高亮'],
+    },
+    photos: [      { src: '/assets/ProjectsPhotos/Mnemo1.png', desc: { en: 'A Chinese story generated by Mnemo using the recent mistaken cards of the user', fr: "Une histoire chinoise générée par Mnemo en utilisant les cartes à la hausse de l'utilisateur", zh: 'Mnemo生成的中文故事，使用了用户最近记错的卡片' } }
+
+    ],
+  },
   'YOLO vs Custom CNN': {
     recap: { en: 'A supervised-learning performance audit comparing YOLO11n and a custom CNN. Detected objects are located in 3D with an Intel RealSense depth camera and an ArUco world reference: the bounding-box center is deprojected to camera coordinates, then transformed to world coordinates via solvePnP. A PyQt6 app provides Detection, Training and Calibration tabs. I was responsible for the CNN conception and development.', fr: "Un audit de performance en apprentissage supervisé comparant YOLO11n et un CNN maison. Les objets détectés sont localisés en 3D avec une caméra de profondeur Intel RealSense et un marqueur ArUco : le centre de la bounding box est déprojeté en coordonnées caméra, puis transformé en coordonnées monde via solvePnP. Une appli PyQt6 offre trois onglets : détection, entraînement et calibration. J'étais responsable de la conception et du développement du CNN.", zh: '对比YOLO11n与自研CNN的监督学习性能评测。借助Intel RealSense深度相机和ArUco世界参考标记实现3D定位：将检测框中心反投影为相机坐标，再通过solvePnP转换为世界坐标。PyQt6桌面应用提供检测、训练和标定三个选项卡。我负责CNN的设计与开发。' },
     skills: { en: ['Designing and training a custom CNN for object detection', 'Comparing model performance with IoU and confusion matrices', '3D localisation using RealSense depth + ArUco markers', 'Integrating a CV pipeline into a PyQt6 desktop app'], fr: ["Concevoir et entraîner un CNN maison pour la détection d'objets", 'Comparer les performances avec IoU et matrices de confusion', 'Localisation 3D via RealSense + marqueurs ArUco', 'Intégrer un pipeline de vision dans une appli PyQt6'], zh: ['设计并训练自定义目标检测CNN', '用IoU和混淆矩阵对比模型性能', '基于RealSense深度相机与ArUco标记的3D定位', '将视觉流水线集成进PyQt6桌面应用'] },

@@ -3,11 +3,14 @@ import { useStore } from '../store';
 import { TRACK, TRACK_DETAILS, PROJECTS, DETAILS } from '../content';
 import Lightbox from './Lightbox';
 import PdfViewer from './PdfViewer';
+import SmartImg from './SmartImg';
+import LinkIcon from './LinkIcon';
 
 const heading: React.CSSProperties = { fontSize: 16, fontWeight: 700, color: 'var(--text)' };
 const modalLink: React.CSSProperties = {
-  fontFamily: 'inherit', fontSize: 13.5, fontWeight: 600, color: 'var(--accent)',
+  fontFamily: 'inherit', fontSize: 13.5, fontWeight: 600,
   background: 'none', border: 'none', padding: 0, cursor: 'pointer', textDecoration: 'none',
+  display: 'inline-flex', alignItems: 'center', gap: 7,
 };
 
 const Bullet: React.FC<{ text: string }> = ({ text }) => (
@@ -31,7 +34,7 @@ const Gallery: React.FC<{
   }}>
     {photos.map((ph, i) => (
       <div key={i}>
-        <img
+        <SmartImg
           src={ph.src}
           alt={ph.desc}
           onClick={() => onOpen(ph.src, ph.desc)}
@@ -163,25 +166,25 @@ const Modal: React.FC = () => {
           {isTrack && (tr!.report || tr!.reference || tr!.github || tr!.tryMe) && (
             <div style={{ marginTop: 24, display: 'flex', gap: 22, flexWrap: 'wrap' }}>
               {tr!.report && (
-                <button className="link-underline" style={modalLink}
+                <button className="card-link" style={modalLink}
                   onClick={() => setPdf({ src: tr!.report!, title: `${title} · ${t.report}` })}>
-                  {t.report}
+                  <LinkIcon platform="document" size={16} /> {t.report}
                 </button>
               )}
               {tr!.reference && (
-                <button className="link-underline" style={modalLink}
+                <button className="card-link" style={modalLink}
                   onClick={() => setPdf({ src: tr!.reference!, title: `${title} · ${t.reference}` })}>
-                  {t.reference}
+                  <LinkIcon platform="document" size={16} /> {t.reference}
                 </button>
               )}
               {tr!.github && (
-                <a href={tr!.github} target="_blank" rel="noreferrer" className="link-underline" style={modalLink}>
-                  GitHub
+                <a href={tr!.github} target="_blank" rel="noreferrer" className="card-link" style={modalLink}>
+                  <LinkIcon platform="github" size={16} /> GitHub
                 </a>
               )}
               {tr!.tryMe && (
-                <a href={tr!.tryMe} target="_blank" rel="noreferrer" className="link-underline" style={modalLink}>
-                  {t.tryLive}
+                <a href={tr!.tryMe} target="_blank" rel="noreferrer" className="card-link" style={modalLink}>
+                  <LinkIcon platform="external" size={16} /> {t.tryLive}
                 </a>
               )}
             </div>
@@ -190,13 +193,13 @@ const Modal: React.FC = () => {
           {!isTrack && (p!.github || p!.tryMe) && (
             <div style={{ marginTop: 24, display: 'flex', gap: 22, flexWrap: 'wrap' }}>
               {p!.github && (
-                <a href={p!.github} target="_blank" rel="noreferrer" className="link-underline" style={modalLink}>
-                  GitHub
+                <a href={p!.github} target="_blank" rel="noreferrer" className="card-link" style={modalLink}>
+                  <LinkIcon platform="github" size={16} /> GitHub
                 </a>
               )}
               {p!.tryMe && (
-                <a href={p!.tryMe} target="_blank" rel="noreferrer" className="link-underline" style={modalLink}>
-                  {t.tryLive}
+                <a href={p!.tryMe} target="_blank" rel="noreferrer" className="card-link" style={modalLink}>
+                  <LinkIcon platform="external" size={16} /> {t.tryLive}
                 </a>
               )}
             </div>

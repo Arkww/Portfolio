@@ -3,10 +3,17 @@ import { useStore } from '../store';
 import { TRACK, PORTRAIT, resumeFor } from '../content';
 import SocialRow from './SocialRow';
 import PdfViewer from './PdfViewer';
+import SmartImg from './SmartImg';
 
 const TrackSection: React.FC = () => {
   const { t, pick, setModal, lang } = useStore();
   const [pdf, setPdf] = useState<{ src: string; title: string } | null>(null);
+
+  // Split entries into Professional Experience and Education (order preserved).
+  const groups = [
+    { title: t.experienceTitle, items: TRACK.filter((x) => x.category === 'experience') },
+    { title: t.educationTitle, items: TRACK.filter((x) => x.category === 'education') },
+  ];
 
   return (
     <>
@@ -27,7 +34,7 @@ const TrackSection: React.FC = () => {
           background: 'var(--card)', border: '1px solid var(--border-soft)', borderRadius: 20,
           overflow: 'hidden', boxShadow: 'var(--shadow)', position: 'sticky', top: 86,
         }}>
-          <img
+          <SmartImg
             src={PORTRAIT}
             alt="Mathieu Jay"
             style={{ width: '100%', height: 280, objectFit: 'cover', display: 'block' }}
@@ -54,19 +61,25 @@ const TrackSection: React.FC = () => {
           </div>
         </div>
 
-        {/* Track list */}
-        <div>
-          <h2 style={{
-            margin: '0 0 26px', fontSize: 30, fontWeight: 800,
-            letterSpacing: '-0.02em', color: 'var(--text)',
-          }}>
-            {t.trackTitle}
-          </h2>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-            {TRACK.map((tr) => (
-              <div
-                key={tr.id}
-                className="lift2"
+        {/* Track lists: Professional Experience + Education (two columns) */}
+        <div style={{
+          display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+          gap: 28, alignItems: 'start',
+        }}>
+          {groups.map((group) =>
+            group.items.length === 0 ? null : (
+              <div key={group.title}>
+                <h2 style={{
+                  margin: '0 0 22px', fontSize: 30, fontWeight: 800,
+                  letterSpacing: '-0.02em', color: 'var(--text)',
+                }}>
+                  {group.title}
+                </h2>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+                  {group.items.map((tr) => (
+                    <div
+                      key={tr.id}
+                      className="lift2"
                 onClick={() => setModal({ kind: 'track', id: tr.id })}
                 style={{
                   background: 'var(--card)', border: '1px solid var(--border-soft)', borderRadius: 16,
@@ -80,7 +93,7 @@ const TrackSection: React.FC = () => {
                   alignItems: 'center', justifyContent: 'center', overflow: 'hidden',
                 }}>
                   {tr.logo && (
-                    <img src={tr.logo} alt="" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: 6 }} />
+                    <SmartImg src={tr.logo} alt="" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: 6 }} />
                   )}
                 </div>
                 <div style={{ minWidth: 0 }}>
@@ -90,10 +103,13 @@ const TrackSection: React.FC = () => {
                     {pick(tr.period)} · {pick(tr.location)}
                   </div>
                 </div>
-                <div style={{ fontSize: 18, color: 'var(--muted)' }}>›</div>
+                      <div style={{ fontSize: 18, color: 'var(--muted)' }}>›</div>
+                    </div>
+                  ))}
+                </div>
               </div>
-            ))}
-          </div>
+            ),
+          )}
         </div>
       </div>
     </section>

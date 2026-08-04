@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { createPortal } from 'react-dom';
+import SmartImg from './SmartImg';
 
 const MIN = 1;
 const MAX = 6;
@@ -66,7 +67,7 @@ const Lightbox: React.FC<{ src: string; alt?: string; onClose: () => void }> = (
         overflow: 'hidden', animation: 'fadeUp .2s ease both',
       }}
     >
-      <img
+      <SmartImg
         src={src}
         alt={alt}
         draggable={false}
