@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { useStore } from '../store';
-import { TRACK, PORTRAIT, RESUME } from '../content';
+import { TRACK, PORTRAIT, resumeFor } from '../content';
 import SocialRow from './SocialRow';
 import PdfViewer from './PdfViewer';
 
 const TrackSection: React.FC = () => {
-  const { t, pick, setModal } = useStore();
+  const { t, pick, setModal, lang } = useStore();
   const [pdf, setPdf] = useState<{ src: string; title: string } | null>(null);
 
   return (
@@ -41,7 +41,7 @@ const TrackSection: React.FC = () => {
               <SocialRow size={34} instagram />
               <button
                 className="resume-pill"
-                onClick={() => setPdf({ src: RESUME, title: t.resume })}
+                onClick={() => setPdf({ src: resumeFor(lang), title: t.resume })}
                 style={{
                   marginLeft: 'auto', fontFamily: 'inherit', fontSize: 13, fontWeight: 600,
                   padding: '9px 18px', background: 'var(--accent)', color: '#fff',
@@ -79,7 +79,9 @@ const TrackSection: React.FC = () => {
                   border: '1px solid var(--border-soft)', display: 'flex',
                   alignItems: 'center', justifyContent: 'center', overflow: 'hidden',
                 }}>
-                  <img src={tr.logo} alt="" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: 6 }} />
+                  {tr.logo && (
+                    <img src={tr.logo} alt="" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: 6 }} />
+                  )}
                 </div>
                 <div style={{ minWidth: 0 }}>
                   <div style={{ fontSize: 16, fontWeight: 700, color: 'var(--text)' }}>{pick(tr.title)}</div>

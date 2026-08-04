@@ -79,11 +79,13 @@ const ProjectsSection: React.FC = () => {
                 flexDirection: 'column', cursor: 'pointer',
               }}
             >
-              <img
-                src={p.img}
-                alt={p.title}
-                style={{ height: 160, width: '100%', objectFit: 'cover', borderBottom: '1px solid var(--border-soft)' }}
-              />
+              {p.img && (
+                <img
+                  src={p.img}
+                  alt={p.title}
+                  style={{ height: 160, width: '100%', objectFit: 'cover', borderBottom: '1px solid var(--border-soft)' }}
+                />
+              )}
               <div style={{ padding: '18px 20px 20px', display: 'flex', flexDirection: 'column', gap: 10, flex: 1 }}>
                 <div style={{ fontSize: 15.5, fontWeight: 700, color: 'var(--text)', lineHeight: 1.3 }}>{p.title}</div>
                 <p style={{ margin: 0, fontSize: 13, lineHeight: 1.6, color: 'var(--sub)', flex: 1 }}>{pick(p.blurb)}</p>

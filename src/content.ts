@@ -97,7 +97,7 @@ export interface LangCard {
 
 export const LANGS: LangCard[] = [
   { code: 'fr', flag: '🇫🇷', greeting: 'Bonjour !', name: { en: 'French', fr: 'Français', zh: '法语' }, level: { en: 'Native', fr: 'Langue maternelle', zh: '母语' }, prof: { en: 'Native speaker', fr: 'Locuteur natif', zh: '母语者' } },
-  { code: 'en', flag: '🇬🇧', greeting: 'Hello!', name: { en: 'English', fr: 'Anglais', zh: '英语' }, level: { en: 'C1 · TOEFL 104', fr: 'C1 · TOEFL 104', zh: 'C1 · 托福104' }, prof: { en: 'Full professional proficiency', fr: 'Compétence professionnelle complète', zh: '完全专业工作能力' }, cert: '/assets/TOELF_SCORE.pdf' },
+  { code: 'en', flag: '🇬🇧', greeting: 'Hello!', name: { en: 'English', fr: 'Anglais', zh: '英语' }, level: { en: 'C1 · TOEFL 104', fr: 'C1 · TOEFL 104', zh: 'C1 · 托福104' }, prof: { en: 'Full professional proficiency', fr: 'Compétence professionnelle complète', zh: '完全专业工作能力' }, cert: '/assets/Documents/TOELF_SCORE.pdf' },
   { code: 'zh', flag: '🇨🇳', greeting: '你好！', name: { en: 'Chinese', fr: 'Chinois', zh: '中文' }, level: { en: 'C1 · HSK 5', fr: 'C1 · HSK 5', zh: 'C1 · HSK五级' }, prof: { en: 'Full professional proficiency', fr: 'Compétence professionnelle complète', zh: '完全专业工作能力' }, cert: '/assets/HSK_SCORE.jpg' },
   { code: 'es', flag: '🇪🇸', greeting: '¡Hola!', name: { en: 'Spanish', fr: 'Espagnol', zh: '西班牙语' }, level: { en: 'B1', fr: 'B1', zh: 'B1' }, prof: { en: 'Elementary working proficiency', fr: 'Compétence de travail élémentaire', zh: '基础工作能力' } },
   { code: 'ja', flag: '🇯🇵', greeting: 'こんにちは！', name: { en: 'Japanese', fr: 'Japonais', zh: '日语' }, level: { en: 'A2 · JLPT N4', fr: 'A2 · JLPT N4', zh: 'A2 · 日语能力考N4' }, prof: { en: 'Elementary working proficiency', fr: 'Compétence de travail élémentaire', zh: '基础工作能力' } },
@@ -116,10 +116,10 @@ export interface TrackPhoto { src: string; desc: Loc; }
 export interface TrackDetail { recap: Loc; skills: LocArr; photos: TrackPhoto[]; }
 
 export const TRACK: TrackItem[] = [
-  { id: 'senat', logo: '/assets/Logos/senatLogo.jpg', title: { en: 'French Senate', fr: 'Sénat', zh: '法国参议院' }, role: { en: 'Apprenticeship · AI Engineer', fr: 'Alternance · Ingénieur IA', zh: '学徒实习 · AI工程师' }, period: { en: 'Sep 2025 – Jul 2026', fr: 'Sept. 2025 – Juil. 2026', zh: '2025年9月 – 2026年7月' }, location: { en: 'Paris, France', fr: 'Paris, France', zh: '法国巴黎' }, report: '/assets/SenatReport.pdf', reference: '', github: '', tryMe: '' },
-  { id: 'tokyo', logo: '/assets/Logos/UniversityOfTokyo.png', title: { en: 'University of Tokyo', fr: 'Université de Tokyo', zh: '东京大学' }, role: { en: 'Internship · Research assistant', fr: 'Stage · Assistant de recherche', zh: '实习 · 研究助理' }, period: { en: 'Apr 2025 – Jul 2025', fr: 'Avr. 2025 – Juil. 2025', zh: '2025年4月 – 7月' }, location: { en: 'Tokyo, Japan', fr: 'Tokyo, Japon', zh: '日本东京' }, report: '/assets/TokyoReport.pdf', reference: '/assets/UTokyoReference.pdf', github: '', tryMe: '' },
+  { id: 'senat', logo: '/assets/Logos/senatLogo.jpg', title: { en: 'French Senate', fr: 'Sénat', zh: '法国参议院' }, role: { en: 'Apprenticeship · AI Engineer', fr: 'Alternance · Ingénieur IA', zh: '学徒实习 · AI工程师' }, period: { en: 'Sep 2025 – Jul 2026', fr: 'Sept. 2025 – Juil. 2026', zh: '2025年9月 – 2026年7月' }, location: { en: 'Paris, France', fr: 'Paris, France', zh: '法国巴黎' }, report: '/assets/Documents/SenatReport.pdf', reference: '', github: '', tryMe: '' },
+  { id: 'tokyo', logo: '/assets/Logos/UniversityOfTokyo.png', title: { en: 'University of Tokyo', fr: 'Université de Tokyo', zh: '东京大学' }, role: { en: 'Internship · Research assistant', fr: 'Stage · Assistant de recherche', zh: '实习 · 研究助理' }, period: { en: 'Apr 2025 – Jul 2025', fr: 'Avr. 2025 – Juil. 2025', zh: '2025年4月 – 7月' }, location: { en: 'Tokyo, Japan', fr: 'Tokyo, Japon', zh: '日本东京' }, report: '/assets/Documents/TokyoReport.pdf', reference: '/assets/Documents/UTokyoReference.pdf', github: '', tryMe: '' },
   { id: 'asso', logo: '/assets/Logos/LogoBDE.png', title: { en: 'Student Association', fr: 'Assopeña', zh: '学生会' }, role: { en: 'President', fr: 'Président', zh: '会长' }, period: { en: '2024 – 2025', fr: '2024 – 2025', zh: '2024 – 2025' }, location: { en: 'Bordeaux, France', fr: 'Bordeaux, France', zh: '法国波尔多' }, report: '', reference: '', github: '', tryMe: '' },
-  { id: 'iut', logo: '/assets/Logos/IUT.png', title: { en: 'University of Bordeaux', fr: 'Université de Bordeaux', zh: '波尔多大学' }, role: { en: 'B.Sc. Computer Science, International Track', fr: 'BUT Informatique, parcours international', zh: '计算机科学学士（国际方向）' }, period: { en: '2023 – 2026', fr: '2023 – 2026', zh: '2023 – 2026' }, location: { en: 'Bordeaux, France', fr: 'Bordeaux, France', zh: '法国波尔多' }, report: '', reference: '/assets/IUTReference.pdf', github: '', tryMe: '' },
+  { id: 'iut', logo: '/assets/Logos/IUT.png', title: { en: 'University of Bordeaux', fr: 'Université de Bordeaux', zh: '波尔多大学' }, role: { en: 'B.Sc. Computer Science, International Track', fr: 'BUT Informatique, parcours international', zh: '计算机科学学士（国际方向）' }, period: { en: '2023 – 2026', fr: '2023 – 2026', zh: '2023 – 2026' }, location: { en: 'Bordeaux, France', fr: 'Bordeaux, France', zh: '法国波尔多' }, report: '', reference: '/assets/Documents/IUTReference.pdf', github: '', tryMe: '' },
 ];
 
 export const TRACK_DETAILS: Record<string, TrackDetail> = {
@@ -308,7 +308,14 @@ export const FILTERS: Filter[] = [
 
 // ------------------------------------------------------------------- Social / links
 export const PORTRAIT = '/assets/MePhotos/PhotoMoi.jpg';
-export const RESUME = '/assets/MATHIEU_JAY_RESUME.pdf';
+
+// Language-dependent resume: French when the site is in French, English otherwise.
+// (Add the French PDF at the path below — it doesn't exist in assets yet.)
+export const RESUME = {
+  fr: '/assets/Documents/MATHIEU_JAY_RESUME_FR.pdf',
+  default: '/assets/Documents/MATHIEU_JAY_RESUME.pdf',
+};
+export const resumeFor = (lang: Lang): string => (lang === 'fr' ? RESUME.fr : RESUME.default);
 export const SOCIAL = {
   github: 'https://github.com/Arkww',
   linkedin: 'https://www.linkedin.com/in/mathieu-jay/',

@@ -86,9 +86,10 @@ const Modal: React.FC = () => {
   const photoH = isTrack ? 210 : 160;
   const desc = isTrack ? (trD ? pick(trD.recap) : '') : (pD ? pick(pD.recap) : pick(p!.blurb));
   const skills = isTrack ? (trD ? pickArr(trD.skills) : []) : (pD ? pickArr(pD.skills) : []);
-  const photos = isTrack
+  const photos = (isTrack
     ? (trD ? trD.photos.map((ph) => ({ src: ph.src, desc: pick(ph.desc) })) : [])
-    : (pD ? pD.photos.map((ph) => ({ src: ph.src, desc: pick(ph.desc) })) : []);
+    : (pD ? pD.photos.map((ph) => ({ src: ph.src, desc: pick(ph.desc) })) : [])
+  ).filter((ph) => ph.src); // drop photos with a missing/empty URL
 
   return (
     <div
