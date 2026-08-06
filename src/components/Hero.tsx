@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useStore } from '../store';
-import { HERO, CURRENT_WORK, HERO_LINKS } from '../content';
+import { HERO, CURRENT_WORK, HERO_LINKS, resumeFor } from '../content';
 import Highlight from './Highlight';
 import LinkIcon from './LinkIcon';
+import PdfViewer from './PdfViewer';
 
 const eyebrow: React.CSSProperties = {
   fontSize: 11.5, fontWeight: 700, letterSpacing: '.12em',
@@ -14,8 +15,10 @@ const TAGS = ['NLP', 'AI', 'ML', 'Data Science'];
 const Hero: React.FC = () => {
   const { t, lang, pick } = useStore();
   const hero = HERO[lang];
+  const [pdf, setPdf] = useState<{ src: string; title: string } | null>(null);
 
   return (
+    <>
     <section
       id="top"
       style={{
@@ -68,6 +71,16 @@ const Hero: React.FC = () => {
             }}>
               {t.explore} ↓
             </a>
+            <button
+              onClick={() => setPdf({ src: resumeFor(lang), title: t.resume })}
+              className="cta-accent"
+              style={{
+                fontFamily: 'inherit', fontSize: 14, fontWeight: 700, padding: '13px 22px', color: 'var(--accent)',
+                border: '1px solid var(--accent)', borderRadius: 12, background: 'var(--card)', cursor: 'pointer',
+              }}
+            >
+              {t.resume}
+            </button>
             <a href="#languages" className="cta-secondary" style={{
               fontSize: 14, fontWeight: 600, padding: '13px 22px', color: 'var(--text)',
               textDecoration: 'none', border: '1px solid var(--border)', borderRadius: 12,
@@ -131,6 +144,8 @@ const Hero: React.FC = () => {
         </div>
       </div>
     </section>
+    {pdf && <PdfViewer src={pdf.src} title={pdf.title} onClose={() => setPdf(null)} />}
+    </>
   );
 };
 

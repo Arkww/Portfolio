@@ -82,7 +82,11 @@ body {
 
 /* Secondary CTA */
 .cta-secondary { transition: all .25s ease; }
-.cta-secondary:hover { border-color: var(--muted); }
+.cta-secondary:hover { border-color: var(--muted) !important; transform: translateY(-2px); box-shadow: var(--shadow); }
+
+/* Accent-outline CTA (Resume) — more prominent than a plain secondary button */
+.cta-accent { transition: all .25s ease; }
+.cta-accent:hover { transform: translateY(-2px); box-shadow: var(--shadow-lift); }
 
 /* Resume pill */
 .resume-pill { transition: all .25s ease; }
@@ -132,12 +136,14 @@ body {
   .langs-grid { grid-template-columns: repeat(3, 1fr) !important; }
   .footer-grid { grid-template-columns: 1fr 1fr !important; }
   .modal-track-grid { grid-template-columns: 1fr !important; gap: 28px !important; }
+  .langs-intro { flex-direction: column-reverse !important; align-items: flex-start !important; gap: 28px !important; }
 }
 
 @media (max-width: 620px) {
   .hide-mobile { display: none !important; }
   .hero-wrap { padding: 72px 20px 80px !important; }
   .hero-wrap h1 { font-size: 36px !important; }
+  .hero-intro { flex-direction: column !important; align-items: flex-start !important; gap: 20px !important; }
   .projects-grid { grid-template-columns: 1fr !important; }
   .langs-grid { grid-template-columns: repeat(2, 1fr) !important; }
   .footer-grid { grid-template-columns: 1fr !important; }

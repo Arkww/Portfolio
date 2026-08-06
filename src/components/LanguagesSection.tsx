@@ -1,7 +1,8 @@
 import React from 'react';
 import { useStore } from '../store';
-import { LANGS } from '../content';
+import { LANGS, PORTRAIT } from '../content';
 import Highlight from './Highlight';
+import SmartImg from './SmartImg';
 
 const LanguagesSection: React.FC = () => {
   const { t, pick } = useStore();
@@ -12,15 +13,28 @@ const LanguagesSection: React.FC = () => {
       style={{ background: 'var(--bg-soft)', borderTop: '1px solid var(--border-soft)' }}
     >
       <div style={{ maxWidth: 1140, margin: '0 auto', padding: '90px 28px 100px' }}>
-        <h2 style={{ margin: 0, fontSize: 30, fontWeight: 800, letterSpacing: '-0.02em', color: 'var(--text)' }}>
-          {t.languagesTitle}
-        </h2>
-        <p style={{ margin: '20px 0 0', fontSize: 15, lineHeight: 1.7, color: 'var(--sub)', maxWidth: 680 }}>
-          <Highlight text={t.langIntro1} />
-        </p>
-        <p style={{ margin: '12px 0 0', fontSize: 15, lineHeight: 1.7, color: 'var(--sub)', maxWidth: 680 }}>
-          <Highlight text={t.langIntro2} />
-        </p>
+        <div className="langs-intro" style={{ display: 'flex', gap: 40, alignItems: 'center' }}>
+          <div style={{ flex: 1, minWidth: 0 }}>
+            <h2 style={{ margin: 0, fontSize: 30, fontWeight: 800, letterSpacing: '-0.02em', color: 'var(--text)' }}>
+              {t.languagesTitle}
+            </h2>
+            <p style={{ margin: '20px 0 0', fontSize: 15, lineHeight: 1.7, color: 'var(--sub)', maxWidth: 620 }}>
+              <Highlight text={t.langIntro1} />
+            </p>
+            <p style={{ margin: '12px 0 0', fontSize: 15, lineHeight: 1.7, color: 'var(--sub)', maxWidth: 620 }}>
+              <Highlight text={t.langIntro2} />
+            </p>
+          </div>
+          <SmartImg
+            src={PORTRAIT}
+            alt="Mathieu Jay"
+            className="langs-photo"
+            style={{
+              flex: 'none', width: 220, height: 270, objectFit: 'cover', objectPosition: 'center 20%',
+              borderRadius: 20, border: '1px solid var(--border-soft)', boxShadow: 'var(--shadow)', display: 'block',
+            }}
+          />
+        </div>
 
         <div className="langs-grid" style={{
           marginTop: 40, display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 16,
