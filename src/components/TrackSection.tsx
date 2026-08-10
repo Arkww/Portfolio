@@ -49,7 +49,7 @@ const TrackSection: React.FC = () => {
                       }}
                     >
                       <div style={{
-                        width: 52, height: 52, borderRadius: 12, background: 'var(--bg-soft)',
+                        width: 52, height: 52, borderRadius: 12, background: '#fff',
                         border: '1px solid var(--border-soft)', display: 'flex',
                         alignItems: 'center', justifyContent: 'center', overflow: 'hidden',
                       }}>
