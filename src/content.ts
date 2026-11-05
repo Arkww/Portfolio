@@ -373,10 +373,10 @@ export const PORTRAIT = '/assets/MePhotos/PhotoMoi.jpg';
 // Language-dependent resume: French when the site is in French, English otherwise.
 // (Add the French PDF at the path below — it doesn't exist in assets yet.)
 export const RESUME = {
-  fr: '/assets/Documents/MATHIEU_JAY_RESUME_FR.pdf',
+  zh: '/assets/Documents/杰马修CV.pdf',
   default: '/assets/Documents/MATHIEU_JAY_RESUME.pdf',
 };
-export const resumeFor = (lang: Lang): string => (lang === 'fr' ? RESUME.fr : RESUME.default);
+export const resumeFor = (lang: Lang): string => (lang === 'zh' ? RESUME.zh : RESUME.default);
 export const SOCIAL = {
   github: 'https://github.com/Arkww',
   linkedin: 'https://www.linkedin.com/in/mathieu-jay/',
