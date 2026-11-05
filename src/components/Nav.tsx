@@ -2,7 +2,7 @@ import React from 'react';
 import { useStore } from '../store';
 import type { Lang } from '../content';
 
-const LANG_OPTS: [Lang, string][] = [['en', 'EN'], ['fr', 'FR'], ['zh', '中文']];
+const LANG_OPTS: [Lang, string][] = [['en', 'EN'], ['zh', '中文'], ['fr', 'FR']];
 
 const Nav: React.FC = () => {
   const { t, lang, setLang, dark, toggleDark } = useStore();
@@ -19,7 +19,7 @@ const Nav: React.FC = () => {
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
       }}>
         <a href="#top" style={{ fontSize: 15.5, fontWeight: 700, color: 'var(--text)', textDecoration: 'none' }}>
-          Mathieu Jay
+          {t.myName}
         </a>
         <div style={{ display: 'flex', alignItems: 'center', gap: 26 }}>
           <a href="#track" className="nav-link hide-mobile" style={{ fontSize: 13.5 }}>{t.navTrack}</a>

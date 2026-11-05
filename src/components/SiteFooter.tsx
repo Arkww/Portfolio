@@ -12,7 +12,7 @@ const SiteFooter: React.FC = () => {
   const { t, lang } = useStore();
   const [pdf, setPdf] = useState<{ src: string; title: string } | null>(null);
 
-  const profileLinks = HERO_LINKS.filter((l) => l.platform !== 'email');
+  const profileLinks = HERO_LINKS.filter((l) => l.platform !== 'email' && l.platform !== 'wechat');
 
   return (
     <>
@@ -23,7 +23,7 @@ const SiteFooter: React.FC = () => {
         }}>
           {/* Col 1 — brand + links (icon + URL, same as the hero) */}
           <div>
-            <div style={{ fontSize: 16, fontWeight: 700, color: 'var(--accent)' }}>Mathieu Jay</div>
+            <div style={{ fontSize: 16, fontWeight: 700, color: 'var(--accent)' }}>{t.myName}</div>
             <div style={{ marginTop: 8, fontSize: 13, color: 'var(--sub)' }}>{t.footerTag}</div>
             <div style={{ marginTop: 18, display: 'flex', flexDirection: 'column', gap: 10 }}>
               {profileLinks.map((l) => (
@@ -57,6 +57,10 @@ const SiteFooter: React.FC = () => {
                 <span style={{ flex: 'none', display: 'flex' }}><LinkIcon platform="email" size={16} /></span>
                 <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{SOCIAL.email}</span>
               </a>
+              <span style={{ ...rowStyle, color: 'var(--sub)' }}>
+                <span style={{ flex: 'none', display: 'flex' }}><LinkIcon platform="wechat" size={16} /></span>
+                <span>{t.wechat}{SOCIAL.wechat}</span>
+              </span>
               <button
                 onClick={() => setPdf({ src: resumeFor(lang), title: t.resume })}
                 className="foot-link"
@@ -74,7 +78,7 @@ const SiteFooter: React.FC = () => {
           marginTop: 44, paddingTop: 20, borderTop: '1px solid var(--border-soft)',
           display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 16, flexWrap: 'wrap',
         }}>
-          <span style={{ fontSize: 12, color: 'var(--muted)' }}>© 2026 Mathieu Jay. {t.rights}</span>
+          <span style={{ fontSize: 12, color: 'var(--muted)' }}>© 2026 {t.myName}. {t.rights}</span>
           <a href="#top" className="foot-link" style={{ fontSize: 12, color: 'var(--muted)' }}>{t.backTop} ↑</a>
         </div>
       </div>

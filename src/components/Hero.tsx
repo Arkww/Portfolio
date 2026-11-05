@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useStore } from '../store';
-import { HERO, CURRENT_WORK, HERO_LINKS, resumeFor } from '../content';
+import { HERO, CURRENT_WORK, HERO_LINKS, SOCIAL, resumeFor } from '../content';
 import Highlight from './Highlight';
 import LinkIcon from './LinkIcon';
 import PdfViewer from './PdfViewer';
@@ -16,6 +16,10 @@ const Hero: React.FC = () => {
   const { t, lang, pick } = useStore();
   const hero = HERO[lang];
   const [pdf, setPdf] = useState<{ src: string; title: string } | null>(null);
+  const [copied, setCopied] = useState(false);
+  const copyWechat = () => {
+    navigator.clipboard?.writeText(SOCIAL.wechat).then(() => { setCopied(true); setTimeout(() => setCopied(false), 1500); }).catch(() => {});
+  };
 
   return (
     <>
@@ -43,8 +47,8 @@ const Hero: React.FC = () => {
             margin: '18px 0 0', fontSize: 56, lineHeight: 1.08, fontWeight: 800,
             letterSpacing: '-0.025em', color: 'var(--text)',
           }}>
-            {hero.hello}{' '}
-            <span style={{ color: 'var(--accent)', transition: 'color .3s' }}>Mathieu Jay</span>
+            {hero.hello}{lang === 'zh' ? '' : ' '}
+            <span style={{ color: 'var(--accent)', transition: 'color .3s' }}>{t.myName}</span>
           </h1>
           <p style={{
             margin: '22px 0 0', fontSize: 16.5, lineHeight: 1.65,
@@ -119,9 +123,29 @@ const Hero: React.FC = () => {
           }}>
             <div style={eyebrow}>{t.links}</div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-              {HERO_LINKS.map((l) => (
+              {HERO_LINKS.map((l) => l.platform === 'wechat' ? (
+                <button
+                  key={l.display}
+                  type="button"
+                  onClick={copyWechat}
+                  title={t.wechat + SOCIAL.wechat}
+                  className="hero-link"
+                  style={{
+                    fontSize: 14, fontWeight: 500, color: 'var(--sub)', background: 'none', border: 'none',
+                    padding: 0, cursor: 'pointer', fontFamily: 'inherit', textAlign: 'left',
+                    display: 'flex', alignItems: 'center', gap: 12, minWidth: 0,
+                  }}
+                >
+                  <span style={{ flex: 'none', display: 'flex', color: 'var(--text)' }}>
+                    <LinkIcon platform="wechat" />
+                  </span>
+                  <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                    {t.wechat}{SOCIAL.wechat}{copied ? '  ✓' : ''}
+                  </span>
+                </button>
+              ) : (
                 <a
-                  key={l.platform}
+                  key={l.display}
                   href={l.href}
                   target={l.href.startsWith('mailto:') ? undefined : '_blank'}
                   rel="noreferrer"

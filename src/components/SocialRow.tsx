@@ -9,9 +9,8 @@ import { SOCIAL, LOGOS } from '../content';
 //
 // mail.png is a solid blue envelope, so we use it as a mask over white to paint just the
 // envelope white on top of a blue circle.
-const SocialRow: React.FC<{ size?: number; instagram?: boolean; gap?: number }> = ({
+const SocialRow: React.FC<{ size?: number; gap?: number }> = ({
   size = 34,
-  instagram = false,
   gap = 8,
 }) => {
   const Badge: React.FC<{ src: string; alt: string; href: string }> = ({ src, alt, href }) => (
@@ -33,7 +32,6 @@ const SocialRow: React.FC<{ size?: number; instagram?: boolean; gap?: number }> 
     <div style={{ display: 'flex', gap, alignItems: 'center' }}>
       <Badge src={LOGOS.github} alt="GitHub" href={SOCIAL.github} />
       <Badge src={LOGOS.linkedin} alt="LinkedIn" href={SOCIAL.linkedin} />
-      {instagram && <Badge src={LOGOS.instagram} alt="Instagram" href={SOCIAL.instagram} />}
 
       <a className="social-badge" href={`mailto:${SOCIAL.email}`} aria-label="Email"
         style={{

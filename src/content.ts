@@ -9,7 +9,7 @@ export type LocArr = Record<Lang, string[]>;
 // ---------------------------------------------------------------- UI strings (T)
 export interface UIStrings {
   navTrack: string; navProjects: string; navLanguages: string;
-  eyebrow: string; hello: string; bio: string;
+  myName: string; wechat: string; eyebrow: string; hello: string; bio: string;
   explore: string; hoverHello: string;
   trackTitle: string; experienceTitle: string; educationTitle: string;
   profileBio: string;
@@ -26,50 +26,50 @@ export interface UIStrings {
 
 export const T: Record<Lang, UIStrings> = {
   en: {
-    navTrack: 'Track', navProjects: 'Projects', navLanguages: 'Languages',
+    myName: 'Mathieu Jay', wechat: 'WeChat: ', navTrack: 'Track', navProjects: 'Projects', navLanguages: 'Languages',
     eyebrow: 'COMPUTER SCIENCE & LANGUAGES', hello: "Hello, I'm",
-    bio: 'Computer science student and autodidact polyglot with a passion for data science and living languages. I enjoy building AI and NLP systems that bridge technology and human language.',
+    bio: "Master's student in Advanced Computing at Tsinghua University and self-taught polyglot. I research agent architectures, agent systems and LLMs, and I enjoy building AI systems that bridge technology and human language.",
     explore: 'Explore my work', hoverHello: 'HOVER TO SAY HELLO',
     trackTitle: 'Academic & Professional Track', experienceTitle: 'Professional Experience', educationTitle: 'Education',
-    profileBio: 'Third-year computer science student at the University of Bordeaux, currently an apprentice AI engineer at the French Senate in Paris, designing and shipping AI solutions for Senators and civil servants.',
+    profileBio: "First-year master's student in Advanced Computing at Tsinghua University, researching agent architectures, agent systems and LLMs at AIR under Li Yuanchun. Previously an apprentice AI engineer at the French Senate and a research intern at the University of Tokyo.",
     resume: 'Resume', projectsTitle: 'Personal Projects', searchPh: 'Search by title, technology…',
     viewGithub: 'View on GitHub', tryMe: 'Try it', noResults: 'No projects match, try another filter or search.',
     languagesTitle: 'Languages',
     langIntro1: 'Apart from programming I spend my time **practicing** and **speaking** foreign languages, self-taught, using all kinds of resources but mostly YouTube.',
     langIntro2: 'Language learning started as a hobby that makes friends everywhere, but learning new **grammars** and **syntaxes** also sharpened my **logic** and **problem-solving**.',
-    descTitle: 'Description', skillsGained: 'Skills Gained', techUsed: 'Technologies Used', gallery: 'Gallery', close: 'Close', tryLive: 'Try it live', showAll: 'Show all projects', showLess: 'Show less', details: 'Details', certificate: 'Certificate', footerTag: 'CS student · AI & NLP enthusiast · Polyglot',
+    descTitle: 'Description', skillsGained: 'Skills Gained', techUsed: 'Technologies Used', gallery: 'Gallery', close: 'Close', tryLive: 'Try it live', showAll: 'Show all projects', showLess: 'Show less', details: 'Details', certificate: 'Certificate', footerTag: 'Tsinghua M.Sc. student · AI agents & LLMs · Polyglot',
     report: 'Report', reference: 'Reference letter', links: 'Links', currentlyWorking: 'Currently working on',
     footerNav: 'NAVIGATION', footerContact: 'CONTACT', rights: 'All rights reserved.', backTop: 'Back to top',
   },
   fr: {
-    navTrack: 'Parcours', navProjects: 'Projets', navLanguages: 'Langues',
+    myName: 'Mathieu Jay', wechat: 'WeChat : ', navTrack: 'Parcours', navProjects: 'Projets', navLanguages: 'Langues',
     eyebrow: 'INFORMATIQUE & LANGUES', hello: 'Bonjour, je suis',
-    bio: "Étudiant en informatique et polyglotte autodidacte, passionné de data science et de langues vivantes. J'aime construire des systèmes d'IA et de NLP qui relient la technologie et le langage humain.",
+    bio: "Étudiant en master Advanced Computing à l'Université Tsinghua et polyglotte autodidacte. Je travaille sur les architectures d'agents, les systèmes d'agents et les LLM, et j'aime construire des systèmes d'IA qui relient la technologie et le langage humain.",
     explore: 'Découvrir mon travail', hoverHello: 'SURVOLEZ POUR DIRE BONJOUR',
     trackTitle: 'Parcours académique & professionnel', experienceTitle: 'Expérience professionnelle', educationTitle: 'Formation',
-    profileBio: "Étudiant en troisième année d'informatique à l'Université de Bordeaux, actuellement ingénieur IA en alternance au Sénat à Paris, je conçois et déploie des solutions d'IA pour les sénateurs et fonctionnaires.",
+    profileBio: "Étudiant en première année de master Advanced Computing à l'Université Tsinghua, je fais de la recherche sur les architectures d'agents, les systèmes d'agents et les LLM à l'AIR, sous la supervision de Li Yuanchun. Auparavant ingénieur IA en alternance au Sénat et stagiaire de recherche à l'Université de Tokyo.",
     resume: 'CV', projectsTitle: 'Projets personnels', searchPh: 'Rechercher par titre, technologie…',
     viewGithub: 'Voir sur GitHub', tryMe: 'Essayer', noResults: 'Aucun projet ne correspond, essayez un autre filtre.',
     languagesTitle: 'Langues',
     langIntro1: "En dehors de la programmation, je passe mon temps à **pratiquer** et **parler** des langues étrangères, en autodidacte, surtout grâce à YouTube.",
     langIntro2: "L'apprentissage des langues est d'abord un loisir qui me fait des amis partout, mais apprendre de nouvelles **grammaires** et **syntaxes** a aussi aiguisé ma **logique** et ma **résolution de problèmes**.",
-    descTitle: 'Description', skillsGained: 'Compétences acquises', techUsed: 'Technologies utilisées', gallery: 'Galerie', close: 'Fermer', tryLive: 'Essayer en ligne', showAll: 'Voir tous les projets', showLess: 'Voir moins', details: 'Détails', certificate: 'Certificat', footerTag: 'Étudiant CS · Passionné IA & NLP · Polyglotte',
+    descTitle: 'Description', skillsGained: 'Compétences acquises', techUsed: 'Technologies utilisées', gallery: 'Galerie', close: 'Fermer', tryLive: 'Essayer en ligne', showAll: 'Voir tous les projets', showLess: 'Voir moins', details: 'Détails', certificate: 'Certificat', footerTag: 'Master à Tsinghua · Agents IA & LLM · Polyglotte',
     report: 'Rapport', reference: 'Lettre de recommandation', links: 'Liens', currentlyWorking: 'En ce moment',
     footerNav: 'NAVIGATION', footerContact: 'CONTACT', rights: 'Tous droits réservés.', backTop: 'Haut de page',
   },  
   zh: {
-    navTrack: '经历', navProjects: '项目', navLanguages: '语言',
+    myName: '杰马修', wechat: '微信：', navTrack: '经历', navProjects: '项目', navLanguages: '语言',
     eyebrow: '计算机科学与语言', hello: '你好，我是',
-    bio: '计算机科学专业学生，自学多语者，热爱数据科学与语言。我喜欢构建连接技术与人类语言的AI和NLP系统。',
+    bio: "清华大学先进计算专业硕士研究生，自学多语者。研究方向为智能体架构、智能体系统与大语言模型，喜欢构建连接技术与人类语言的AI系统。",
     explore: '查看我的作品', hoverHello: '悬停打个招呼',
     trackTitle: '学术与职业经历', experienceTitle: '职业经历', educationTitle: '教育经历',
-    profileBio: '波尔多大学计算机科学三年级学生，目前在巴黎的法国参议院担任AI工程师学徒，为参议员和公务员设计并落地AI解决方案。',
+    profileBio: "清华大学先进计算专业一年级硕士研究生，在智能产业研究院（AIR）从事智能体架构、智能体系统与大语言模型研究，导师为李元春。曾在法国参议院担任AI工程师学徒，并在东京大学进行研究实习。",
     resume: '简历', projectsTitle: '个人项目', searchPh: '按标题、技术搜索…',
     viewGithub: '在GitHub查看', tryMe: '试一试', noResults: '没有匹配的项目，换个筛选或搜索词试试。',
     languagesTitle: '语言',
     langIntro1: '编程之外，我把时间花在**练习**和**使用**外语上，完全自学，主要通过YouTube。',
     langIntro2: '学语言起初只是能到处交朋友的爱好，但学习新的**语法**和**句法**也让我的**逻辑**和**解决问题**的能力更敏锐。',
-    descTitle: '描述', skillsGained: '收获的技能', techUsed: '使用的技术', gallery: '图库', close: '关闭', tryLive: '在线试玩', showAll: '查看全部项目', showLess: '收起', details: '详情', certificate: '证书', footerTag: '计算机学生 · AI与NLP爱好者 · 多语者',
+    descTitle: '描述', skillsGained: '收获的技能', techUsed: '使用的技术', gallery: '图库', close: '关闭', tryLive: '在线试玩', showAll: '查看全部项目', showLess: '收起', details: '详情', certificate: '证书', footerTag: '清华硕士生 · 智能体与大模型 · 多语者',
     report: '报告', reference: '推荐信', links: '链接', currentlyWorking: '正在做的',
     footerNav: '导航', footerContact: '联系方式', rights: '版权所有。', backTop: '回到顶部',
   },
@@ -81,28 +81,28 @@ export interface HeroCopy { eyebrow: string; hello: string; bio: string; }
 
 // Keywords wrapped in **…** are rendered in the accent colour (see <Highlight>).
 export const HERO: Record<HeroLang, HeroCopy> = {
-  en: { eyebrow: 'COMPUTER SCIENCE & LANGUAGES', hello: "Hello, I'm", bio: 'Computer science student and autodidact **polyglot** with a passion for **data science** and living languages. I enjoy building **AI** and **NLP** systems that bridge technology and human language.' },
-  fr: { eyebrow: 'INFORMATIQUE & LANGUES', hello: 'Bonjour, je suis', bio: "Étudiant en informatique et **polyglotte** autodidacte, passionné de **data science** et de langues vivantes. J'aime construire des systèmes d'**IA** et de **NLP** qui relient la technologie et le langage humain." },
-  zh: { eyebrow: '计算机科学与语言', hello: '你好，我是', bio: '计算机科学专业学生，自学**多语者**，热爱**数据科学**与语言。我喜欢构建连接技术与人类语言的**AI**和**NLP**系统。' },
-  es: { eyebrow: 'INFORMÁTICA E IDIOMAS', hello: '¡Hola! Soy', bio: 'Estudiante de informática y **políglota** autodidacta, apasionado por la **ciencia de datos** y las lenguas vivas. Me gusta construir sistemas de **IA** y **PLN** que conectan la tecnología con el lenguaje humano.' },
-  ja: { eyebrow: 'コンピュータサイエンスと言語', hello: 'こんにちは、私は', bio: 'コンピュータサイエンスを学ぶ学生であり、独学の**ポリグロット**です。**データサイエンス**と生きた言語に情熱を注ぎ、テクノロジーと人間の言語をつなぐ**AI**・**NLP**システムを作ることが好きです。' },
+  en: { eyebrow: 'COMPUTER SCIENCE & LANGUAGES', hello: "Hello, I'm", bio: "Master's student in Advanced Computing at Tsinghua University and self-taught **polyglot**. I research **agent architectures**, **agent systems** and **LLMs**, and I enjoy building AI systems that bridge technology and human language." },
+  fr: { eyebrow: 'INFORMATIQUE & LANGUES', hello: 'Bonjour, je suis', bio: "Étudiant en master Advanced Computing à l'Université Tsinghua et **polyglotte** autodidacte. Je travaille sur les **architectures d'agents**, les **systèmes d'agents** et les **LLM**, et j'aime construire des systèmes d'IA qui relient la technologie et le langage humain." },
+  zh: { eyebrow: '计算机科学与语言', hello: '你好，我是', bio: "清华大学先进计算专业硕士研究生，自学**多语者**。研究方向为**智能体架构**、**智能体系统**与**大语言模型**，喜欢构建连接技术与人类语言的AI系统。" },
+  es: { eyebrow: 'INFORMÁTICA E IDIOMAS', hello: '¡Hola! Soy', bio: "Estudiante de máster en Advanced Computing en la Universidad Tsinghua y **políglota** autodidacta. Investigo **arquitecturas de agentes**, **sistemas de agentes** y **LLM**, y me gusta construir sistemas de IA que conectan la tecnología con el lenguaje humano." },
+  ja: { eyebrow: 'コンピュータサイエンスと言語', hello: 'こんにちは、私は', bio: "清華大学 Advanced Computing 専攻の修士学生で、独学の**ポリグロット**です。**エージェントアーキテクチャ**、**エージェントシステム**、**LLM**を研究しており、テクノロジーと人間の言語をつなぐAIシステムを作ることが好きです。" },
 };
 
 // ----------------------------------------------------------------- Hero "currently working on"
 export const CURRENT_WORK: Loc = {
-  en: 'First year master student at Tsinghua University in Beijing China. Learning about advanced AI use practicaly and theoretically.',
-  fr: "Étudiant en première année de master à l'Université Tsinghua à Pékin, Chine. J'apprends à utiliser l'IA avancée de manière pratique et théorique.",
-  zh: ' 中国北京清华大学硕士一年级学生。学习先进的人工智能的理论与实践。',
+  en: "First-year master's student in Advanced Computing at Tsinghua University (DCST), on a Chinese Government Scholarship. Researching agent architectures, agent systems and LLMs at the Institute for AI Industry Research (AIR), under the supervision of Li Yuanchun.",
+  fr: "Étudiant en première année de master en Advanced Computing à l'Université Tsinghua (DCST), boursier du gouvernement chinois. Recherche sur les architectures d'agents, les systèmes d'agents et les LLM à l'Institute for AI Industry Research (AIR), sous la supervision de Li Yuanchun.",
+  zh: '清华大学计算机系先进计算专业一年级硕士研究生，获中国政府奖学金。在清华大学智能产业研究院（AIR）从事智能体架构、智能体系统与大语言模型研究，导师为李元春。',
 };
 
 // Hero links card. `platform` selects the icon; `display` is the URL shown to the user.
-export type LinkPlatform = 'leetcode' | 'github' | 'instagram' | 'linkedin' | 'email' | 'external' | 'document';
+export type LinkPlatform = 'leetcode' | 'github' | 'instagram' | 'linkedin' | 'email' | 'wechat' | 'external' | 'document';
 export const HERO_LINKS: { platform: LinkPlatform; href: string; display: string }[] = [
   { platform: 'github', href: 'https://github.com/Arkww', display: 'github.com/Arkww' },
   { platform: 'linkedin', href: 'https://www.linkedin.com/in/mathieu-jay/', display: 'linkedin.com/in/mathieu-jay' },
-  { platform: 'email', href: 'mailto:mathieu.jay2@gmail.com', display: 'mathieu.jay2@gmail.com' },
+  { platform: 'email', href: 'mailto:jiemx26@mails.tsinghua.edu.cn', display: 'jiemx26@mails.tsinghua.edu.cn' },
+  { platform: 'wechat', href: '', display: 'WeChat: mathieuzh' },
   { platform: 'leetcode', href: 'https://leetcode.com/u/MatMatLaMenace/', display: 'leetcode.com/u/MatMatLaMenace' },
-  { platform: 'instagram', href: 'https://www.instagram.com/mathieuaway/', display: 'instagram.com/mathieuaway' },
 
 ];
 
@@ -138,7 +138,7 @@ export const TRACK: TrackItem[] = [
   { id: 'senat', category: 'experience', logo: '/assets/Logos/senatLogo.jpg', title: { en: 'French Senate', fr: 'Sénat', zh: '法国参议院' }, role: { en: 'Apprenticeship · AI Engineer', fr: 'Alternance · Ingénieur IA', zh: '学徒实习 · AI工程师' }, period: { en: 'Sep 2025 – Jul 2026', fr: 'Sept. 2025 – Juil. 2026', zh: '2025年9月 – 2026年7月' }, location: { en: 'Paris, France', fr: 'Paris, France', zh: '法国巴黎' }, report: '/assets/Documents/SenatReport.pdf', reference: '', github: '', tryMe: '' },
   { id: 'tokyo', category: 'experience', logo: '/assets/Logos/UniversityOfTokyo.png', title: { en: 'University of Tokyo', fr: 'Université de Tokyo', zh: '东京大学' }, role: { en: 'Internship · Research assistant', fr: 'Stage · Assistant de recherche', zh: '实习 · 研究助理' }, period: { en: 'Apr 2025 – Jul 2025', fr: 'Avr. 2025 – Juil. 2025', zh: '2025年4月 – 7月' }, location: { en: 'Tokyo, Japan', fr: 'Tokyo, Japon', zh: '日本东京' }, report: '/assets/Documents/TokyoReport.pdf', reference: '/assets/Documents/UTokyoReference.pdf', github: '', tryMe: '' },
   { id: 'asso', category: 'experience', logo: '/assets/Logos/LogoBDE.png', title: { en: 'Student Association', fr: 'Assopeña', zh: '学生会' }, role: { en: 'President', fr: 'Président', zh: '会长' }, period: { en: '2024 – 2025', fr: '2024 – 2025', zh: '2024 – 2025' }, location: { en: 'Bordeaux, France', fr: 'Bordeaux, France', zh: '法国波尔多' }, report: '', reference: '', github: '', tryMe: '' },
-  { id: 'tsinghua', category: 'education', logo: '/assets/Logos/Tsinghua.png', title: { en: 'Tsinghua University', fr: 'Université Tsinghua', zh: '清华大学' }, role: { en: 'M.Sc. Advanced Computing', fr: 'Master Advanced Computing', zh: '高等计算硕士' }, period: { en: '2026 - 2028', fr: '2026 - 2028', zh: '2026年 - 2028年' }, location: { en: 'Beijing, China', fr: 'Pékin, Chine', zh: '中国北京' }, report: '', reference: '', github: '', tryMe: '' },
+  { id: 'tsinghua', category: 'education', logo: '/assets/Logos/Tsinghua.png', title: { en: 'Tsinghua University', fr: 'Université Tsinghua', zh: '清华大学' }, role: { en: 'M.Sc. Advanced Computing', fr: 'Master Advanced Computing', zh: '先进计算硕士' }, period: { en: 'Sep 2026 – Jul 2028', fr: 'Sept. 2026 – Juil. 2028', zh: '2026年9月 – 2028年7月' }, location: { en: 'Beijing, China', fr: 'Pékin, Chine', zh: '中国北京' }, report: '', reference: '', github: '', tryMe: '' },
   { id: 'iut', category: 'education', logo: '/assets/Logos/IUT.png', title: { en: 'University of Bordeaux', fr: 'Université de Bordeaux', zh: '波尔多大学' }, role: { en: 'B.Sc. Computer Science, International Track', fr: 'BUT Informatique, parcours international', zh: '计算机科学学士（国际方向）' }, period: { en: '2023 – 2026', fr: '2023 – 2026', zh: '2023 – 2026' }, location: { en: 'Bordeaux, France', fr: 'Bordeaux, France', zh: '法国波尔多' }, report: '', reference: '/assets/Documents/IUTReference.pdf', github: '', tryMe: '' },
 ];
 
@@ -175,8 +175,12 @@ export const TRACK_DETAILS: Record<string, TrackDetail> = {
     ],
   },
   tsinghua: {
-    recap: { en: "Tsinghua University, in Beijing, is one of China's most prestigious universities and consistently ranks among the best in the world, especially in science and engineering. I am a first-year master's student there in Advanced Computing, focusing on AI subjects, with coursework in Chinese and English.", fr: "L'Université Tsinghua, à Pékin, est l'une des universités les plus prestigieuses de Chine et figure régulièrement parmi les meilleures au monde, en particulier en sciences et en ingénierie. J'y suis étudiant en première année de master en Advanced Computing, spécialisé sur les sujets d'IA, avec des cours en chinois et en anglais.", zh: '清华大学位于北京，是中国最负盛名的高等学府之一，在世界范围内、尤其在理工科领域长期名列前茅。我是清华 Advanced Computing（高等计算）专业的一年级硕士研究生，专注于人工智能方向，课程以中英文授课。' },
-    skills: { en: ['Advanced computing with a focus on AI', 'Coursework taught in Chinese and English', 'Research-oriented graduate study'], fr: ["Advanced computing avec une spécialisation en IA", 'Cours en chinois et en anglais', 'Études de master orientées recherche'], zh: ['高等计算与人工智能方向', '中英文授课', '研究导向的硕士学习'] },
+    recap: {
+      en: "First-year master's student in Advanced Computing at the Department of Computer Science and Technology (DCST) of Tsinghua University, in Beijing, on a full Chinese Government Scholarship.\n\nI do research at the Tsinghua Institute for AI Industry Research (AIR) under the supervision of Li Yuanchun. My interests are agent architectures, agent systems and large language models (LLMs). Coursework includes Machine Learning, Deep Learning, Big Data Systems, and AI Hardware and Software Systems, taught in Chinese and English.",
+      fr: "Étudiant en première année de master en Advanced Computing au Département d'informatique (DCST) de l'Université Tsinghua, à Pékin, avec une bourse complète du gouvernement chinois.\n\nJe fais de la recherche à l'Institute for AI Industry Research (AIR) de Tsinghua sous la supervision de Li Yuanchun. Mes centres d'intérêt : les architectures d'agents, les systèmes d'agents et les grands modèles de langage (LLM). Cours : Machine Learning, Deep Learning, systèmes Big Data, systèmes matériels et logiciels pour l'IA, en chinois et en anglais.",
+      zh: '清华大学计算机科学与技术系先进计算专业一年级硕士研究生，获中国政府全额奖学金。\n\n在清华大学智能产业研究院（AIR）从事科研，导师为李元春，研究兴趣为智能体架构、智能体系统与大语言模型（LLM）。课程包括机器学习、深度学习、大数据系统、人工智能软硬件系统等，以中英文授课。',
+    },
+    skills: { en: ['Agent architectures', 'Agent systems', 'Large language models (LLMs)', 'Machine learning & deep learning', 'Big data systems', 'AI hardware and software systems', 'Research in Chinese and English'], fr: ["Architectures d'agents", "Systèmes d'agents", 'Grands modèles de langage (LLM)', 'Machine learning & deep learning', 'Systèmes Big Data', "Systèmes matériels et logiciels pour l'IA", 'Recherche en chinois et en anglais'], zh: ['智能体架构', '智能体系统', '大语言模型（LLM）', '机器学习与深度学习', '大数据系统', '人工智能软硬件系统', '中英文科研'] },
     photos: [],
   },
   iut: {
@@ -376,8 +380,8 @@ export const resumeFor = (lang: Lang): string => (lang === 'fr' ? RESUME.fr : RE
 export const SOCIAL = {
   github: 'https://github.com/Arkww',
   linkedin: 'https://www.linkedin.com/in/mathieu-jay/',
-  instagram: 'https://www.instagram.com/mathieuaway/',
-  email: 'mathieu.jay2@gmail.com',
+  email: 'jiemx26@mails.tsinghua.edu.cn',
+  wechat: 'mathieuzh',
 };
 
 // Circular brand badges (blue circle + white glyph), read well in light & dark.

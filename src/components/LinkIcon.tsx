@@ -32,6 +32,17 @@ const LinkIcon: React.FC<{ platform: LinkPlatform; size?: number }> = ({ platfor
           <path d="M3 6l9 6 9-6" />
         </svg>
       );
+    case 'wechat':
+      return (
+        <svg {...common} fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinejoin="round">
+          <path d="M9.5 4C5.36 4 2 6.69 2 10c0 1.86 1.06 3.52 2.72 4.62L4 17l2.73-1.37c.88.25 1.81.37 2.77.37" />
+          <path d="M15 9c3.87 0 7 2.46 7 5.5 0 1.6-.87 3.04-2.26 4.05L20.3 21l-2.62-1.31c-.85.2-1.76.31-2.68.31-3.87 0-7-2.46-7-5.5S11.13 9 15 9z" />
+          <circle cx="7" cy="8.6" r=".9" fill="currentColor" stroke="none" />
+          <circle cx="12" cy="8.6" r=".9" fill="currentColor" stroke="none" />
+          <circle cx="12.7" cy="13.8" r=".8" fill="currentColor" stroke="none" />
+          <circle cx="17.3" cy="13.8" r=".8" fill="currentColor" stroke="none" />
+        </svg>
+      );
     case 'leetcode':
       return (
         <svg {...common} fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
